@@ -82,6 +82,6 @@ inline_issue <- function(year = "2025", issue = "01") {
 
 # Apply -------------------------------------------------------------------
 
-new_issue(year = "2025", issue = "12")
+new_issue(year = "2025", issue = "13")
 
-inline_issue(year = "2025", issue = "12")
+inline_issue(year = "2025", issue = "13")

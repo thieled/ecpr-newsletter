@@ -1,13 +1,11 @@
 ---
 title: ""
 year: 2025
-issue: "test"
+issue: 13
 format:
   html:
     theme: none
-    toc: true              # generate TOC
-    toc-depth: 1           # only ## headings
-    toc-location: none     # do NOT auto-place
+    toc: true
     page-layout: full
     embed-resources: false
     css: https://thieled.github.io/ecpr-newsletter/assets/styles/newsletter_v02.css
@@ -56,10 +54,6 @@ format:
 
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
 
-<div class="mini-toc">
-{{< toc >}}
-</div>
-
 ::: section
 ![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
 
@@ -70,7 +64,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit a
 </button>
 :::
 
-## More News {#more-news}
+## More News
 
 ::: section
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -78,7 +72,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit a
 
 ---
 
-## Conferences {#conferences}
+## Conferences
 
 ::: job
 **Title:** ECPR General Conference  
@@ -100,7 +94,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit a
 
 ---
 
-## Job Bulletin {#job-bulletin}
+## Job Bulletin
 
 ::: job
 **Title:** Assistant Professor (Tenure-Track)  

@@ -1,0 +1,136 @@
+/* ===== RESET ===== */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafc;
+}
+
+img {
+  border: 0;
+  outline: none;
+  text-decoration: none;
+  display: block;
+}
+
+/* ===== BODY ===== */
+
+.email-body {
+  background: #ffffff;
+  padding: 24px;
+  font-family:
+    "Segoe UI",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+/* ===== HEADINGS ===== */
+
+h2 {
+  font-size: 24px;
+  color: #1F2D3D;
+  margin: 24px 0 12px 0;
+}
+
+/* ===== MINI TOC ===== */
+
+.mini-toc {
+  margin: 12px 0 20px 0;
+  font-size: 15px;
+}
+
+.mini-toc ul {
+  margin: 6px 0 0 0;
+  padding: 0;
+}
+
+.mini-toc li {
+  list-style: none;
+  margin: 0 0 4px 0;
+}
+
+.mini-toc a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+/* ===== SECTIONS ===== */
+
+.section {
+  background: #ffffff;
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+/* ===== INLINE NEWS IMAGE ===== */
+
+.newsimg {
+  float: right;
+  width: 180px;
+  max-width: 180px;
+  height: auto;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* ===== JOB BLOCKS ===== */
+
+.job {
+  background: #ededed;
+  padding: 18px;
+  margin-bottom: 12px;
+  border-left: 4px solid #000;
+  font-size: 15px;
+}
+
+/* ===== BUTTON ===== */
+
+button.readmore {
+  background: #000000;
+  border: none;
+  padding: 8px 14px;
+  margin-top: 8px;
+  display: inline-block;
+}
+
+button.readmore a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  display: inline-block;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+  background: #000000;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.footer-content {
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.footer .smalltext {
+  font-size: 13px;
+  color: #cccccc;
+}
+
+.footer .footer-link {
+  color: #ffffff;
+  text-decoration: underline;
+}
