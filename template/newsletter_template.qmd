@@ -1,0 +1,99 @@
+---
+title: "ECPR PolCom Newsletter"
+format:
+  html:
+    html-math-method: katex
+    theme: none
+    css: assets/styles/styles.css
+    toc: false
+    page-layout: full
+    embed-resources: false
+    include-in-header: 
+      text: |
+        <meta name="quarto-disable-formatting" content="true">
+execute:
+  echo: false
+  warning: false
+  message: false
+filters: []
+---
+
+<!-- Header image -->
+
+![](https://thieled.github.io/ecpr-newsletter/assets/banners/header.png){width="100%"}
+
+## Headline Example
+
+::: section
+![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor 
+<button class="readmore">
+
+<a href="https://example.com">Read more</a>
+
+</button>
+:::
+
+## More News
+
+::: section
+Lorem ipsum dolor sit amem dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing 
+:::
+
+------------------------------------------------------------------------
+
+## Call for Papers
+
+::: job
+**Title:** ECPR General Conference\
+**Location:** University of Dublin\
+**Deadline:** 1 Jan 2023\
+**Description:** Short blurb describing the CfP\
+<button class="readmore"><a href="https://example.com">Read more</a></button>
+:::
+
+::: job
+**Title:** ECREA\
+**Location:** University of Brno\
+**Deadline:** NN\
+**Description:** Short blurb describing the CfP\
+<button class="readmore"><a href="https://example.com">Read more</a></button>
+:::
+
+------------------------------------------------------------------------
+
+## Job Bulletin Example
+
+::: job
+**Title:** Assistant Professor (Tenure-Track)\
+**Location:** Universitat Pompeu Fabra\
+**Deadline:** 3 Feb 2025\
+**Description:** Short blurb describing the job.\
+<button class="readmore"><a href="https://example.com">Read more</a></button>
+:::
+
+------------------------------------------------------------------------
+
+<!-- Footer -->
+
+::::: footer
+
+:::: footer-content
+[![](https://thieled.github.io/ecpr-newsletter/assets/icons/bluesky.png){.icon width="30" height="30"}](https://bsky.app/profile/ecpr-polcom.bsky.social) [![](https://thieled.github.io/ecpr-newsletter/assets/icons/linkedin.png){.icon width="30" height="30"}](https://www.linkedin.com/company/ecpr-polcom)
+
+**Standing Group on Political Communication** 
+
+c/o European Consortium for Political Research 
+
+[ecpr.eu/group/political-communication](https://ecpr.eu/group/political-communication){.footer-link}
+
+::: smalltext
+You received this email because you are a member of the  
+ECPR Standing Group on Political Communication.\
+
+Manage subscriptions to the emails we send you via your [My ECPR account](https://ecpr.eu/login.aspx){.footer-link}
+:::
+::::
+
+:::::

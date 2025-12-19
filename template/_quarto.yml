@@ -1,0 +1,9 @@
+project:
+  output-dir: .
+format:
+  html:
+    theme: none
+    css: styles.css
+    toc: false
+    page-layout: full
+    embed-resources: true

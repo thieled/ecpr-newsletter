@@ -1,0 +1,120 @@
+body {
+  font-family: 'Mulish', Arial, sans-serif;
+  background-color: #f9fafc;
+  color: #000;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  line-height: 1.5;
+  font-size: 18px; /* increased */
+}
+
+h2 {
+  color: #1F2D3D;
+  margin-top: 2em;
+  font-size: 30px; /* increased */
+  font-weight: 700;
+}
+
+h3 {
+  color: #1F2D3D;
+  margin-top: 1.8em;
+  font-size: 24px; /* increased */
+  font-weight: 700;
+}
+
+.section {
+  background: #fff;
+  padding: 18px; /* slightly increased */
+  margin-bottom: 20px;
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.newsimg {
+  float: right;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin-left: 15px;
+  border-radius: 4px;
+}
+
+.job {
+  background: #ededed;
+  padding: 18px; /* slightly increased */
+  margin-bottom: 10px;
+  border-left: 4px solid #000;
+  font-size: 17px; /* slightly larger as well */
+}
+
+button.readmore {
+  background: #000;
+  color: #fff;
+  border: none;
+  font-weight: 700; /* bold */
+  padding: 8px 14px;
+  margin-top: 6px;   /* reduced */
+  margin-bottom: 6px; /* reduced */
+}
+
+button.readmore a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700; /* ensure bold on link too */
+}
+
+button.readmore:hover {
+  opacity: 0.85;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+  padding: 0;
+  font-size: 16px; /* slightly smaller than body */
+  line-height: 1.4;
+}
+
+.footer .bar {
+  width: 100%;
+  display: block;
+}
+
+.footer-content {
+  padding: 20px 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.footer .smalltext {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.footer .footer-link {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer .footer-link:hover {
+  opacity: 0.85;
+}
+
+/* Social icons */
+.footer .icon {
+  vertical-align: middle;
+  margin: 0 6px 10px 6px;
+  width: 28px;
+  height: 28px;
+  filter: invert(100%); /* ensures white icons */
+}
