@@ -1,11 +1,11 @@
 ---
-title: "ECPR PolCom Newsletter"
+title: ""
 format:
   html:
     theme: none
     toc: false
     page-layout: full
-    embed-resources: true
+    embed-resources: false
     css: newsletter_v02.css
     include-in-header:
       text: |
@@ -27,13 +27,9 @@ format:
           }
         </style>
         <![endif]-->
-execute:
-  echo: false
-  warning: false
-  message: false
 ---
 
-<!-- ===== OUTLOOK CENTERING WRAPPER (Elsevier-style) ===== -->
+<!-- ===== OUTLOOK CENTERING WRAPPER ===== -->
 
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f9fafc">
 <tr>
@@ -54,7 +50,7 @@ execute:
 
 <!-- ===== CONTENT START ===== -->
 
-## Headline Example
+## ECPR Newsletter test/2025
 
 ::: section
 ![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
@@ -113,15 +109,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit a
 
 <div class="footer-content">
 
-<a href="https://bsky.app/profile/ecpr-polcom.bsky.social">
-<img src="https://thieled.github.io/ecpr-newsletter/assets/icons/bluesky.png"
-     class="icon" width="28" height="28">
-</a>
-
-<a href="https://www.linkedin.com/company/ecpr-polcom">
-<img src="https://thieled.github.io/ecpr-newsletter/assets/icons/linkedin.png"
-     class="icon" width="28" height="28">
-</a>
+<table role="presentation" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="padding:0 6px;">
+      <a href="https://bsky.app/profile/ecpr-polcom.bsky.social">
+        <img src="https://thieled.github.io/ecpr-newsletter/assets/icons/bluesky.png"
+             width="28" height="28" style="display:inline-block;">
+      </a>
+    </td>
+    <td style="padding:0 6px;">
+      <a href="https://www.linkedin.com/company/ecpr-polcom">
+        <img src="https://thieled.github.io/ecpr-newsletter/assets/icons/linkedin.png"
+             width="28" height="28" style="display:inline-block;">
+      </a>
+    </td>
+  </tr>
+</table>
 
 <p><strong>Standing Group on Political Communication</strong><br>
 European Consortium for Political Research</p>

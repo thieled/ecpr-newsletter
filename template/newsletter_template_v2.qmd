@@ -1,0 +1,159 @@
+---
+title: "ECPR PolCom Newsletter"
+format:
+  html:
+    theme: none
+    toc: false
+    embed-resources: true
+    include-in-header:
+      text: |
+        <meta charset="utf-8">
+        <meta name="x-apple-disable-message-reformatting">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--[if mso]>
+        <style>
+          body, table, td { font-family: Arial, sans-serif !important; }
+          table { border-collapse: collapse; }
+        </style>
+        <![endif]-->
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+<!-- OUTER WRAPPER -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f9fafc">
+<tr>
+<td align="center">
+
+<!-- MAIN CONTAINER -->
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+<tr>
+<td style="padding:0;">
+
+<!-- HEADER IMAGE -->
+<img src="https://thieled.github.io/ecpr-newsletter/assets/banners/header.png"
+     alt="ECPR PolCom Newsletter"
+     width="600"
+     style="display:block;width:100%;max-width:600px;border:0;" />
+
+</td>
+</tr>
+
+<tr>
+<td style="padding:24px;">
+
+<h2 style="margin:0 0 16px 0;">Headline Example</h2>
+
+<!-- NEWS ITEM -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+<tr>
+
+<td width="180" valign="top" style="padding-right:16px;">
+<img src="https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png"
+     width="180"
+     style="display:block;border-radius:4px;" />
+</td>
+
+<td valign="top" style="font-size:16px;line-height:1.5;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.
+
+<!-- BUTTON -->
+<table role="presentation" cellpadding="0" cellspacing="0" style="margin-top:12px;">
+<tr>
+<td bgcolor="#000000" style="padding:10px 16px;">
+<a href="https://example.com"
+   style="color:#ffffff;text-decoration:none;font-weight:bold;font-size:14px;display:inline-block;">
+Read more
+</a>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+<hr style="border:none;border-top:1px solid #ddd;margin:32px 0;" />
+
+<h2>More News</h2>
+
+<p style="font-size:16px;line-height:1.5;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.
+</p>
+
+<hr style="border:none;border-top:1px solid #ddd;margin:32px 0;" />
+
+<h2>Call for Papers</h2>
+
+<!-- CFP ITEM -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ededed" style="margin-bottom:16px;">
+<tr>
+<td style="padding:16px;font-size:15px;line-height:1.5;border-left:4px solid #000;">
+<strong>Title:</strong> ECPR General Conference<br>
+<strong>Location:</strong> University of Dublin<br>
+<strong>Deadline:</strong> 1 Jan 2023<br>
+<strong>Description:</strong> Short blurb describing the CfP<br><br>
+
+<a href="https://example.com"
+   style="background:#000;color:#fff;padding:8px 14px;text-decoration:none;font-weight:bold;display:inline-block;">
+Read more
+</a>
+</td>
+</tr>
+</table>
+
+<hr style="border:none;border-top:1px solid #ddd;margin:32px 0;" />
+
+<h2>Job Bulletin</h2>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ededed">
+<tr>
+<td style="padding:16px;font-size:15px;line-height:1.5;border-left:4px solid #000;">
+<strong>Title:</strong> Assistant Professor (Tenure-Track)<br>
+<strong>Location:</strong> Universitat Pompeu Fabra<br>
+<strong>Deadline:</strong> 3 Feb 2025<br>
+<strong>Description:</strong> Short blurb describing the job<br><br>
+
+<a href="https://example.com"
+   style="background:#000;color:#fff;padding:8px 14px;text-decoration:none;font-weight:bold;display:inline-block;">
+Read more
+</a>
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+
+<!-- FOOTER -->
+<tr>
+<td bgcolor="#000000" style="padding:24px;text-align:center;color:#ffffff;">
+
+<a href="https://bsky.app/profile/ecpr-polcom.bsky.social">
+<img src="https://thieled.github.io/ecpr-newsletter/assets/icons/bluesky.png"
+     width="28" style="margin:0 6px;" />
+</a>
+
+<a href="https://www.linkedin.com/company/ecpr-polcom">
+<img src="https://thieled.github.io/ecpr-newsletter/assets/icons/linkedin.png"
+     width="28" style="margin:0 6px;" />
+</a>
+
+<p style="margin:16px 0 6px 0;font-size:15px;">
+<strong>Standing Group on Political Communication</strong><br>
+European Consortium for Political Research
+</p>
+
+<p style="font-size:13px;color:#cccccc;margin:0;">
+You received this email because you are a member of the ECPR Standing Group on Political Communication.
+</p>
+
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
