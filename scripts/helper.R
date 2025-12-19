@@ -13,8 +13,15 @@ new_issue <- function(year = "2025", issue = "01") {
   img_dir <- file.path(issue_dir, "img")
   doc_dir <- file.path(issue_dir, "doc")
   
-  if (!dir.exists(img_dir)) dir.create(img_dir, showWarnings = FALSE)
-  if (!dir.exists(doc_dir)) dir.create(doc_dir, showWarnings = FALSE)
+  if (!dir.exists(img_dir)) {
+    dir.create(img_dir, showWarnings = FALSE)
+    file.create(file.path(img_dir, ".gitkeep"))
+  }
+  
+  if (!dir.exists(doc_dir)) {
+    dir.create(doc_dir, showWarnings = FALSE)
+    file.create(file.path(doc_dir, ".gitkeep"))
+  }
   
   template_path <- file.path("template", "newsletter_template.qmd")
   if (!file.exists(template_path)) {
