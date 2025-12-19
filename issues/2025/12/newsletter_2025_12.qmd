@@ -1,7 +1,7 @@
 ---
 title: ""
 year: 2025
-issue: "test"
+issue: 12
 format:
   html:
     theme: none
