@@ -4,7 +4,7 @@ format:
   html:
     html-math-method: katex
     theme: none
-    css: assets/styles/styles.css
+    css: https://thieled.github.io/ecpr-newsletter/assets/styles/styles.css
     toc: false
     page-layout: full
     embed-resources: false
