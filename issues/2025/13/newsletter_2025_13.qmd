@@ -5,12 +5,12 @@ issue: 13
 format:
   html:
     theme: none
-    toc: true              # generate TOC
-    toc-depth: 1           # only ## headings
-    toc-location: none     # do NOT auto-place
+    toc: true            # generate TOC
+    toc-depth: 1         # only ## headings
+    toc-location: body   # valid value
     page-layout: full
     embed-resources: false
-    css: https://thieled.github.io/ecpr-newsletter/assets/styles/newsletter_v03.css
+    css: https://thieled.github.io/ecpr-newsletter/assets/styles/newsletter_v02.css
     include-in-header:
       text: |
         <meta charset="utf-8">
@@ -56,9 +56,7 @@ format:
 
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
 
-<div class="mini-toc">
-{{< toc >}}
-</div>
+<!--MINI_TOC-->
 
 ::: section
 ![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}

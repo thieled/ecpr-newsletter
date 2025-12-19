@@ -38,21 +38,32 @@ h2 {
   margin: 24px 0 12px 0;
 }
 
-/* ===== MINI TOC (EMAIL SAFE) ===== */
+/* ===== MINI TOC ===== */
 
-.mini-toc {
-  margin: 12px 0 18px 0;
-  font-size: 15px;
-  line-height: 1.4;
+.toc-section {
+  margin: 18px 0 22px 0;
 }
 
-.mini-toc a {
-  color: #000000;
+.toc-section h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1F2D3D;
+}
+
+.toc-section ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.toc-section li {
+  list-style-type: square;
+  margin: 0 0 6px 0;
+}
+
+.toc-section a {
+  color: #1F2D3D;
   text-decoration: underline;
-}
-
-.mini-toc td {
-  padding: 0 10px 6px 0;
 }
 
 /* ===== SECTIONS ===== */
