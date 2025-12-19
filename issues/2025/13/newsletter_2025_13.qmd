@@ -5,10 +5,12 @@ issue: 13
 format:
   html:
     theme: none
-    toc: true
+    toc: true              # generate TOC
+    toc-depth: 1           # only ## headings
+    toc-location: none     # do NOT auto-place
     page-layout: full
     embed-resources: false
-    css: https://thieled.github.io/ecpr-newsletter/assets/styles/newsletter_v02.css
+    css: https://thieled.github.io/ecpr-newsletter/assets/styles/newsletter_v03.css
     include-in-header:
       text: |
         <meta charset="utf-8">
@@ -54,6 +56,10 @@ format:
 
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
 
+<div class="mini-toc">
+{{< toc >}}
+</div>
+
 ::: section
 ![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
 
@@ -64,7 +70,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit a
 </button>
 :::
 
-## More News
+## More News {#more-news}
 
 ::: section
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -72,7 +78,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit a
 
 ---
 
-## Conferences
+## Conferences {#conferences}
 
 ::: job
 **Title:** ECPR General Conference  
@@ -94,7 +100,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit a
 
 ---
 
-## Job Bulletin
+## Job Bulletin {#job-bulletin}
 
 ::: job
 **Title:** Assistant Professor (Tenure-Track)  
