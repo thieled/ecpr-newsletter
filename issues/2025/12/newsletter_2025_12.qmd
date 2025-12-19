@@ -1,7 +1,7 @@
 ---
 title: ""
 year: 2025
-issue: "test"
+issue: 12
 format:
   html:
     theme: none
@@ -55,6 +55,18 @@ format:
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
 
 ::: section
+In this newsletter, we have some exciting news: 
+
+
+<!-- Table of Contents; Delete if not wished: -->
+::: {.issue-toc}
+:::
+
+:::
+
+## ECR Club — Next Session (9 Dec)
+
+::: section
 ![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -63,6 +75,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit a
 <a href="https://example.com">Read more</a>
 </button>
 :::
+
 
 ## More News
 
