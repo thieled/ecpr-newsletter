@@ -1,5 +1,8 @@
 name: Create newsletter issue
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
     inputs:

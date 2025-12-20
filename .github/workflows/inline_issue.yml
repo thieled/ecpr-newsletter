@@ -1,5 +1,8 @@
 name: Render and inline newsletter
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch:
     inputs:
