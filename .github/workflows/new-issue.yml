@@ -26,15 +26,10 @@ jobs:
 
       - uses: r-lib/actions/setup-r@v2
 
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          packages: |
-            readr
-
       - name: Create issue
         run: |
           Rscript -e '
-            source("scripts/new_issue_helpers.R")
+            source("scripts/new_issue.R")
             new_issue(
               year = "${{ github.event.inputs.year }}",
               issue = "${{ github.event.inputs.issue }}",
@@ -44,8 +39,8 @@ jobs:
 
       - name: Commit changes
         run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add issues/
           git commit -m "Create newsletter issue ${{ github.event.inputs.year }}/${{ github.event.inputs.issue }}" || echo "Nothing to commit"
           git push
