@@ -1,4 +1,4 @@
-name: 01-Upload-and-crop-image
+name: 01-Crop-image
 
 permissions:
   contents: write
@@ -6,16 +6,12 @@ permissions:
 on:
   workflow_dispatch:
     inputs:
-      year:
-        description: "Year (e.g. 2025)"
+      input_path:
+        description: "Path to input image (e.g. issues/2025/20/img/krakow.webp)"
         required: true
-      issue:
-        description: "Issue (e.g. 01)"
-        required: true
-      to_square:
-        description: "Crop image to square (true/false)"
+      output_path:
+        description: "Optional output path (e.g. issues/2025/20/img/krakow_sq.png)"
         required: false
-        default: "false"
       offset_x_adj:
         description: "Horizontal offset adjustment (pixels, can be negative)"
         required: false
@@ -26,82 +22,63 @@ on:
         default: "0"
 
 jobs:
-  upload_image:
+  crop_image:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Upload image
-        uses: actions/upload-artifact@v4
-        with:
-          name: uploaded-image
-          path: |
-            *.png
-            *.jpg
-            *.jpeg
-            *.webp
-          if-no-files-found: error
-
-      - name: Download image
-        uses: actions/download-artifact@v4
-        with:
-          name: uploaded-image
-          path: _uploaded_img
-
+      # System dependency for magick
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y libmagick++-dev
 
+      # Setup R (base only)
       - uses: r-lib/actions/setup-r@v2
 
+      # Install magick only
       - name: Install R dependency
         run: |
-          Rscript -e 'install.packages("magick", repos="https://cloud.r-project.org")'
+          Rscript -e 'install.packages("magick", repos = "https://cloud.r-project.org")'
 
-      - name: Move and optionally crop image
+      - name: Crop image
         run: |
           Rscript -e '
             source("scripts/img_helper.R")
 
-            year  <- "${{ github.event.inputs.year }}"
-            issue <- "${{ github.event.inputs.issue }}"
-            to_sq <- as.logical("${{ github.event.inputs.to_square }}")
+            input_path <- "${{ github.event.inputs.input_path }}"
+            output_path <- "${{ github.event.inputs.output_path }}"
 
             offset_x <- as.integer("${{ github.event.inputs.offset_x_adj }}")
             offset_y <- as.integer("${{ github.event.inputs.offset_y_adj }}")
 
-            img_dir <- file.path("issues", year, issue, "img")
-            dir.create(img_dir, recursive = TRUE, showWarnings = FALSE)
-
-            files <- list.files("_uploaded_img", full.names = TRUE)
-            if (length(files) != 1) stop("Please upload exactly one image.")
-
-            src  <- files[1]
-            base <- tools::file_path_sans_ext(basename(src))
-            dest <- file.path(img_dir, basename(src))
-
-            file.copy(src, dest, overwrite = TRUE)
-
-            if (isTRUE(to_sq)) {
-              out <- file.path(img_dir, paste0(base, "_sq.png"))
-              crop_to_square(
-                image_path   = dest,
-                output_path  = out,
-                offset_x_adj = offset_x,
-                offset_y_adj = offset_y
-              )
-              message("Saved cropped image: ", out)
-            } else {
-              message("Saved image: ", dest)
+            if (!file.exists(input_path)) {
+              stop("Input image does not exist: ", input_path)
             }
+
+            if (nzchar(output_path)) {
+              out <- output_path
+            } else {
+              base <- tools::file_path_sans_ext(input_path)
+              out  <- paste0(base, "_sq.png")
+            }
+
+            crop_to_square(
+              image_path   = input_path,
+              output_path  = out,
+              offset_x_adj = offset_x,
+              offset_y_adj = offset_y
+            )
+
+            message("Saved cropped image: ", out)
           '
 
-      - name: Commit image
+      - name: Commit result
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "${{ github.event.inputs.input_path }}" || true
           git add issues/
-          git commit -m "Upload image for issue ${{ github.event.inputs.year }}/${{ github.event.inputs.issue }}" || echo "Nothing to commit"
+          git commit -m "Crop image $(basename "${{ github.event.inputs.input_path }}")" || echo "Nothing to commit"
           git push
