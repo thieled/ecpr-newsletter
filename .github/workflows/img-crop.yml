@@ -1,0 +1,107 @@
+name: 01-Upload-and-crop-image
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "Year (e.g. 2025)"
+        required: true
+      issue:
+        description: "Issue (e.g. 01)"
+        required: true
+      to_square:
+        description: "Crop image to square (true/false)"
+        required: false
+        default: "false"
+      offset_x_adj:
+        description: "Horizontal offset adjustment (pixels, can be negative)"
+        required: false
+        default: "0"
+      offset_y_adj:
+        description: "Vertical offset adjustment (pixels, can be negative)"
+        required: false
+        default: "0"
+
+jobs:
+  upload_image:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Upload image
+        uses: actions/upload-artifact@v4
+        with:
+          name: uploaded-image
+          path: |
+            *.png
+            *.jpg
+            *.jpeg
+            *.webp
+          if-no-files-found: error
+
+      - name: Download image
+        uses: actions/download-artifact@v4
+        with:
+          name: uploaded-image
+          path: _uploaded_img
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libmagick++-dev
+
+      - uses: r-lib/actions/setup-r@v2
+
+      - name: Install R dependency
+        run: |
+          Rscript -e 'install.packages("magick", repos="https://cloud.r-project.org")'
+
+      - name: Move and optionally crop image
+        run: |
+          Rscript -e '
+            source("scripts/img_helper.R")
+
+            year  <- "${{ github.event.inputs.year }}"
+            issue <- "${{ github.event.inputs.issue }}"
+            to_sq <- as.logical("${{ github.event.inputs.to_square }}")
+
+            offset_x <- as.integer("${{ github.event.inputs.offset_x_adj }}")
+            offset_y <- as.integer("${{ github.event.inputs.offset_y_adj }}")
+
+            img_dir <- file.path("issues", year, issue, "img")
+            dir.create(img_dir, recursive = TRUE, showWarnings = FALSE)
+
+            files <- list.files("_uploaded_img", full.names = TRUE)
+            if (length(files) != 1) stop("Please upload exactly one image.")
+
+            src  <- files[1]
+            base <- tools::file_path_sans_ext(basename(src))
+            dest <- file.path(img_dir, basename(src))
+
+            file.copy(src, dest, overwrite = TRUE)
+
+            if (isTRUE(to_sq)) {
+              out <- file.path(img_dir, paste0(base, "_sq.png"))
+              crop_to_square(
+                image_path   = dest,
+                output_path  = out,
+                offset_x_adj = offset_x,
+                offset_y_adj = offset_y
+              )
+              message("Saved cropped image: ", out)
+            } else {
+              message("Saved image: ", dest)
+            }
+          '
+
+      - name: Commit image
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add issues/
+          git commit -m "Upload image for issue ${{ github.event.inputs.year }}/${{ github.event.inputs.issue }}" || echo "Nothing to commit"
+          git push

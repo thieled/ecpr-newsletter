@@ -37,8 +37,8 @@ crop_to_square <- function(image_path, output_path = NULL,
 }
 
 
-# Use ---------------------------------------------------------------------
-
-crop_to_square(image_path = "assets/banners/ecr_club.png", 
-               output_path = "assets/banners/ecr_club_testsq.png", offset_x_adj = 150)
+# # Use ---------------------------------------------------------------------
+# 
+# crop_to_square(image_path = "assets/banners/ecr_club.png", 
+#                output_path = "assets/banners/ecr_club_testsq.png", offset_x_adj = 150)
 
