@@ -1,4 +1,4 @@
-name: Render and inline newsletter
+name: 02-Render-and-inline-newsletter
 
 permissions:
   contents: write

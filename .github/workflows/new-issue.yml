@@ -1,4 +1,4 @@
-name: Create newsletter issue
+name: 00-Create-new-issue
 
 permissions:
   contents: write
