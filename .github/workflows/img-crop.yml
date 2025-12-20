@@ -53,22 +53,22 @@ jobs:
             OUTPUT="${BASE}_sq.png"
           fi
 
-          # get dimensions
-          WIDTH=$(magick identify -format "%w" "$INPUT")
-          HEIGHT=$(magick identify -format "%h" "$INPUT")
+          # Get dimensions (IM6)
+          WIDTH=$(identify -format "%w" "$INPUT")
+          HEIGHT=$(identify -format "%h" "$INPUT")
 
           SIZE=$(( WIDTH < HEIGHT ? WIDTH : HEIGHT ))
 
           OFFSET_X=$(( (WIDTH  - SIZE) / 2 + OFFSET_X ))
           OFFSET_Y=$(( (HEIGHT - SIZE) / 2 + OFFSET_Y ))
 
-          # clamp offsets
+          # Clamp offsets
           OFFSET_X=$(( OFFSET_X < 0 ? 0 : OFFSET_X ))
           OFFSET_Y=$(( OFFSET_Y < 0 ? 0 : OFFSET_Y ))
 
           echo "Cropping ${SIZE}x${SIZE}+${OFFSET_X}+${OFFSET_Y}"
 
-          magick "$INPUT" \
+          convert "$INPUT" \
             -crop "${SIZE}x${SIZE}+${OFFSET_X}+${OFFSET_Y}" \
             +repage \
             "$OUTPUT"
