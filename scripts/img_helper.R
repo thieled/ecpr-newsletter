@@ -1,4 +1,4 @@
-crop_image_action <- function(
+crop_to_square <- function(
     input_path,
     output_path = "",
     offset_x_adj = 0,

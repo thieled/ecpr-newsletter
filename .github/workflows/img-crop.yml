@@ -53,7 +53,7 @@ jobs:
             offset_x <- as.integer("${{ github.event.inputs.offset_x_adj }}")
             offset_y <- as.integer("${{ github.event.inputs.offset_y_adj }}")
 
-            crop_image_action(
+            crop_to_square(
               input_path   = input_path,
               output_path  = output_path,
               offset_x_adj = offset_x,
