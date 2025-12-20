@@ -88,6 +88,6 @@ inline_issue <- function(year = "2025", issue = "01") {
 
 # Apply -------------------------------------------------------------------
 
-new_issue(year = "2025", issue = "14", overwrite = F)
+new_issue(year = "2025", issue = "155", overwrite = F)
 
-inline_issue(year = "2025", issue = "14")
+inline_issue(year = "2025", issue = "155")
