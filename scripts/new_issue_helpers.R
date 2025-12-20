@@ -1,36 +1,41 @@
-
-# Helper to create folders and qmd for a specific issue -------------------
-
-
 new_issue <- function(year = "2025", issue = "01", overwrite = FALSE) {
+  
+  stopifnot(
+    is.character(year), length(year) == 1,
+    is.character(issue), length(issue) == 1
+  )
   
   issue_dir <- file.path("issues", year, issue)
   
-  if(overwrite){
-    if(dir.exists(issue_dir)) unlink(issue_dir, recursive = T, force = T)
+  if (dir.exists(issue_dir) && !overwrite) {
+    stop(
+      "Issue directory already exists: ", issue_dir,
+      "\nSet overwrite = TRUE to recreate it."
+    )
   }
   
-  
-  if (!dir.exists(issue_dir)) {
-    dir.create(issue_dir, recursive = TRUE, showWarnings = FALSE)
+  if (overwrite && dir.exists(issue_dir)) {
+    unlink(issue_dir, recursive = TRUE, force = TRUE)
   }
+  
+  # --- create directory structure ----
+  
+  dir.create(issue_dir, recursive = TRUE, showWarnings = FALSE)
   
   img_dir <- file.path(issue_dir, "img")
   doc_dir <- file.path(issue_dir, "doc")
   
-  if (!dir.exists(img_dir)) {
-    dir.create(img_dir, showWarnings = FALSE)
-    file.create(file.path(img_dir, ".gitkeep"))
-  }
+  dir.create(img_dir, showWarnings = FALSE)
+  dir.create(doc_dir, showWarnings = FALSE)
   
-  if (!dir.exists(doc_dir)) {
-    dir.create(doc_dir, showWarnings = FALSE)
-    file.create(file.path(doc_dir, ".gitkeep"))
-  }
+  file.create(file.path(img_dir, ".gitkeep"))
+  file.create(file.path(doc_dir, ".gitkeep"))
+  
+  # --- copy and modify template ----
   
   template_path <- file.path("template", "newsletter_template.qmd")
   if (!file.exists(template_path)) {
-    stop("Template not found at ", template_path)
+    stop("Template not found at: ", template_path)
   }
   
   target_file <- file.path(
@@ -42,18 +47,22 @@ new_issue <- function(year = "2025", issue = "01", overwrite = FALSE) {
   
   txt <- txt |>
     gsub("^year:.*$",  paste0("year: ", year),  x = _) |>
-    gsub("^issue:.*$", paste0("issue: ", issue), x = _)
+    gsub("^issue:.*$", paste0("issue: \"", issue, "\""), x = _)
   
   writeLines(txt, target_file, useBytes = TRUE)
   
+  message("Created issue: ", target_file)
   invisible(target_file)
 }
 
 
 
-# Helper function to Inline .css in a specific issue  ---------------------
-
 inline_issue <- function(year = "2025", issue = "01") {
+  
+  stopifnot(
+    is.character(year), length(year) == 1,
+    is.character(issue), length(issue) == 1
+  )
   
   issue_dir <- file.path("issues", year, issue)
   
@@ -66,8 +75,12 @@ inline_issue <- function(year = "2025", issue = "01") {
     stop("QMD file not found: ", qmd_file)
   }
   
-  # Render with Quarto
-  quarto::quarto_render(qmd_file, quiet = TRUE)
+  # --- render ----
+  
+  quarto::quarto_render(
+    input = qmd_file,
+    quiet = TRUE
+  )
   
   html_file <- sub("\\.qmd$", ".html", qmd_file)
   
@@ -75,19 +88,12 @@ inline_issue <- function(year = "2025", issue = "01") {
     stop("Rendered HTML not found: ", html_file)
   }
   
-  # Inline CSS
+  # --- inline CSS ----
+  
   html <- readr::read_file(html_file)
   html <- juicyjuice::css_inline(html)
-  
   readr::write_file(html, html_file)
   
+  message("Rendered and inlined: ", html_file)
   invisible(html_file)
 }
-
-
-
-# Apply -------------------------------------------------------------------
-
-new_issue(year = "2025", issue = "14", overwrite = F)
-
-inline_issue(year = "2025", issue = "14")

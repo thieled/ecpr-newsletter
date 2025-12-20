@@ -1,0 +1,48 @@
+name: Create newsletter issue
+
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "Year (e.g. 2025)"
+        required: true
+      issue:
+        description: "Issue (e.g. 01)"
+        required: true
+      overwrite:
+        description: "Overwrite existing issue (true/false)"
+        required: false
+        default: "false"
+
+jobs:
+  new_issue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            readr
+
+      - name: Create issue
+        run: |
+          Rscript -e '
+            source("scripts/new_issue_helpers.R")
+            new_issue(
+              year = "${{ github.event.inputs.year }}",
+              issue = "${{ github.event.inputs.issue }}",
+              overwrite = as.logical("${{ github.event.inputs.overwrite }}")
+            )
+          '
+
+      - name: Commit changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add issues/
+          git commit -m "Create newsletter issue ${{ github.event.inputs.year }}/${{ github.event.inputs.issue }}" || echo "Nothing to commit"
+          git push
