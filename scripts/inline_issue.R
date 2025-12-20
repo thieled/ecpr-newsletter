@@ -1,10 +1,13 @@
-
 inline_issue <- function(year = "2025", issue = "01") {
   
   stopifnot(
     is.character(year), length(year) == 1,
     is.character(issue), length(issue) == 1
   )
+  
+  if (!requireNamespace("juicyjuice", quietly = TRUE)) {
+    stop("Package 'juicyjuice' is required but not installed.")
+  }
   
   issue_dir <- file.path("issues", year, issue)
   
@@ -17,9 +20,7 @@ inline_issue <- function(year = "2025", issue = "01") {
     stop("QMD file not found: ", qmd_file)
   }
   
-  # --- render ----
-  
-  ## Use CLI instead of package: 
+  # --- render via Quarto CLI (no R deps) ----
   cmd <- sprintf("quarto render %s --to html --quiet", shQuote(qmd_file))
   status <- system(cmd)
   
@@ -27,11 +28,6 @@ inline_issue <- function(year = "2025", issue = "01") {
     stop("Quarto render failed for: ", qmd_file)
   }
   
-  # quarto::quarto_render(
-  #   input = qmd_file,
-  #   quiet = TRUE
-  # )
-  # 
   html_file <- sub("\\.qmd$", ".html", qmd_file)
   
   if (!file.exists(html_file)) {
@@ -39,10 +35,14 @@ inline_issue <- function(year = "2025", issue = "01") {
   }
   
   # --- inline CSS ----
+  html <- paste(
+    readLines(html_file, warn = FALSE, encoding = "UTF-8"),
+    collapse = "\n"
+  )
   
-  html <- readr::read_file(html_file)
   html <- juicyjuice::css_inline(html)
-  readr::write_file(html, html_file)
+  
+  writeLines(html, html_file, useBytes = TRUE)
   
   message("Rendered and inlined: ", html_file)
   invisible(html_file)

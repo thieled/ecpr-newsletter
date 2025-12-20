@@ -20,16 +20,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Install Quarto CLI
+      # Install Quarto CLI (cached, fast)
       - uses: quarto-dev/quarto-actions/setup@v2
 
-      # Setup base R
+      # Setup base R only
       - uses: r-lib/actions/setup-r@v2
 
-      # Install ONLY required R packages
+      # Install ONLY what is actually needed
       - name: Install R dependencies
         run: |
-          Rscript -e 'install.packages(c("readr","juicyjuice"), repos="https://cloud.r-project.org")'
+          Rscript -e 'install.packages("juicyjuice", repos="https://cloud.r-project.org")'
 
       - name: Render and inline
         run: |
