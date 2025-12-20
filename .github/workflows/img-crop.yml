@@ -7,59 +7,73 @@ on:
   workflow_dispatch:
     inputs:
       input_path:
-        description: "Exact repo path to image (e.g. issues/2025/20/img/krakow.webp)"
+        description: "Repo path to image (e.g. issues/2025/20/img/krakow.webp)"
         required: true
       output_path:
         description: "Optional output path (e.g. issues/2025/20/img/krakow_sq.png)"
         required: false
       offset_x_adj:
-        description: "Horizontal offset adjustment (pixels, can be negative)"
+        description: "Horizontal offset (pixels, can be negative)"
         required: false
         default: "0"
       offset_y_adj:
-        description: "Vertical offset adjustment (pixels, can be negative)"
+        description: "Vertical offset (pixels, can be negative)"
         required: false
         default: "0"
 
 jobs:
-  crop_image:
+  crop:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      # system deps for magick
-      - name: Install system dependencies
+      - name: Install ImageMagick
         run: |
           sudo apt-get update
-          sudo apt-get install -y libmagick++-dev
+          sudo apt-get install -y imagemagick
 
-      # base R only
-      - uses: r-lib/actions/setup-r@v2
-
-      # magick only
-      - name: Install R dependency
+      - name: Crop image to square
         run: |
-          Rscript -e 'install.packages("magick", repos = "https://cloud.r-project.org")'
+          set -e
 
-      - name: Crop image
-        run: |
-          Rscript -e '
-            source("scripts/img_helper.R")
+          INPUT="$(echo "${{ github.event.inputs.input_path }}" | tr -d '\r\n' | xargs)"
+          OUTPUT="$(echo "${{ github.event.inputs.output_path }}" | tr -d '\r\n' | xargs)"
 
-            input_path  <- "${{ github.event.inputs.input_path }}"
-            output_path <- "${{ github.event.inputs.output_path }}"
+          OFFSET_X="${{ github.event.inputs.offset_x_adj }}"
+          OFFSET_Y="${{ github.event.inputs.offset_y_adj }}"
 
-            offset_x <- as.integer("${{ github.event.inputs.offset_x_adj }}")
-            offset_y <- as.integer("${{ github.event.inputs.offset_y_adj }}")
+          if [ ! -f "$INPUT" ]; then
+            echo "Input image does not exist: $INPUT"
+            exit 1
+          fi
 
-            crop_image_action(
-              input_path   = input_path,
-              output_path  = output_path,
-              offset_x_adj = offset_x,
-              offset_y_adj = offset_y
-            )
-          '
+          if [ -z "$OUTPUT" ]; then
+            BASE="${INPUT%.*}"
+            OUTPUT="${BASE}_sq.png"
+          fi
+
+          # get dimensions
+          WIDTH=$(magick identify -format "%w" "$INPUT")
+          HEIGHT=$(magick identify -format "%h" "$INPUT")
+
+          SIZE=$(( WIDTH < HEIGHT ? WIDTH : HEIGHT ))
+
+          OFFSET_X=$(( (WIDTH  - SIZE) / 2 + OFFSET_X ))
+          OFFSET_Y=$(( (HEIGHT - SIZE) / 2 + OFFSET_Y ))
+
+          # clamp offsets
+          OFFSET_X=$(( OFFSET_X < 0 ? 0 : OFFSET_X ))
+          OFFSET_Y=$(( OFFSET_Y < 0 ? 0 : OFFSET_Y ))
+
+          echo "Cropping ${SIZE}x${SIZE}+${OFFSET_X}+${OFFSET_Y}"
+
+          magick "$INPUT" \
+            -crop "${SIZE}x${SIZE}+${OFFSET_X}+${OFFSET_Y}" \
+            +repage \
+            "$OUTPUT"
+
+          echo "Saved cropped image: $OUTPUT"
 
       - name: Commit result
         run: |
