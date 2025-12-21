@@ -68,19 +68,51 @@ def call_model(prompt: str) -> str:
         ],
     )
 
-    return response.choices[0].message.content
+    content = response.choices[0].message.content
+    if not content or not content.strip():
+        raise RuntimeError("Model returned empty output")
+
+    return content
 
 
 def main(changed_files_list: str) -> None:
     paths = Path(changed_files_list).read_text().splitlines()
 
+    print(f"Processing {len(paths)} document(s)")
+
     for file_path in paths:
         path = Path(file_path)
+        print(f"→ Processing {path}")
+
         if not path.exists():
+            print("  Skipped: file does not exist")
             continue
 
         raw_text = extract_text(path)
         if not raw_text.strip():
-            continue
+            print("  Warning: extracted text is empty, continuing anyway")
 
-        truncated = tru
+        truncated = truncate_to_tokens(raw_text, MAX_INPUT_TOKENS)
+
+        prompt = (
+            "Please do the following:\n\n"
+            "1. Provide a concise summary of the document.\n"
+            "2. Write a short newsletter-style announcement (3–5 sentences).\n\n"
+            "Document text:\n\n"
+            f"{truncated}"
+        )
+
+        output = call_model(prompt)
+
+        out_path = path.with_name(path.stem + "_summary.md")
+        out_path.write_text(output.strip() + "\n", encoding="utf-8")
+
+        print(f"  Wrote summary: {out_path}")
+
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: summarize_docs.py <changed_files.txt>")
+        sys.exit(1)
+
+    main(sys.argv[1])
