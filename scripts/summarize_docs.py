@@ -138,17 +138,17 @@ Follow ALL instructions strictly.
 
 ### Announcement text
 
-Start with a clear, informative title.
+Start with a clear, concise title.
 
-Then write a brief, crisp, and well-flowing announcement (1–2 short paragraphs) that:
-- explains what the opportunity or event is (long event/opportunity title formatted *italics*)
-- highlights its relevance for political communication research
+Then write a brief, engaging, crisp, and well-flowing announcement (1–3 short paragraphs) that:
+- briefly explains what the opportunity or event is (long event/opportunity title formatted *italics*)
+- highlights its key themes and relevance for political communication research
 - mentions key people, institutions, dates, and locations when available; (people, locations, dates formatted **bold**)
 - ends with a clear call to action
 
 Wrap this section EXACTLY like this:
 
-## <Descriptive title>
+## <Concise Title>
 
 ::: section
 
