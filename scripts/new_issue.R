@@ -24,12 +24,15 @@ new_issue <- function(year = "2025", issue = "01", overwrite = FALSE) {
   
   img_dir <- file.path(issue_dir, "img")
   doc_dir <- file.path(issue_dir, "doc")
+  summarize_dir <- file.path(issue_dir, "summarize")
   
   dir.create(img_dir, showWarnings = FALSE)
   dir.create(doc_dir, showWarnings = FALSE)
+  dir.create(summarize_dir, showWarnings = FALSE)
   
   file.create(file.path(img_dir, ".gitkeep"))
   file.create(file.path(doc_dir, ".gitkeep"))
+  file.create(file.path(summarize_dir, ".gitkeep"))
   
   # --- copy and modify template ----
   
@@ -54,4 +57,3 @@ new_issue <- function(year = "2025", issue = "01", overwrite = FALSE) {
   message("Created issue: ", target_file)
   invisible(target_file)
 }
-

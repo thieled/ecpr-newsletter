@@ -35,9 +35,14 @@ fi
 
 # --- directory structure -----------------------------------------------------
 
-mkdir -p "${ISSUE_DIR}/img" "${ISSUE_DIR}/doc"
+mkdir -p \
+  "${ISSUE_DIR}/img" \
+  "${ISSUE_DIR}/doc" \
+  "${ISSUE_DIR}/summarize"
+
 touch "${ISSUE_DIR}/img/.gitkeep"
 touch "${ISSUE_DIR}/doc/.gitkeep"
+touch "${ISSUE_DIR}/summarize/.gitkeep"
 
 # --- copy + modify template --------------------------------------------------
 

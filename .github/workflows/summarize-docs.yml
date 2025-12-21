@@ -5,10 +5,10 @@ on:
     branches:
       - main
     paths:
-      - "issues/**/doc/**/*.doc"
-      - "issues/**/doc/**/*.docx"
-      - "issues/**/doc/**/*.txt"
-      - "issues/**/doc/**/*.pdf"
+      - "issues/**/summarize/**/*.doc"
+      - "issues/**/summarize/**/*.docx"
+      - "issues/**/summarize/**/*.txt"
+      - "issues/**/summarize/**/*.pdf"
 
 permissions:
   contents: write
@@ -42,7 +42,7 @@ jobs:
       - name: Detect changed documents
         run: |
           git diff --name-only ${{ github.event.before }} ${{ github.sha }} \
-            | grep -E '^issues/.*/doc/.*\.(doc|docx|pdf|txt)$' \
+            | grep -E '^issues/.*/summarize/.*\.(doc|docx|pdf|txt)$' \
             > changed_files.txt || true
 
           if [ ! -s changed_files.txt ]; then
@@ -63,7 +63,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "actions@github.com"
 
-          git add issues/**/doc/*_summary.md || true
+          git add issues/**/summarize/*_summary.md || true
 
           if git diff --cached --quiet; then
             echo "No summaries to commit."

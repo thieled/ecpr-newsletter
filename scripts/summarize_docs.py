@@ -9,8 +9,8 @@ from azure.ai.inference.models import SystemMessage, UserMessage
 from azure.core.credentials import AzureKeyCredential
 
 
-MAX_INPUT_TOKENS = 1600
-MODEL_NAME = "openai/gpt-5-nano"
+MAX_INPUT_TOKENS = 2000
+MODEL_NAME = "openai/gpt-5-mini"
 ENDPOINT = "https://models.github.ai/inference"
 
 
@@ -62,7 +62,7 @@ def call_model(prompt: str) -> str:
         model=MODEL_NAME,
         messages=[
             SystemMessage(
-                "You summarize documents and write short newsletter announcements."
+                "You summarize academic documents and write concise, high-quality newsletter announcements."
             ),
             UserMessage(prompt),
         ],
@@ -88,6 +88,11 @@ def main(changed_files_list: str) -> None:
             print("  Skipped: file does not exist")
             continue
 
+        # Expect files to live under issues/.../summarize/
+        if "summarize" not in path.parts:
+            print("  Skipped: not in a summarize/ folder")
+            continue
+
         raw_text = extract_text(path)
         if not raw_text.strip():
             print("  Warning: extracted text is empty, continuing anyway")
@@ -95,90 +100,90 @@ def main(changed_files_list: str) -> None:
         truncated = truncate_to_tokens(raw_text, MAX_INPUT_TOKENS)
 
         prompt = f"""
-        You are a professional science communicator writing engaging, precise, and enthusiastic
-        newsletter announcements for the ECPR Political Communication Standing Group newsletter.
-        
-        Your task is to transform the input text into a WELL-STRUCTURED MARKDOWN ANNOUNCEMENT.
-        
-        Follow ALL instructions strictly.
-        
-        ---
-        
-        ## OUTPUT REQUIREMENTS (MANDATORY)
-        
-        1. Always produce TWO sections, in this exact order:
-           - A LONG VERSION announcement
-           - A SHORT OVERVIEW
-        
-        2. Use VALID Markdown and the following structural containers EXACTLY as shown.
-        
-        3. Write in a professional but stimulating tone suitable for an academic audience.
-        
-        4. If the input refers to:
-           - a call for papers
-           - a workshop
-           - a conference
-           - a job opening
-           - a fellowship
-           - or another academic opportunity
-        
-           adapt the wording accordingly, BUT KEEP THE SAME STRUCTURE.
-        
-        5. If some details (e.g. location, deadline, link) are missing or unclear,
-           infer cautiously from the text or omit them gracefully (do NOT invent facts).
-        
-        ---
-        
-        ## REQUIRED OUTPUT FORMAT
-        
-        ### Long version
-        
-        Start with a clear, informative title.
-        
-        Then write a rich, well-flowing announcement (2–4 paragraphs) that:
-        - explains what the opportunity/event is about
-        - highlights its academic relevance
-        - names key people and institutions when available
-        - mentions dates, location, and deadlines when provided
-        - ends with a clear call to action
-        
-        Wrap this section EXACTLY like this:
-        
-        ## <Descriptive title>
-        
-        ::: section
-        
-        <well-written long-form announcement text>
-        
-        <button class="readmore"><a href="<relevant link if available>">Read more</a></button>
-        
-        :::
-        
-        ---
-        
-        ### Short overview
-        
-        Then provide a concise, structured overview with the most important facts.
-        
-        Wrap this section EXACTLY like this:
-        
-        ## Call – Short
-        
-        ::: job
-        **Title:** <title>
-        **Location:** <location or "–">
-        **Deadline:** <deadline or "–">
-        **Description:** <1–2 sentence concise description>
-        <button class="readmore"><a href="<relevant link if available>">Read more</a></button>
-        :::
-        
-        ---
-        
-        ## INPUT TEXT (SOURCE DOCUMENT)
-        
-        {truncated}
-        """
+You are a professional science communicator writing engaging, precise, and concise
+newsletter announcements for the ECPR Political Communication Standing Group newsletter.
 
+Your task is to transform the input text into a WELL-STRUCTURED MARKDOWN ANNOUNCEMENT.
+
+Follow ALL instructions strictly.
+
+---
+
+## OUTPUT REQUIREMENTS (MANDATORY)
+
+1. Always produce TWO sections, in this exact order:
+   - A concise, well-flowing ANNOUNCEMENT TEXT
+   - A ONE-GLIMPSE OVERVIEW
+
+2. Use VALID Markdown and the structural containers EXACTLY as specified.
+
+3. Write in a professional, clear, and informative tone suitable for an academic audience.
+
+4. If the input refers to:
+   - a call for papers
+   - a workshop
+   - a conference
+   - a job opening
+   - a fellowship
+   - or another academic opportunity
+
+   adapt the wording accordingly, BUT KEEP THE SAME STRUCTURE.
+
+5. If details (e.g. location, deadline, link) are missing or unclear,
+   infer cautiously or omit them gracefully (do NOT invent facts).
+
+---
+
+## REQUIRED OUTPUT FORMAT
+
+### Announcement text
+
+Start with a clear, informative title.
+
+Then write a brief, crisp, and well-flowing announcement (1–2 short paragraphs) that:
+- explains what the opportunity or event is (long event/opportunity title formatted *italics*)
+- highlights its relevance for political communication research
+- mentions key people, institutions, dates, and locations when available; (people, locations, dates formatted **bold**)
+- ends with a clear call to action
+
+Wrap this section EXACTLY like this:
+
+## <Descriptive title>
+
+::: section
+
+<concise, high-quality announcement text>
+
+<deadline, if available>
+
+<button class="readmore"><a href="<relevant link if available>">Read more</a></button>
+
+:::
+
+---
+
+### One-glimpse overview
+
+Provide a compact, scannable overview with only the most essential facts.
+
+Wrap this section EXACTLY like this:
+
+## Call – Short
+
+::: job
+**Title:** <title>
+**Location:** <location or "–">
+**Deadline:** <deadline or "–">
+**Description:** <1 concise sentence>
+<button class="readmore"><a href="<relevant link if available>">Read more</a></button>
+:::
+
+---
+
+## INPUT TEXT (SOURCE DOCUMENT)
+
+{truncated}
+"""
 
         output = call_model(prompt)
 
