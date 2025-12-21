@@ -172,7 +172,13 @@ def main(changed_files_list: str) -> None:
         <button class="readmore"><a href="<relevant link if available>">Read more</a></button>
         :::
         
+        ---
+        
+        ## INPUT TEXT (SOURCE DOCUMENT)
+        
+        {truncated}
         """
+
 
         output = call_model(prompt)
 
