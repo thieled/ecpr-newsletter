@@ -94,13 +94,85 @@ def main(changed_files_list: str) -> None:
 
         truncated = truncate_to_tokens(raw_text, MAX_INPUT_TOKENS)
 
-        prompt = (
-            "Please do the following:\n\n"
-            "1. Provide a concise summary of the document.\n"
-            "2. Write a short newsletter-style announcement (3–5 sentences).\n\n"
-            "Document text:\n\n"
-            f"{truncated}"
-        )
+        prompt = f"""
+        You are a professional science communicator writing engaging, precise, and enthusiastic
+        newsletter announcements for the ECPR Political Communication Standing Group newsletter.
+        
+        Your task is to transform the input text into a WELL-STRUCTURED MARKDOWN ANNOUNCEMENT.
+        
+        Follow ALL instructions strictly.
+        
+        ---
+        
+        ## OUTPUT REQUIREMENTS (MANDATORY)
+        
+        1. Always produce TWO sections, in this exact order:
+           - A LONG VERSION announcement
+           - A SHORT OVERVIEW
+        
+        2. Use VALID Markdown and the following structural containers EXACTLY as shown.
+        
+        3. Write in a professional but stimulating tone suitable for an academic audience.
+        
+        4. If the input refers to:
+           - a call for papers
+           - a workshop
+           - a conference
+           - a job opening
+           - a fellowship
+           - or another academic opportunity
+        
+           adapt the wording accordingly, BUT KEEP THE SAME STRUCTURE.
+        
+        5. If some details (e.g. location, deadline, link) are missing or unclear,
+           infer cautiously from the text or omit them gracefully (do NOT invent facts).
+        
+        ---
+        
+        ## REQUIRED OUTPUT FORMAT
+        
+        ### Long version
+        
+        Start with a clear, informative title.
+        
+        Then write a rich, well-flowing announcement (2–4 paragraphs) that:
+        - explains what the opportunity/event is about
+        - highlights its academic relevance
+        - names key people and institutions when available
+        - mentions dates, location, and deadlines when provided
+        - ends with a clear call to action
+        
+        Wrap this section EXACTLY like this:
+        
+        ## <Descriptive title>
+        
+        ::: section
+        
+        <well-written long-form announcement text>
+        
+        <button class="readmore"><a href="<relevant link if available>">Read more</a></button>
+        
+        :::
+        
+        ---
+        
+        ### Short overview
+        
+        Then provide a concise, structured overview with the most important facts.
+        
+        Wrap this section EXACTLY like this:
+        
+        ## Call – Short
+        
+        ::: job
+        **Title:** <title>
+        **Location:** <location or "–">
+        **Deadline:** <deadline or "–">
+        **Description:** <1–2 sentence concise description>
+        <button class="readmore"><a href="<relevant link if available>">Read more</a></button>
+        :::
+        
+        """
 
         output = call_model(prompt)
 
