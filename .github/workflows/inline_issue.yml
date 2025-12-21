@@ -20,13 +20,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Quarto CLI (cached, fast)
+      # Quarto CLI
       - uses: quarto-dev/quarto-actions/setup@v2
 
-      # Node.js (for juice)
+      # Node.js for juice
       - uses: actions/setup-node@v4
         with:
           node-version: "20"
+
+      - name: Make script executable
+        run: chmod +x scripts/inline_issue.sh
 
       - name: Render and inline
         run: |
