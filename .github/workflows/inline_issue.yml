@@ -20,32 +20,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Quarto CLI (cached)
+      # Quarto CLI (cached, fast)
       - uses: quarto-dev/quarto-actions/setup@v2
 
-      # Base R only
-      - uses: r-lib/actions/setup-r@v2
-
-      # Install system requirements for juicyjuice / V8
-      - name: Install system dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libcurl4-openssl-dev libssl-dev
-
-      # Install ONLY juicyjuice (base R install now works)
-      - name: Install R dependencies
-        run: |
-          Rscript -e 'install.packages("juicyjuice", repos = "https://cloud.r-project.org")'
+      # Node.js (for juice)
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
       - name: Render and inline
         run: |
-          Rscript -e '
-            source("scripts/inline_issue.R")
-            inline_issue(
-              year  = "${{ github.event.inputs.year }}",
-              issue = "${{ github.event.inputs.issue }}"
-            )
-          '
+          scripts/inline_issue.sh \
+            "${{ github.event.inputs.year }}" \
+            "${{ github.event.inputs.issue }}"
 
       - name: Commit output
         run: |
