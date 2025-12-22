@@ -53,6 +53,8 @@ Each newsletter lives in its own folder, organized by **year** and **issue numbe
 You will see a **yellow spinning wheel** 🟡 while it runs.  
 Finished when it turns **green** 🟢.
 
+#### Walktrough:
+
 !["Screen recording"](https://thieled.github.io/ecpr-newsletter/tutorial/img/00-create-new-issue.gif)
 
 ---
@@ -76,10 +78,12 @@ Within each issue folder, you can upload:
 6. Enter a short, informative commit message (example: `uploaded cfp innsbruck`)
 7. Click **Commit changes** (green button)
 
-### Best practice
+#### Best practice
 
 - **Do not use whitespace in filenames**
 - Use clear names like: `cfp_polcom_2026.pdf`, `krakow.webp`
+
+#### Walktrough:
 
 !["Screen recording"](https://thieled.github.io/ecpr-newsletter/tutorial/img/01-upload-img.gif)
 
@@ -100,11 +104,11 @@ Always use: base-url + relative/path/from/repo-root/file.type
 
 ---
 
-## 03 · Optional: Crop Images to Square Format
+## 03 · (Optional:) Crop Images to Square Format
 
-Newsletter images work best in **1:1 (square) format**.
+Newsletter images work best in **1:1 (square) format**. The GitHub repository provides an automated workflow to corp uploaded images.
 
-### Steps
+#### Instructions
 
 1. Go to **Actions**
 2. Click **01-Crop-image**
@@ -118,12 +122,17 @@ Newsletter images work best in **1:1 (square) format**.
      - `100` moves crop right/down
 5. Click **Run workflow**
 
-### Result
+#### Result
 
 A new image is created in the same folder:
 - `krakow_sq.png`
 
 It is cropped to square and saved as PNG.
+
+
+#### Walktrough:
+
+!["Screen recording"](https://thieled.github.io/ecpr-newsletter/tutorial/img/02-crop-img.gif)
 
 ---
 
