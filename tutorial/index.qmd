@@ -183,6 +183,12 @@ Please note that this workflow only works after you have added **payment informa
 
 Important: always read and double-check before using.
 
+
+
+#### Walktrough:
+
+![Cropping an image.](https://thieled.github.io/ecpr-newsletter/tutorial/img/03-summarize-doc.gif)
+
 ---
 
 ## 05 · Edit the Newsletter (`.qmd` file)
