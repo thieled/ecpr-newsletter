@@ -1,12 +1,12 @@
-## S69: Political Communication Between Disruptive Technologies and Democratic Backsliding
+## S69 — Political Communication Between Disruptive Technologies and Democratic Backsliding
 
 ::: section
 
-*Political Communication Between Disruptive Technologies and Democratic Backsliding* is a dedicated section (S69) at the *ECPR General Conference 2026* hosted by **Jagiellonian University** from **8–11 September 2026**, chaired by **Johanna Burger** (**Freie Universität Berlin**) and **Thomas Milic** (**University of Zurich**) and endorsed by the **ECPR Standing Group on Political Communication**. The section solicits research that probes how technological innovation, information disorders, and anti-democratic actors interact to shape political communication and democratic resilience.
+The ECPR General Conference section *Political Communication Between Disruptive Technologies and Democratic Backsliding* invites empirical and theoretical work that examines how technological change and information disorder interact with democratic erosion. Convened by **Johanna Burger** (Freie Universität Berlin) and **Thomas Milic** (University of Zurich) and endorsed by the ECPR Standing Group on Political Communication, the section will meet at **ECPR General Conference 2026, Jagiellonian University, 8–11 September 2026**.
 
-We invite theoretical, empirical, and methodological contributions that address themes such as generative AI, algorithmic curation, synthetic content and deepfakes, disinformation and cross-border influence operations, the changing role of legacy media and fact-checkers, and political strategies to mitigate democratic backsliding. Submissions may use experiments, surveys, digital trace data, computational methods, qualitative approaches, mixed methods, or comparative designs.
+We welcome submissions addressing (but not limited to) the political communication implications of generative AI, algorithmic curation, deepfakes, disinformation and influence operations, media and intermediary responses, and political actors’ strategies for resilience or exploitation. The call is open to diverse methods — experiments, surveys, digital-trace and computational work, qualitative and comparative studies — that illuminate effects on public discourse, trust, polarization, and democratic accountability.
 
-Visit the section page for submission details and instructions; submit your proposal through the ECPR conference portal.
+Submit your paper or panel proposal via the conference page linked below.
 
 <button class="readmore"><a href="https://ecpr.eu/Events/Event/SectionDetails/1677">Read more</a></button>
 
@@ -18,8 +18,8 @@ Visit the section page for submission details and instructions; submit your prop
 
 ::: job
 **Title:** Political Communication Between Disruptive Technologies and Democratic Backsliding (Section S69)  
-**Location:** Jagiellonian University (ECPR General Conference 2026)  
+**Location:** Jagiellonian University  
 **Deadline:** –  
-**Description:** Section inviting research on how emerging technologies, information disorders, media intermediaries, and political actors interact to affect political communication and democratic resilience.  
+**Description:** ECPR General Conference section soliciting research on how emerging technologies, information disorders, media, and political actors shape democratic vulnerability and resilience.  
 <button class="readmore"><a href="https://ecpr.eu/Events/Event/SectionDetails/1677">Read more</a></button>
 :::
