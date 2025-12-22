@@ -49,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#requirements-and-setup" id="toc-requirements-and-setup" class="nav-link active" data-scroll-target="#requirements-and-setup">00 · Requirements and Setup</a></li>
   <li><a href="#create-a-new-newsletter-issue" id="toc-create-a-new-newsletter-issue" class="nav-link" data-scroll-target="#create-a-new-newsletter-issue">01 · Create a New Newsletter Issue</a></li>
   <li><a href="#optional-upload-documents-and-images" id="toc-optional-upload-documents-and-images" class="nav-link" data-scroll-target="#optional-upload-documents-and-images">02 · (Optional:) Upload Documents and Images</a></li>
-  <li><a href="#optional-crop-images-to-square-format" id="toc-optional-crop-images-to-square-format" class="nav-link" data-scroll-target="#optional-crop-images-to-square-format">03 · Optional: Crop Images to Square Format</a></li>
+  <li><a href="#optional-crop-images-to-square-format" id="toc-optional-crop-images-to-square-format" class="nav-link" data-scroll-target="#optional-crop-images-to-square-format">03 · (Optional:) Crop Images to Square Format</a></li>
   <li><a href="#optional-let-an-ai-summarize-a-document" id="toc-optional-let-an-ai-summarize-a-document" class="nav-link" data-scroll-target="#optional-let-an-ai-summarize-a-document">04 · Optional: Let an AI Summarize a Document</a></li>
   <li><a href="#edit-the-newsletter-.qmd-file" id="toc-edit-the-newsletter-.qmd-file" class="nav-link" data-scroll-target="#edit-the-newsletter-.qmd-file">05 · Edit the Newsletter (<code>.qmd</code> file)</a></li>
   </ul>
@@ -180,10 +180,10 @@ Finished when it turns <strong>green</strong> 🟢.</p>
 </section>
 </section>
 <section id="optional-crop-images-to-square-format" class="level2">
-<h2 class="anchored" data-anchor-id="optional-crop-images-to-square-format">03 · Optional: Crop Images to Square Format</h2>
-<p>Newsletter images work best in <strong>1:1 (square) format</strong>.</p>
-<section id="steps" class="level3">
-<h3 class="anchored" data-anchor-id="steps">Steps</h3>
+<h2 class="anchored" data-anchor-id="optional-crop-images-to-square-format">03 · (Optional:) Crop Images to Square Format</h2>
+<p>Newsletter images work best in <strong>1:1 (square) format</strong>. The GitHub repository provides an automated workflow to corp uploaded images.</p>
+<section id="instructions-1" class="level4">
+<h4 class="anchored" data-anchor-id="instructions-1">Instructions</h4>
 <ol type="1">
 <li>Go to <strong>Actions</strong></li>
 <li>Click <strong>01-Crop-image</strong></li>
@@ -201,19 +201,29 @@ Finished when it turns <strong>green</strong> 🟢.</p>
 <li>Click <strong>Run workflow</strong></li>
 </ol>
 </section>
-<section id="result" class="level3">
-<h3 class="anchored" data-anchor-id="result">Result</h3>
+<section id="result" class="level4">
+<h4 class="anchored" data-anchor-id="result">Result</h4>
 <p>A new image is created in the same folder: - <code>krakow_sq.png</code></p>
 <p>It is cropped to square and saved as PNG.</p>
+</section>
+<section id="walktrough-2" class="level4">
+<h4 class="anchored" data-anchor-id="walktrough-2">Walktrough:</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://thieled.github.io/ecpr-newsletter/tutorial/img/02-crop-img.gif" class="img-fluid figure-img"></p>
+<figcaption>“Screen recording”</figcaption>
+</figure>
+</div>
 <hr>
 </section>
 </section>
 <section id="optional-let-an-ai-summarize-a-document" class="level2">
 <h2 class="anchored" data-anchor-id="optional-let-an-ai-summarize-a-document">04 · Optional: Let an AI Summarize a Document</h2>
-<p>You can let a language model create <strong>ready-to-use newsletter text</strong> from a document.</p>
+<p>To assist you with drafting the newsletter, you can let a language model (gtp-5-mini) create <strong>ready-to-use, markdow-formatted newsletter text</strong> from a document.</p>
+<p>Upload <strong>one</strong> document for each individual event, call, or opportunity.</p>
 <p>Supported formats: - <code>.txt</code>, <code>.pdf</code>, <code>.doc</code>, <code>.docx</code></p>
-<section id="steps-1" class="level3">
-<h3 class="anchored" data-anchor-id="steps-1">Steps</h3>
+<section id="instructions-2" class="level4">
+<h4 class="anchored" data-anchor-id="instructions-2">Instructions</h4>
 <ol type="1">
 <li>Go to: <code>issues → YEAR → ISSUE → summarize</code></li>
 <li>Click <strong>Add file → Upload files</strong></li>
@@ -222,8 +232,8 @@ Finished when it turns <strong>green</strong> 🟢.</p>
 <li>Click <strong>Commit changes</strong></li>
 </ol>
 </section>
-<section id="what-happens-1" class="level3">
-<h3 class="anchored" data-anchor-id="what-happens-1">What happens?</h3>
+<section id="what-happens-1" class="level4">
+<h4 class="anchored" data-anchor-id="what-happens-1">What happens?</h4>
 <ul>
 <li>Summarization runs automatically after upload</li>
 <li>You can monitor progress under <strong>Actions</strong></li>
@@ -233,8 +243,8 @@ Finished when it turns <strong>green</strong> 🟢.</p>
 </ul></li>
 </ul>
 </section>
-<section id="output-contains" class="level3">
-<h3 class="anchored" data-anchor-id="output-contains">Output contains</h3>
+<section id="output-contains" class="level4">
+<h4 class="anchored" data-anchor-id="output-contains">Output contains</h4>
 <ul>
 <li>A <strong>flowing announcement text</strong> (for the News section)</li>
 <li>A <strong>one-glimpse overview</strong> (for Call for Papers / Job Bulletin)</li>
@@ -246,8 +256,8 @@ Finished when it turns <strong>green</strong> 🟢.</p>
 <section id="edit-the-newsletter-.qmd-file" class="level2">
 <h2 class="anchored" data-anchor-id="edit-the-newsletter-.qmd-file">05 · Edit the Newsletter (<code>.qmd</code> file)</h2>
 <p>This is where you assemble the newsletter content.</p>
-<section id="steps-2" class="level3">
-<h3 class="anchored" data-anchor-id="steps-2">Steps</h3>
+<section id="steps" class="level3">
+<h3 class="anchored" data-anchor-id="steps">Steps</h3>
 <ol type="1">
 <li>Go to: <code>issues → YEAR → ISSUE</code></li>
 <li>Click <code>newsletter_YEAR_ISSUE.qmd</code></li>

@@ -115,7 +115,7 @@ Newsletter images work best in **1:1 (square) format**. The GitHub repository pr
 3. Click **Run workflow**
 4. Enter:
    - **Input path** (from repo root), for example:
-     `issues/2025/12/img/krakow.webp`
+     `issues/2025/12/img/Krakow.webp`
    - Leave **output path empty**
    - Optional offsets (pixels):
      - `-100` moves crop left/up
@@ -125,7 +125,7 @@ Newsletter images work best in **1:1 (square) format**. The GitHub repository pr
 #### Result
 
 A new image is created in the same folder:
-- `krakow_sq.png`
+- `Krakow_sq.png`
 
 It is cropped to square and saved as PNG.
 
@@ -138,12 +138,15 @@ It is cropped to square and saved as PNG.
 
 ## 04 · Optional: Let an AI Summarize a Document
 
-You can let a language model create **ready-to-use newsletter text** from a document.
+To assist you with drafting the newsletter, you can let a language model (gtp-5-mini) create **ready-to-use, markdow-formatted newsletter text** from a document.
+
+Upload **one** document for each individual event,
+call, or opportunity.
 
 Supported formats:
 - `.txt`, `.pdf`, `.doc`, `.docx`
 
-### Steps
+#### Instructions
 
 1. Go to: `issues → YEAR → ISSUE → summarize`
 2. Click **Add file → Upload files**
@@ -151,14 +154,14 @@ Supported formats:
 4. Use a clear commit message (example: `uploading polcom section cfp 2026`)
 5. Click **Commit changes**
 
-### What happens?
+#### What happens?
 
 - Summarization runs automatically after upload
 - You can monitor progress under **Actions**
 - A new file appears in the same folder:
   - `yourfile_summary.md`
 
-### Output contains
+#### Output contains
 
 - A **flowing announcement text** (for the News section)
 - A **one-glimpse overview** (for Call for Papers / Job Bulletin)
