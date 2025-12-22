@@ -45,9 +45,6 @@ Each newsletter lives in its own folder, organized by **year** and **issue numbe
    - **Issue** (e.g. `01`)
 5. Click **Run workflow**
 
-!["Screen recording"](https://thieled.github.io/ecpr-newsletter/tutorial/img/00-create-new-issue.gif)
-
-
 #### What happens?
 
 - A new folder is created: `issues/YEAR/ISSUE/`
@@ -55,6 +52,8 @@ Each newsletter lives in its own folder, organized by **year** and **issue numbe
 
 You will see a **yellow spinning wheel** 🟡 while it runs.  
 Finished when it turns **green** 🟢.
+
+!["Screen recording"](https://thieled.github.io/ecpr-newsletter/tutorial/img/00-create-new-issue.gif)
 
 ---
 
@@ -81,6 +80,8 @@ Within each issue folder, you can upload:
 
 - **Do not use whitespace in filenames**
 - Use clear names like: `cfp_polcom_2026.pdf`, `krakow.webp`
+
+!["Screen recording"](https://thieled.github.io/ecpr-newsletter/tutorial/img/01-upload-img.gif)
 
 ---
 
