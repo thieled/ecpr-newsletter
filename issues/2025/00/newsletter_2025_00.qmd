@@ -64,7 +64,7 @@ In this newsletter, we have some exciting news:
 
 :::
 
-## Biggest News
+## Biggest News - sligth changes
 
 ::: section
 ![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
