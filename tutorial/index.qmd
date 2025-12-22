@@ -45,6 +45,9 @@ Each newsletter lives in its own folder, organized by **year** and **issue numbe
    - **Issue** (e.g. `01`)
 5. Click **Run workflow**
 
+!["Screen recording"](https://thieled.github.io/ecpr-newsletter/tutorial/img/00-create-new-issue.gif)
+
+
 #### What happens?
 
 - A new folder is created: `issues/YEAR/ISSUE/`
