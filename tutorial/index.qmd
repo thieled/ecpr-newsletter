@@ -1,5 +1,202 @@
 ---
-title: "index"
-format: html
+title: "ECPR PolCom Newsletter – Tutorial"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 2
+page-layout: full
 ---
+
+Hi!   
+This page explains **step by step** for members of the ECPR PolCom Steering Committee how to create and send the
+**ECPR Standing Group on Political Communication Newsletter**, using GitHub.
+
+No coding is required. Everything happens through the GitHub web interface and the ECPR website.
+
+---
+
+## 00 · Requirements and Setup
+
+Before you start, make sure the following is in place:
+
+1. **Create a GitHub account**: <https://github.com/signup>
+
+2. **Ask to be added as a collaborator**  
+   If you're a steering committee member, please ask **thieled** to be added to this repository: <https://github.com/thieled/ecpr-newsletter>
+
+Once you are added, you can:
+
+- upload files
+- edit newsletter text
+- trigger automated workflows
+
+---
+
+## 01 · Create a New Newsletter Issue
+
+Each newsletter lives in its own folder, organized by **year** and **issue number**. To automatically create a new folder and copy the template, follow these steps:
+
+1. Go to the [**Actions**](https://github.com/thieled/ecpr-newsletter/actions) tab in the repository
+2. On the left, click [**00-Create-new-issue**](https://github.com/thieled/ecpr-newsletter/actions/workflows/new-issue.yml)
+3. Click **Run workflow** (top right)
+4. Enter:
+   - **Year** (e.g. `2025`)
+   - **Issue** (e.g. `01`)
+5. Click **Run workflow**
+
+#### What happens?
+
+- A new folder is created: `issues/YEAR/ISSUE/`
+- A newsletter file appears: `newsletter_YEAR_ISSUE.qmd`
+
+You will see a **yellow spinning wheel** 🟡 while it runs.  
+Finished when it turns **green** 🟢.
+
+---
+
+## 02 · (Optional:) Upload Documents and Images
+
+Within each issue folder, you can upload:
+
+- **documents** (CfPs, job ads, PDFs) → `/doc`
+- **images** (used in the newsletter) → `/img`
+
+#### Instructions
+
+1. Click the [**Code**](https://github.com/thieled/ecpr-newsletter) tab
+2. In the **folders**, navigate to: `issues → YEAR → ISSUE`
+3. Open either:
+   - `doc/` (documents)
+   - `img/` (images)
+4. Click **Add file → Upload files**
+5. Select your file(s)
+6. Enter a short, informative commit message (example: `uploaded cfp innsbruck`)
+7. Click **Commit changes** (green button)
+
+### Best practice
+
+- **Do not use whitespace in filenames**
+- Use clear names like: `cfp_polcom_2026.pdf`, `krakow.webp`
+
+---
+
+### Using Uploaded Files in the Newsletter
+
+All uploaded files are publicly available via GitHub Pages.
+
+**Base URL**: `https://thieled.github.io/ecpr-newsletter/`
+
+Always use: base-url + relative/path/from/repo-root/file.type
+
+
+**Example**
+- Relative path: `issues/2025/12/img/krakow.png`
+- Full URL: `https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/krakow.png`
+
+---
+
+## 03 · Optional: Crop Images to Square Format
+
+Newsletter images work best in **1:1 (square) format**.
+
+### Steps
+
+1. Go to **Actions**
+2. Click **01-Crop-image**
+3. Click **Run workflow**
+4. Enter:
+   - **Input path** (from repo root), for example:
+     `issues/2025/12/img/krakow.webp`
+   - Leave **output path empty**
+   - Optional offsets (pixels):
+     - `-100` moves crop left/up
+     - `100` moves crop right/down
+5. Click **Run workflow**
+
+### Result
+
+A new image is created in the same folder:
+- `krakow_sq.png`
+
+It is cropped to square and saved as PNG.
+
+---
+
+## 04 · Optional: Let an AI Summarize a Document
+
+You can let a language model create **ready-to-use newsletter text** from a document.
+
+Supported formats:
+- `.txt`, `.pdf`, `.doc`, `.docx`
+
+### Steps
+
+1. Go to: `issues → YEAR → ISSUE → summarize`
+2. Click **Add file → Upload files**
+3. Upload **one document per event/opportunity**
+4. Use a clear commit message (example: `uploading polcom section cfp 2026`)
+5. Click **Commit changes**
+
+### What happens?
+
+- Summarization runs automatically after upload
+- You can monitor progress under **Actions**
+- A new file appears in the same folder:
+  - `yourfile_summary.md`
+
+### Output contains
+
+- A **flowing announcement text** (for the News section)
+- A **one-glimpse overview** (for Call for Papers / Job Bulletin)
+
+Important: always read and double-check before using.
+
+---
+
+## 05 · Edit the Newsletter (`.qmd` file)
+
+This is where you assemble the newsletter content.
+
+### Steps
+
+1. Go to: `issues → YEAR → ISSUE`
+2. Click `newsletter_YEAR_ISSUE.qmd`
+3. Click the ✏️ **Edit** button (top right)
+
+---
+
+### Newsletter Structure
+
+You can keep, edit, or delete sections:
+
+1. Opening statement + table of contents  
+2. Main **News** items  
+3. **Call for Papers** overview  
+4. **Job Bulletin**  
+5. Publications by members (Articles / Books)
+
+---
+
+### Markdown Reminders
+
+- Headings: `## Headline`
+- Italics: `*italic text*`
+- Bold: `**bold text**`
+
+Do not change anything above:
+`<!-- ===== CONTENT START ===== -->`  
+or below:
+`<!-- ===== CONTENT END ===== -->`
+
+---
+
+### Table of Contents (Optional)
+
+To remove it, delete this block:
+
+>`<!-- Table of Contents; Delete if not wished: -->` \
+`::: {.issue-toc}` \
+`:::`
+
 

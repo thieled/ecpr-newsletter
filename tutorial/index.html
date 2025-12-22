@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ECPR PolCom Newsletter – Tutorial</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap-813c323200a87c37e262811031999de4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-full">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#requirements-and-setup" id="toc-requirements-and-setup" class="nav-link active" data-scroll-target="#requirements-and-setup">00 · Requirements and Setup</a></li>
+  <li><a href="#create-a-new-newsletter-issue" id="toc-create-a-new-newsletter-issue" class="nav-link" data-scroll-target="#create-a-new-newsletter-issue">01 · Create a New Newsletter Issue</a></li>
+  <li><a href="#optional-upload-documents-and-images" id="toc-optional-upload-documents-and-images" class="nav-link" data-scroll-target="#optional-upload-documents-and-images">02 · (Optional:) Upload Documents and Images</a></li>
+  <li><a href="#optional-crop-images-to-square-format" id="toc-optional-crop-images-to-square-format" class="nav-link" data-scroll-target="#optional-crop-images-to-square-format">03 · Optional: Crop Images to Square Format</a></li>
+  <li><a href="#optional-let-an-ai-summarize-a-document" id="toc-optional-let-an-ai-summarize-a-document" class="nav-link" data-scroll-target="#optional-let-an-ai-summarize-a-document">04 · Optional: Let an AI Summarize a Document</a></li>
+  <li><a href="#edit-the-newsletter-.qmd-file" id="toc-edit-the-newsletter-.qmd-file" class="nav-link" data-scroll-target="#edit-the-newsletter-.qmd-file">05 · Edit the Newsletter (<code>.qmd</code> file)</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">ECPR PolCom Newsletter – Tutorial</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page-left">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Hi!<br>
+This page explains <strong>step by step</strong> for members of the ECPR PolCom Steering Committee how to create and send the <strong>ECPR Standing Group on Political Communication Newsletter</strong>, using GitHub.</p>
+<p>No coding is required. Everything happens through the GitHub web interface and the ECPR website.</p>
+<hr>
+<section id="requirements-and-setup" class="level2">
+<h2 class="anchored" data-anchor-id="requirements-and-setup">00 · Requirements and Setup</h2>
+<p>Before you start, make sure the following is in place:</p>
+<ol type="1">
+<li><p><strong>Create a GitHub account</strong>: <a href="https://github.com/signup" class="uri">https://github.com/signup</a></p></li>
+<li><p><strong>Ask to be added as a collaborator</strong><br>
+If you’re a steering committee member, please ask <strong>thieled</strong> to be added to this repository: <a href="https://github.com/thieled/ecpr-newsletter" class="uri">https://github.com/thieled/ecpr-newsletter</a></p></li>
+</ol>
+<p>Once you are added, you can:</p>
+<ul>
+<li>upload files</li>
+<li>edit newsletter text</li>
+<li>trigger automated workflows</li>
+</ul>
+<hr>
+</section>
+<section id="create-a-new-newsletter-issue" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-new-newsletter-issue">01 · Create a New Newsletter Issue</h2>
+<p>Each newsletter lives in its own folder, organized by <strong>year</strong> and <strong>issue number</strong>. To automatically create a new folder and copy the template, follow these steps:</p>
+<ol type="1">
+<li>Go to the <a href="https://github.com/thieled/ecpr-newsletter/actions"><strong>Actions</strong></a> tab in the repository</li>
+<li>On the left, click <a href="https://github.com/thieled/ecpr-newsletter/actions/workflows/new-issue.yml"><strong>00-Create-new-issue</strong></a></li>
+<li>Click <strong>Run workflow</strong> (top right)</li>
+<li>Enter:
+<ul>
+<li><strong>Year</strong> (e.g.&nbsp;<code>2025</code>)</li>
+<li><strong>Issue</strong> (e.g.&nbsp;<code>01</code>)</li>
+</ul></li>
+<li>Click <strong>Run workflow</strong></li>
+</ol>
+<section id="what-happens" class="level4">
+<h4 class="anchored" data-anchor-id="what-happens">What happens?</h4>
+<ul>
+<li>A new folder is created: <code>issues/YEAR/ISSUE/</code></li>
+<li>A newsletter file appears: <code>newsletter_YEAR_ISSUE.qmd</code></li>
+</ul>
+<p>You will see a <strong>yellow spinning wheel</strong> 🟡 while it runs.<br>
+Finished when it turns <strong>green</strong> 🟢.</p>
+<hr>
+</section>
+</section>
+<section id="optional-upload-documents-and-images" class="level2">
+<h2 class="anchored" data-anchor-id="optional-upload-documents-and-images">02 · (Optional:) Upload Documents and Images</h2>
+<p>Within each issue folder, you can upload:</p>
+<ul>
+<li><strong>documents</strong> (CfPs, job ads, PDFs) → <code>/doc</code></li>
+<li><strong>images</strong> (used in the newsletter) → <code>/img</code></li>
+</ul>
+<section id="steps" class="level3">
+<h3 class="anchored" data-anchor-id="steps">Steps</h3>
+<ol type="1">
+<li>Click the <strong>Code</strong> tab</li>
+<li>Navigate to: <code>issues → YEAR → ISSUE</code></li>
+<li>Open either:
+<ul>
+<li><code>doc/</code> (documents)</li>
+<li><code>img/</code> (images)</li>
+</ul></li>
+<li>Click <strong>Add file → Upload files</strong></li>
+<li>Select your file(s)</li>
+<li>Enter a short, informative commit message (example: <code>uploaded cfp innsbruck</code>)</li>
+<li>Click <strong>Commit changes</strong> (green button)</li>
+</ol>
+</section>
+<section id="best-practice" class="level3">
+<h3 class="anchored" data-anchor-id="best-practice">Best practice</h3>
+<ul>
+<li><strong>Do not use whitespace in filenames</strong></li>
+<li>Use clear names like: <code>cfp_polcom_2026.pdf</code>, <code>krakow.webp</code></li>
+</ul>
+<hr>
+</section>
+<section id="using-uploaded-files-in-the-newsletter" class="level3">
+<h3 class="anchored" data-anchor-id="using-uploaded-files-in-the-newsletter">Using Uploaded Files in the Newsletter</h3>
+<p>All uploaded files are publicly available via GitHub Pages.</p>
+<p><strong>Base URL</strong>: <code>https://thieled.github.io/ecpr-newsletter/</code></p>
+<p>Always use: base-url + relative/path/from/repo-root/file.type</p>
+<p><strong>Example</strong> - Relative path: <code>issues/2025/12/img/krakow.png</code> - Full URL: <code>https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/krakow.png</code></p>
+<hr>
+</section>
+</section>
+<section id="optional-crop-images-to-square-format" class="level2">
+<h2 class="anchored" data-anchor-id="optional-crop-images-to-square-format">03 · Optional: Crop Images to Square Format</h2>
+<p>Newsletter images work best in <strong>1:1 (square) format</strong>.</p>
+<section id="steps-1" class="level3">
+<h3 class="anchored" data-anchor-id="steps-1">Steps</h3>
+<ol type="1">
+<li>Go to <strong>Actions</strong></li>
+<li>Click <strong>01-Crop-image</strong></li>
+<li>Click <strong>Run workflow</strong></li>
+<li>Enter:
+<ul>
+<li><strong>Input path</strong> (from repo root), for example: <code>issues/2025/12/img/krakow.webp</code></li>
+<li>Leave <strong>output path empty</strong></li>
+<li>Optional offsets (pixels):
+<ul>
+<li><code>-100</code> moves crop left/up</li>
+<li><code>100</code> moves crop right/down</li>
+</ul></li>
+</ul></li>
+<li>Click <strong>Run workflow</strong></li>
+</ol>
+</section>
+<section id="result" class="level3">
+<h3 class="anchored" data-anchor-id="result">Result</h3>
+<p>A new image is created in the same folder: - <code>krakow_sq.png</code></p>
+<p>It is cropped to square and saved as PNG.</p>
+<hr>
+</section>
+</section>
+<section id="optional-let-an-ai-summarize-a-document" class="level2">
+<h2 class="anchored" data-anchor-id="optional-let-an-ai-summarize-a-document">04 · Optional: Let an AI Summarize a Document</h2>
+<p>You can let a language model create <strong>ready-to-use newsletter text</strong> from a document.</p>
+<p>Supported formats: - <code>.txt</code>, <code>.pdf</code>, <code>.doc</code>, <code>.docx</code></p>
+<section id="steps-2" class="level3">
+<h3 class="anchored" data-anchor-id="steps-2">Steps</h3>
+<ol type="1">
+<li>Go to: <code>issues → YEAR → ISSUE → summarize</code></li>
+<li>Click <strong>Add file → Upload files</strong></li>
+<li>Upload <strong>one document per event/opportunity</strong></li>
+<li>Use a clear commit message (example: <code>uploading polcom section cfp 2026</code>)</li>
+<li>Click <strong>Commit changes</strong></li>
+</ol>
+</section>
+<section id="what-happens-1" class="level3">
+<h3 class="anchored" data-anchor-id="what-happens-1">What happens?</h3>
+<ul>
+<li>Summarization runs automatically after upload</li>
+<li>You can monitor progress under <strong>Actions</strong></li>
+<li>A new file appears in the same folder:
+<ul>
+<li><code>yourfile_summary.md</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="output-contains" class="level3">
+<h3 class="anchored" data-anchor-id="output-contains">Output contains</h3>
+<ul>
+<li>A <strong>flowing announcement text</strong> (for the News section)</li>
+<li>A <strong>one-glimpse overview</strong> (for Call for Papers / Job Bulletin)</li>
+</ul>
+<p>Important: always read and double-check before using.</p>
+<hr>
+</section>
+</section>
+<section id="edit-the-newsletter-.qmd-file" class="level2">
+<h2 class="anchored" data-anchor-id="edit-the-newsletter-.qmd-file">05 · Edit the Newsletter (<code>.qmd</code> file)</h2>
+<p>This is where you assemble the newsletter content.</p>
+<section id="steps-3" class="level3">
+<h3 class="anchored" data-anchor-id="steps-3">Steps</h3>
+<ol type="1">
+<li>Go to: <code>issues → YEAR → ISSUE</code></li>
+<li>Click <code>newsletter_YEAR_ISSUE.qmd</code></li>
+<li>Click the ✏️ <strong>Edit</strong> button (top right)</li>
+</ol>
+<hr>
+</section>
+<section id="newsletter-structure" class="level3">
+<h3 class="anchored" data-anchor-id="newsletter-structure">Newsletter Structure</h3>
+<p>You can keep, edit, or delete sections:</p>
+<ol type="1">
+<li>Opening statement + table of contents<br>
+</li>
+<li>Main <strong>News</strong> items<br>
+</li>
+<li><strong>Call for Papers</strong> overview<br>
+</li>
+<li><strong>Job Bulletin</strong><br>
+</li>
+<li>Publications by members (Articles / Books)</li>
+</ol>
+<hr>
+</section>
+<section id="markdown-reminders" class="level3">
+<h3 class="anchored" data-anchor-id="markdown-reminders">Markdown Reminders</h3>
+<ul>
+<li>Headings: <code>## Headline</code></li>
+<li>Italics: <code>*italic text*</code></li>
+<li>Bold: <code>**bold text**</code></li>
+</ul>
+<p>Do not change anything above: <code>&lt;!-- ===== CONTENT START ===== --&gt;</code><br>
+or below: <code>&lt;!-- ===== CONTENT END ===== --&gt;</code></p>
+<hr>
+</section>
+<section id="table-of-contents-optional" class="level3">
+<h3 class="anchored" data-anchor-id="table-of-contents-optional">Table of Contents (Optional)</h3>
+<p>To remove it, delete this block:</p>
+<blockquote class="blockquote">
+<p><code>&lt;!-- Table of Contents; Delete if not wished: --&gt;</code><br>
+<code>::: {.issue-toc}</code><br>
+<code>:::</code></p>
+</blockquote>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
