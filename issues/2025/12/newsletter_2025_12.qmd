@@ -69,7 +69,7 @@ In this newsletter, we have some exciting news:
 
 ::: section
 
-![](https://thieled.github.io/ecpr-newsletter/issues/2025/12/Krakow.png){.newsimg width="180"}
+![](https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/Krakow_sq.png){.newsimg width="180"}
 
 The Standing Group invites submissions to *Political Communication Between Disruptive Technologies and Democratic Backsliding*, a section of the *ECPR General Conference 2026* taking place at **Jagiellonian University** in **Kraków** on **8–11 September 2026**. Chaired by **Johanna Burger** (**Freie Universität Berlin**) and **Thomas Milic** (**University of Zurich**) and endorsed by the ECPR Standing Group on Political Communication, the section seeks research that clarifies how technological change, information disorders, and political strategies interact to affect democratic institutions and public discourse.
 
