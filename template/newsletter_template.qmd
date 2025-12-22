@@ -50,6 +50,8 @@ format:
   style="display:block;width:100%;max-width:600px;height:auto;border:0;"
 >
 
+
+
 <!-- ===== CONTENT START ===== -->
 
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
@@ -117,6 +119,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit a
 
 <button class="readmore"><a href="https://example.com">Read more</a></button>
 :::
+
+
 
 <!-- ===== FOOTER ===== -->
 

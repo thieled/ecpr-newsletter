@@ -148,7 +148,7 @@ It is cropped to square and saved as PNG.
 
 ---
 
-## 04 · Optional: Let a LLM Summarize a Document
+## 04 · (Optional:) Let a LLM Summarize a Document
 
 To assist you with drafting the newsletter, you can let a language model (gtp-5-mini) create **ready-to-use, markdow-formatted newsletter text** from a document.
 
@@ -187,54 +187,57 @@ Important: always read and double-check before using.
 
 #### Walktrough:
 
-![Cropping an image.](https://thieled.github.io/ecpr-newsletter/tutorial/img/03-summarize-doc.gif)
+![Summarizing a document.](https://thieled.github.io/ecpr-newsletter/tutorial/img/03-summarize-doc.gif)
 
 ---
 
-## 05 · Edit the Newsletter (`.qmd` file)
+## 05 · Edit the Newsletter
 
-This is where you assemble the newsletter content.
+The newsletter is written in **Quarto markdown**, which can be easily transformed in .html but is simpler to edit.
+
+To do so, follow these steps:
 
 #### Steps
 
-1. Go to: `issues → YEAR → ISSUE`
-2. Click `newsletter_YEAR_ISSUE.qmd`
+1. In the **Code** tab of the repository, navigate to the folder of the current issue: `issues → YEAR → ISSUE`
+2. Click on `newsletter_YEAR_ISSUE.qmd`
 3. Click the ✏️ **Edit** button (top right) - see details below.
-4. Once you're done editing, click **Commit changes**
-5. Add a clear commit message
-6. Click Commit changes (green button)
+4. Once you're done editing, click **Commit changes**.
+5. Add a clear **commit message**.
+6. Click **Commit changes** (green button).
 
 
----
 
 #### Newsletter Structure
 
-You can keep, edit, or delete sections:
+You can edit, keep, or delete these sections:
 
-1. Opening statement + table of contents  
+1. **Welcome** & **Table of contents** (automatically created) 
 2. Main **News** items  
 3. **Call for Papers** overview  
 4. **Job Bulletin**  
-5. Publications by members (Articles / Books)
+5. **Publications** by members (Articles / Books)
 
----
+Do **not** change anything above:
+`<!-- ===== CONTENT START ===== -->`  
+or below:
+`<!-- ===== FOOTER ===== -->`
 
-#### Markdown Elements
+
+
+#### Markdown Basics
+
+Here are a few markdown **formatting** basics:
 
 - Headings: `## Headline`
 - Italics: `*italic text*`
 - Bold: `**bold text**`
 
-Do not change anything above:
-`<!-- ===== CONTENT START ===== -->`  
-or below:
-`<!-- ===== CONTENT END ===== -->`
+For a more comprehensive guide, see [here](https://quarto.org/docs/authoring/markdown-basics.html).
 
----
+##### Table of Contents
 
-##### Table of Contents (Optional)
-
-To remove it, delete this block:
+The table is created automatically from the `## Headlines`. To remove it, simply delete this block: \
 
 >`<!-- Table of Contents; Delete if not wished: -->` \
 `::: {.issue-toc}` \
@@ -242,11 +245,24 @@ To remove it, delete this block:
 
 ##### Images
 
-Use this snippet (replace URL):
-`![](https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/krakow_sq.png){.newsimg width="180"}`
+All images included in the newsletter must publicly available, hosted on a web server. Use the **previously uploaded** (and cropped images) and find the correct URL. 
+
+The correct URL is always the **base URL**:
+
+`https://thieled.github.io/ecpr-newsletter/` 
+
+plus the relative/path/from/ecpr-newsletter, e.g.: 
+
+`https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/Krakow.png`
+
+Use this **code snippet** to insert images - simply replace the URL: \
+
+>`![](https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/Krakow_sq.png){.newsimg width="180"}`
 
 
 ##### Buttons
+
+You can edit the URL and displayed text ("Read more") of the clickable **buttons**: \
 
 >`<button class="readmore">` \
 `<a href="https://example.com">Read more</a>` \
@@ -255,47 +271,53 @@ Use this snippet (replace URL):
 
 ##### Overview Blocks (CfPs & Jobs)
 
->`:::` \
+The items in the **Call for Paper** and **Job Bulletin** section are both formatted by a section called 'job'.
+You can edit or remove `**Title**`, `**Location**` etc. as you wish:
+
+>`::: job` \
 `**Title:** ECREA`  \
 `**Location:** University of Brno`  \
 `**Deadline:** NN`   \
 `**Description:** Short blurb describing the CfP`  \
-
 `<button class="readmore"><a href="https://example.com">Read more</a></button>` \
 `:::`
 
+#### Walkthrough
 
+![Editing a .qmd.](https://thieled.github.io/ecpr-newsletter/tutorial/img/04-edit-qmd.gif)
 
 
 ## 06 · Render the Newsletter to HTML
 
-This step is essential: it converts the newsletter into email-safe HTML and inlines CSS for better compatibility (especially Outlook).
+This step is crucial: it converts the newsletter from .qmd into email-safe **HTML** and inlines **CSS** (style guides) for compatibility with E-Mail programs like Outlook.
 
 #### Steps
 
-1. Go to Actions
-2. Click 02-Render-and-inline-newsletter
-3. Click Run workflow
+1. Go to the tab **Actions**
+2. Click **02-Render-and-inline-newsletter**
+3. Click **Run workflow**
 4. Enter:
     * Year
     * Issue
-5. Wait until it turns green
+5. Click **Run workflow** (green button)
+6. Wait until the process has finished 🟢
 
 #### Result
 
-A new file appears in the issue subfolder:
+A **new .html file** appears in the issue subfolder:
 
 `newsletter_YEAR_ISSUE.html`
 
 #### Preview the Newsletter
 
 Copy the file path, for example:
-`issues/2025/00/newsletter_2025_00.html`
+`issues/2025/12/newsletter_2025_12.html`
 
 Add the base URL:
-`https://thieled.github.io/ecpr-newsletter/issues/2025/00/newsletter_2025_00.html`
 
-Open it in your browser to preview.
+`https://thieled.github.io/ecpr-newsletter/issues/2025/12/newsletter_2025_12.html`
+
+[Open the URL](https://thieled.github.io/ecpr-newsletter/issues/2025/12/newsletter_2025_12.html) in your browser to **preview**.
 
 ## 07 · Send the Newsletter via ECPR
 
