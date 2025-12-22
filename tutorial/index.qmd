@@ -20,10 +20,22 @@ No coding is required. Everything happens through the GitHub web interface and t
 
 Before you start, make sure the following is in place:
 
+1. **Log-in** with:
+
+  - username: `ecprpolcom`
+  - password: shared with steering committee members
+  
+
+**Alternatively** use your own account or create one:
+
 1. **Create a GitHub account**: <https://github.com/signup>
 
 2. **Ask to be added as a collaborator**  
    If you're a steering committee member, please ask **thieled** to be added to this repository: <https://github.com/thieled/ecpr-newsletter>
+   
+3. (Optional:) **Add billing details** and a **payment method** to your profile settings. 
+**No costs will occur**, yet this step is required to enable GitHub Models, which is used for the (optional), LLM-powered [Step 04 - Summarize a Document](http://localhost:5775/tutorial/index.html#optional-let-a-LLM-summarize-a-document)   
+
 
 Once you are added, you can:
 
@@ -55,7 +67,7 @@ Finished when it turns **green** 🟢.
 
 #### Walktrough:
 
-!["Screen recording"](https://thieled.github.io/ecpr-newsletter/tutorial/img/00-create-new-issue.gif)
+![Creating a new newsletter issue.](https://thieled.github.io/ecpr-newsletter/tutorial/img/00-create-new-issue.gif)
 
 ---
 
@@ -85,7 +97,7 @@ Within each issue folder, you can upload:
 
 #### Walktrough:
 
-!["Screen recording"](https://thieled.github.io/ecpr-newsletter/tutorial/img/01-upload-img.gif)
+![Uploading an image.](https://thieled.github.io/ecpr-newsletter/tutorial/img/01-upload-img.gif)
 
 ---
 
@@ -132,11 +144,11 @@ It is cropped to square and saved as PNG.
 
 #### Walktrough:
 
-!["Screen recording"](https://thieled.github.io/ecpr-newsletter/tutorial/img/02-crop-img.gif)
+![Cropping an image.](https://thieled.github.io/ecpr-newsletter/tutorial/img/02-crop-img.gif)
 
 ---
 
-## 04 · Optional: Let an AI Summarize a Document
+## 04 · Optional: Let a LLM Summarize a Document
 
 To assist you with drafting the newsletter, you can let a language model (gtp-5-mini) create **ready-to-use, markdow-formatted newsletter text** from a document.
 
@@ -145,6 +157,9 @@ call, or opportunity.
 
 Supported formats:
 - `.txt`, `.pdf`, `.doc`, `.docx`
+
+Please note that this workflow only works after you have added **payment information** to your GitHub profile. For the current workflow, **no costs occur** though.
+
 
 #### Instructions
 
@@ -156,7 +171,7 @@ Supported formats:
 
 #### What happens?
 
-- Summarization runs automatically after upload
+- **Summarization** runs automatically after upload
 - You can monitor progress under **Actions**
 - A new file appears in the same folder:
   - `yourfile_summary.md`
@@ -174,15 +189,19 @@ Important: always read and double-check before using.
 
 This is where you assemble the newsletter content.
 
-### Steps
+#### Steps
 
 1. Go to: `issues → YEAR → ISSUE`
 2. Click `newsletter_YEAR_ISSUE.qmd`
-3. Click the ✏️ **Edit** button (top right)
+3. Click the ✏️ **Edit** button (top right) - see details below.
+4. Once you're done editing, click **Commit changes**
+5. Add a clear commit message
+6. Click Commit changes (green button)
+
 
 ---
 
-### Newsletter Structure
+#### Newsletter Structure
 
 You can keep, edit, or delete sections:
 
@@ -194,7 +213,7 @@ You can keep, edit, or delete sections:
 
 ---
 
-### Markdown Reminders
+#### Markdown Elements
 
 - Headings: `## Headline`
 - Italics: `*italic text*`
@@ -207,7 +226,7 @@ or below:
 
 ---
 
-### Table of Contents (Optional)
+##### Table of Contents (Optional)
 
 To remove it, delete this block:
 
@@ -215,4 +234,87 @@ To remove it, delete this block:
 `::: {.issue-toc}` \
 `:::`
 
+##### Images
 
+Use this snippet (replace URL):
+`![](https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/krakow_sq.png){.newsimg width="180"}`
+
+
+##### Buttons
+
+>`<button class="readmore">` \
+`<a href="https://example.com">Read more</a>` \
+`</button>`
+
+
+##### Overview Blocks (CfPs & Jobs)
+
+>`:::` \
+`**Title:** ECREA`  \
+`**Location:** University of Brno`  \
+`**Deadline:** NN`   \
+`**Description:** Short blurb describing the CfP`  \
+
+`<button class="readmore"><a href="https://example.com">Read more</a></button>` \
+`:::`
+
+
+
+
+## 06 · Render the Newsletter to HTML
+
+This step is essential: it converts the newsletter into email-safe HTML and inlines CSS for better compatibility (especially Outlook).
+
+#### Steps
+
+1. Go to Actions
+2. Click 02-Render-and-inline-newsletter
+3. Click Run workflow
+4. Enter:
+    * Year
+    * Issue
+5. Wait until it turns green
+
+#### Result
+
+A new file appears in the issue subfolder:
+
+`newsletter_YEAR_ISSUE.html`
+
+#### Preview the Newsletter
+
+Copy the file path, for example:
+`issues/2025/00/newsletter_2025_00.html`
+
+Add the base URL:
+`https://thieled.github.io/ecpr-newsletter/issues/2025/00/newsletter_2025_00.html`
+
+Open it in your browser to preview.
+
+## 07 · Send the Newsletter via ECPR
+
+#### Steps
+
+1. Open the .html file on GitHub (in the issue folder)
+2. Click Copy raw file
+3. Go to: <https://ecpr.eu/MyECPR/MyProfile?myProfileTabs=MyGroups>
+4. Click on **'Manage'** next to Political Communication group
+5. Open Send an Email
+6. Click **CREATE AN EMAIL FOR ALL GROUP MEMBERS**
+7. Click **Source code** (icon top left)
+8. Paste the copied **HTML** into the message field, nothing eles.
+9. Add a email **subject**
+10. **Testing:**
+
+
+Click Send test email first
+
+Check layout in your inbox
+
+Final step
+
+Click SEND AN EMAIL TO ALL GROUP MEMBERS
+
+Confirm
+
+Done 🎉

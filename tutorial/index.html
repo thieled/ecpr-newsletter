@@ -50,8 +50,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#create-a-new-newsletter-issue" id="toc-create-a-new-newsletter-issue" class="nav-link" data-scroll-target="#create-a-new-newsletter-issue">01 · Create a New Newsletter Issue</a></li>
   <li><a href="#optional-upload-documents-and-images" id="toc-optional-upload-documents-and-images" class="nav-link" data-scroll-target="#optional-upload-documents-and-images">02 · (Optional:) Upload Documents and Images</a></li>
   <li><a href="#optional-crop-images-to-square-format" id="toc-optional-crop-images-to-square-format" class="nav-link" data-scroll-target="#optional-crop-images-to-square-format">03 · (Optional:) Crop Images to Square Format</a></li>
-  <li><a href="#optional-let-an-ai-summarize-a-document" id="toc-optional-let-an-ai-summarize-a-document" class="nav-link" data-scroll-target="#optional-let-an-ai-summarize-a-document">04 · Optional: Let an AI Summarize a Document</a></li>
+  <li><a href="#optional-let-a-llm-summarize-a-document" id="toc-optional-let-a-llm-summarize-a-document" class="nav-link" data-scroll-target="#optional-let-a-llm-summarize-a-document">04 · Optional: Let a LLM Summarize a Document</a></li>
   <li><a href="#edit-the-newsletter-.qmd-file" id="toc-edit-the-newsletter-.qmd-file" class="nav-link" data-scroll-target="#edit-the-newsletter-.qmd-file">05 · Edit the Newsletter (<code>.qmd</code> file)</a></li>
+  <li><a href="#render-the-newsletter-to-html" id="toc-render-the-newsletter-to-html" class="nav-link" data-scroll-target="#render-the-newsletter-to-html">06 · Render the Newsletter to HTML</a></li>
+  <li><a href="#send-the-newsletter-via-ecpr" id="toc-send-the-newsletter-via-ecpr" class="nav-link" data-scroll-target="#send-the-newsletter-via-ecpr">07 · Send the Newsletter via ECPR</a></li>
   </ul>
 </nav>
 </div>
@@ -84,9 +86,18 @@ This page explains <strong>step by step</strong> for members of the ECPR PolCom 
 <h2 class="anchored" data-anchor-id="requirements-and-setup">00 · Requirements and Setup</h2>
 <p>Before you start, make sure the following is in place:</p>
 <ol type="1">
+<li><strong>Log-in</strong> with:</li>
+</ol>
+<ul>
+<li>username: <code>ecprpolcom</code></li>
+<li>password: shared with steering committee members</li>
+</ul>
+<p><strong>Alternatively</strong> use your own account or create one:</p>
+<ol type="1">
 <li><p><strong>Create a GitHub account</strong>: <a href="https://github.com/signup" class="uri">https://github.com/signup</a></p></li>
 <li><p><strong>Ask to be added as a collaborator</strong><br>
 If you’re a steering committee member, please ask <strong>thieled</strong> to be added to this repository: <a href="https://github.com/thieled/ecpr-newsletter" class="uri">https://github.com/thieled/ecpr-newsletter</a></p></li>
+<li><p>(Optional:) <strong>Add billing details</strong> and a <strong>payment method</strong> to your profile settings. <strong>No costs will occur</strong>, yet this step is required to enable GitHub Models, which is used for the (optional), LLM-powered <a href="http://localhost:5775/tutorial/index.html#optional-let-a-LLM-summarize-a-document">Step 04 - Summarize a Document</a></p></li>
 </ol>
 <p>Once you are added, you can:</p>
 <ul>
@@ -190,7 +201,7 @@ Finished when it turns <strong>green</strong> 🟢.</p>
 <li>Click <strong>Run workflow</strong></li>
 <li>Enter:
 <ul>
-<li><strong>Input path</strong> (from repo root), for example: <code>issues/2025/12/img/krakow.webp</code></li>
+<li><strong>Input path</strong> (from repo root), for example: <code>issues/2025/12/img/Krakow.webp</code></li>
 <li>Leave <strong>output path empty</strong></li>
 <li>Optional offsets (pixels):
 <ul>
@@ -203,7 +214,7 @@ Finished when it turns <strong>green</strong> 🟢.</p>
 </section>
 <section id="result" class="level4">
 <h4 class="anchored" data-anchor-id="result">Result</h4>
-<p>A new image is created in the same folder: - <code>krakow_sq.png</code></p>
+<p>A new image is created in the same folder: - <code>Krakow_sq.png</code></p>
 <p>It is cropped to square and saved as PNG.</p>
 </section>
 <section id="walktrough-2" class="level4">
@@ -217,8 +228,8 @@ Finished when it turns <strong>green</strong> 🟢.</p>
 <hr>
 </section>
 </section>
-<section id="optional-let-an-ai-summarize-a-document" class="level2">
-<h2 class="anchored" data-anchor-id="optional-let-an-ai-summarize-a-document">04 · Optional: Let an AI Summarize a Document</h2>
+<section id="optional-let-a-llm-summarize-a-document" class="level2">
+<h2 class="anchored" data-anchor-id="optional-let-a-llm-summarize-a-document">04 · Optional: Let a LLM Summarize a Document</h2>
 <p>To assist you with drafting the newsletter, you can let a language model (gtp-5-mini) create <strong>ready-to-use, markdow-formatted newsletter text</strong> from a document.</p>
 <p>Upload <strong>one</strong> document for each individual event, call, or opportunity.</p>
 <p>Supported formats: - <code>.txt</code>, <code>.pdf</code>, <code>.doc</code>, <code>.docx</code></p>
@@ -256,17 +267,20 @@ Finished when it turns <strong>green</strong> 🟢.</p>
 <section id="edit-the-newsletter-.qmd-file" class="level2">
 <h2 class="anchored" data-anchor-id="edit-the-newsletter-.qmd-file">05 · Edit the Newsletter (<code>.qmd</code> file)</h2>
 <p>This is where you assemble the newsletter content.</p>
-<section id="steps" class="level3">
-<h3 class="anchored" data-anchor-id="steps">Steps</h3>
+<section id="steps" class="level4">
+<h4 class="anchored" data-anchor-id="steps">Steps</h4>
 <ol type="1">
 <li>Go to: <code>issues → YEAR → ISSUE</code></li>
 <li>Click <code>newsletter_YEAR_ISSUE.qmd</code></li>
-<li>Click the ✏️ <strong>Edit</strong> button (top right)</li>
+<li>Click the ✏️ <strong>Edit</strong> button (top right) - see details below.</li>
+<li>Once you’re done editing, click <strong>Commit changes</strong></li>
+<li>Add a clear commit message</li>
+<li>Click Commit changes (green button)</li>
 </ol>
 <hr>
 </section>
-<section id="newsletter-structure" class="level3">
-<h3 class="anchored" data-anchor-id="newsletter-structure">Newsletter Structure</h3>
+<section id="newsletter-structure" class="level4">
+<h4 class="anchored" data-anchor-id="newsletter-structure">Newsletter Structure</h4>
 <p>You can keep, edit, or delete sections:</p>
 <ol type="1">
 <li>Opening statement + table of contents<br>
@@ -281,8 +295,8 @@ Finished when it turns <strong>green</strong> 🟢.</p>
 </ol>
 <hr>
 </section>
-<section id="markdown-reminders" class="level3">
-<h3 class="anchored" data-anchor-id="markdown-reminders">Markdown Reminders</h3>
+<section id="markdown-elements" class="level4">
+<h4 class="anchored" data-anchor-id="markdown-elements">Markdown Elements</h4>
 <ul>
 <li>Headings: <code>## Headline</code></li>
 <li>Italics: <code>*italic text*</code></li>
@@ -291,15 +305,93 @@ Finished when it turns <strong>green</strong> 🟢.</p>
 <p>Do not change anything above: <code>&lt;!-- ===== CONTENT START ===== --&gt;</code><br>
 or below: <code>&lt;!-- ===== CONTENT END ===== --&gt;</code></p>
 <hr>
-</section>
-<section id="table-of-contents-optional" class="level3">
-<h3 class="anchored" data-anchor-id="table-of-contents-optional">Table of Contents (Optional)</h3>
+<section id="table-of-contents-optional" class="level5">
+<h5 class="anchored" data-anchor-id="table-of-contents-optional">Table of Contents (Optional)</h5>
 <p>To remove it, delete this block:</p>
 <blockquote class="blockquote">
 <p><code>&lt;!-- Table of Contents; Delete if not wished: --&gt;</code><br>
 <code>::: {.issue-toc}</code><br>
 <code>:::</code></p>
 </blockquote>
+</section>
+<section id="images" class="level5">
+<h5 class="anchored" data-anchor-id="images">Images</h5>
+<p>Use this snippet (replace URL): <code>![](https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/krakow_sq.png){.newsimg width="180"}</code></p>
+</section>
+<section id="buttons" class="level5">
+<h5 class="anchored" data-anchor-id="buttons">Buttons</h5>
+<blockquote class="blockquote">
+<p><code>&lt;button class="readmore"&gt;</code><br>
+<code>&lt;a href="https://example.com"&gt;Read more&lt;/a&gt;</code><br>
+<code>&lt;/button&gt;</code></p>
+</blockquote>
+</section>
+<section id="overview-blocks-cfps-jobs" class="level5">
+<h5 class="anchored" data-anchor-id="overview-blocks-cfps-jobs">Overview Blocks (CfPs &amp; Jobs)</h5>
+<blockquote class="blockquote">
+<p><code>:::</code><br>
+<code>**Title:** ECREA</code><br>
+<code>**Location:** University of Brno</code><br>
+<code>**Deadline:** NN</code><br>
+<code>**Description:** Short blurb describing the CfP</code><br>
+</p>
+</blockquote>
+<p><code>&lt;button class="readmore"&gt;&lt;a href="https://example.com"&gt;Read more&lt;/a&gt;&lt;/button&gt;</code><br>
+<code>:::</code></p>
+</section>
+</section>
+</section>
+<section id="render-the-newsletter-to-html" class="level2">
+<h2 class="anchored" data-anchor-id="render-the-newsletter-to-html">06 · Render the Newsletter to HTML</h2>
+<p>This step is essential: it converts the newsletter into email-safe HTML and inlines CSS for better compatibility (especially Outlook).</p>
+<section id="steps-1" class="level4">
+<h4 class="anchored" data-anchor-id="steps-1">Steps</h4>
+<ol type="1">
+<li>Go to Actions</li>
+<li>Click 02-Render-and-inline-newsletter</li>
+<li>Click Run workflow</li>
+<li>Enter:
+<ul>
+<li>Year</li>
+<li>Issue</li>
+</ul></li>
+<li>Wait until it turns green</li>
+</ol>
+</section>
+<section id="result-1" class="level4">
+<h4 class="anchored" data-anchor-id="result-1">Result</h4>
+<p>A new file appears in the issue subfolder:</p>
+<p><code>newsletter_YEAR_ISSUE.html</code></p>
+</section>
+<section id="preview-the-newsletter" class="level4">
+<h4 class="anchored" data-anchor-id="preview-the-newsletter">Preview the Newsletter</h4>
+<p>Copy the file path, for example: <code>issues/2025/00/newsletter_2025_00.html</code></p>
+<p>Add the base URL: <code>https://thieled.github.io/ecpr-newsletter/issues/2025/00/newsletter_2025_00.html</code></p>
+<p>Open it in your browser to preview.</p>
+</section>
+</section>
+<section id="send-the-newsletter-via-ecpr" class="level2">
+<h2 class="anchored" data-anchor-id="send-the-newsletter-via-ecpr">07 · Send the Newsletter via ECPR</h2>
+<section id="steps-2" class="level4">
+<h4 class="anchored" data-anchor-id="steps-2">Steps</h4>
+<ol type="1">
+<li>Open the .html file on GitHub (in the issue folder)</li>
+<li>Click Copy raw file</li>
+<li>Go to: <a href="https://ecpr.eu/MyECPR/MyProfile?myProfileTabs=MyGroups" class="uri">https://ecpr.eu/MyECPR/MyProfile?myProfileTabs=MyGroups</a></li>
+<li>Click on <strong>‘Manage’</strong> next to Political Communication group</li>
+<li>Open Send an Email</li>
+<li>Click <strong>CREATE AN EMAIL FOR ALL GROUP MEMBERS</strong></li>
+<li>Click <strong>Source code</strong> (icon top left)</li>
+<li>Paste the copied <strong>HTML</strong> into the message field, nothing eles.</li>
+<li>Add a email <strong>subject</strong></li>
+<li><strong>Testing:</strong></li>
+</ol>
+<p>Click Send test email first</p>
+<p>Check layout in your inbox</p>
+<p>Final step</p>
+<p>Click SEND AN EMAIL TO ALL GROUP MEMBERS</p>
+<p>Confirm</p>
+<p>Done 🎉</p>
 </section>
 </section>
 
