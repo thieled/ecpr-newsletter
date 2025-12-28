@@ -46,7 +46,7 @@ jobs:
             await github.rest.actions.createWorkflowDispatch({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              workflow_id: "02-Render-and-inline-newsletter.yml",
+              workflow_id: "inline_issue.yml",
               ref: "main",
               inputs: {
                 year: "${{ steps.detect.outputs.year }}",
