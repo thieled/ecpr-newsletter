@@ -29,6 +29,11 @@ format:
           }
         </style>
         <![endif]-->
+bibliography: publications/publications.bib
+csl: publications/apa.csl
+nocite: |
+  @*
+---
 ---
 
 <!-- ===== OUTLOOK CENTERING WRAPPER ===== -->
@@ -47,8 +52,14 @@ format:
   src="https://thieled.github.io/ecpr-newsletter/assets/banners/header.png"
   alt="ECPR PolCom Newsletter"
   width="600"
-  style="display:block;width:100%;max-width:600px;height:auto;border:0;"
->
+  style="display:block;width:100%;max-width:600px;height:auto;border:0;">
+
+<!-- ===== VIEW IN BROWSER ===== -->
+
+::: {style="margin:10px 0 0 0;text-align:center;"}
+[View in browser](https://thieled.github.io/ecpr-newsletter/issues/{{< meta year >}}/{{< meta issue >}}/newsletter_{{< meta year >}}_{{< meta issue >}}.html){style="font-size:12px;line-height:1.2;color:#6b7280;text-decoration:underline;"}
+:::
+
 
 <!-- ===== CONTENT START ===== -->
 
@@ -117,6 +128,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit a
 
 <button class="readmore"><a href="https://example.com">Read more</a></button>
 :::
+
+
+## Recent Publications by Our Members
+
+::: {#refs}
+:::
+
 
 <!-- ===== FOOTER ===== -->
 
