@@ -75,12 +75,12 @@ In this newsletter, we have some exciting news:
 
 :::
 
-## Biggest News
+## CfP for PolCom Section at General Conference in Krakow
 
 ::: section
-![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
+![](https://thieled.github.io/ecpr-newsletter/issues/2026/01/img/Krakow_sq.png){.newsimg width="180"}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Blablabla
 
 <button class="readmore">
 <a href="https://example.com">Read more</a>
