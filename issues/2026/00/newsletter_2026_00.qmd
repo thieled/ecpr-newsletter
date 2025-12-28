@@ -75,10 +75,12 @@ In this newsletter, we have some exciting news:
 
 :::
 
-## Biggest News
+## Changed Headline
 
 ::: section
 ![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
+
+Here I have done some edits. test test.
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
