@@ -7,6 +7,8 @@ OVERWRITE="$3"
 
 ISSUE_DIR="issues/${YEAR}/${ISSUE}"
 TEMPLATE="template/newsletter_template.qmd"
+PUBLICATIONS_SRC="publications"
+PUBLICATIONS_DST="${ISSUE_DIR}/publications"
 TARGET="${ISSUE_DIR}/newsletter_${YEAR}_${ISSUE}.qmd"
 
 # --- validation -------------------------------------------------------------
@@ -18,6 +20,11 @@ fi
 
 if [[ ! -f "$TEMPLATE" ]]; then
   echo "ERROR: Template not found at ${TEMPLATE}" >&2
+  exit 1
+fi
+
+if [[ ! -d "$PUBLICATIONS_SRC" ]]; then
+  echo "ERROR: publications directory not found at ${PUBLICATIONS_SRC}" >&2
   exit 1
 fi
 
@@ -44,7 +51,11 @@ touch "${ISSUE_DIR}/img/.gitkeep"
 touch "${ISSUE_DIR}/doc/.gitkeep"
 touch "${ISSUE_DIR}/summarize/.gitkeep"
 
-# --- copy + modify template --------------------------------------------------
+# --- copy publications ------------------------------------------------------
+
+cp -R "${PUBLICATIONS_SRC}" "${PUBLICATIONS_DST}"
+
+# --- copy + modify template -------------------------------------------------
 
 sed \
   -e "s/^year:.*/year: ${YEAR}/" \

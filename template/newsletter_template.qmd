@@ -29,6 +29,11 @@ format:
           }
         </style>
         <![endif]-->
+bibliography: publications/examples.bib
+csl: publications/apa.csl
+nocite: |
+  @*
+---
 ---
 
 <!-- ===== OUTLOOK CENTERING WRAPPER ===== -->
@@ -120,6 +125,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit a
 <button class="readmore"><a href="https://example.com">Read more</a></button>
 :::
 
+
+## Recent Publications by Our Members
+
+::: {#refs}
+:::
 
 
 <!-- ===== FOOTER ===== -->

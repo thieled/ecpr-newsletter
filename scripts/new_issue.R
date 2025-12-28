@@ -34,6 +34,25 @@ new_issue <- function(year = "2025", issue = "01", overwrite = FALSE) {
   file.create(file.path(doc_dir, ".gitkeep"))
   file.create(file.path(summarize_dir, ".gitkeep"))
   
+  # --- copy publications ----
+  
+  publications_src <- "publications"
+  publications_dst <- file.path(issue_dir, "publications")
+  
+  if (!dir.exists(publications_src)) {
+    stop("publications directory not found at: ", publications_src)
+  }
+  
+  ok <- file.copy(
+    from = publications_src,
+    to = publications_dst,
+    recursive = TRUE
+  )
+  
+  if (!ok) {
+    stop("Failed to copy publications directory")
+  }
+  
   # --- copy and modify template ----
   
   template_path <- file.path("template", "newsletter_template.qmd")
