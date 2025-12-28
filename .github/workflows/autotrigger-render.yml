@@ -1,0 +1,55 @@
+name: auto-trigger-rendering
+
+permissions:
+  contents: read
+  actions: write
+
+on:
+  push:
+    paths:
+      - "issues/**/**/*.qmd"
+
+jobs:
+  trigger-render:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect changed issue QMD
+        id: detect
+        run: |
+          set -e
+
+          FILE=$(git diff --name-only HEAD^ HEAD | grep '^issues/.*/.*/.*\.qmd$' | head -n 1 || true)
+
+          if [ -z "$FILE" ]; then
+            echo "No issue QMD change detected."
+            exit 0
+          fi
+
+          echo "Changed file: $FILE"
+
+          YEAR=$(echo "$FILE" | cut -d'/' -f2)
+          ISSUE=$(echo "$FILE" | cut -d'/' -f3)
+
+          echo "year=$YEAR" >> $GITHUB_OUTPUT
+          echo "issue=$ISSUE" >> $GITHUB_OUTPUT
+
+      - name: Trigger render workflow
+        if: steps.detect.outputs.year != ''
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: "02-Render-and-inline-newsletter.yml",
+              ref: "main",
+              inputs: {
+                year: "${{ steps.detect.outputs.year }}",
+                issue: "${{ steps.detect.outputs.issue }}"
+              }
+            })
