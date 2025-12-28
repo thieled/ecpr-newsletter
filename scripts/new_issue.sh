@@ -7,7 +7,7 @@ OVERWRITE="$3"
 
 ISSUE_DIR="issues/${YEAR}/${ISSUE}"
 TEMPLATE="template/newsletter_template.qmd"
-PUBLICATIONS_SRC="publications"
+PUBLICATIONS_SRC="template/publications"
 PUBLICATIONS_DST="${ISSUE_DIR}/publications"
 TARGET="${ISSUE_DIR}/newsletter_${YEAR}_${ISSUE}.qmd"
 
