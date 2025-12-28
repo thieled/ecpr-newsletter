@@ -82,7 +82,7 @@ In this newsletter, we have some exciting news:
 
 Here I have done some edits. test test.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+These here are new edits -- 15:27.
 
 <button class="readmore">
 <a href="https://example.com">Read more</a>
