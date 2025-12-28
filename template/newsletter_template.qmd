@@ -29,7 +29,7 @@ format:
           }
         </style>
         <![endif]-->
-bibliography: publications/examples.bib
+bibliography: publications/publications.bib
 csl: publications/apa.csl
 nocite: |
   @*
