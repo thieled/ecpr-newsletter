@@ -53,7 +53,9 @@ touch "${ISSUE_DIR}/summarize/.gitkeep"
 
 # --- copy publications ------------------------------------------------------
 
-cp -R "${PUBLICATIONS_SRC}" "${PUBLICATIONS_DST}"
+mkdir -p "${PUBLICATIONS_DST}"
+
+cp "${PUBLICATIONS_SRC}/"* "${PUBLICATIONS_DST}/"
 
 # --- copy + modify template -------------------------------------------------
 

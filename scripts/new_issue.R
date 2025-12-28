@@ -36,22 +36,34 @@ new_issue <- function(year = "2025", issue = "01", overwrite = FALSE) {
   
   # --- copy publications ----
   
-  publications_src <- "publications"
+  publications_src <- file.path("template", "publications")
   publications_dst <- file.path(issue_dir, "publications")
   
   if (!dir.exists(publications_src)) {
     stop("publications directory not found at: ", publications_src)
   }
   
-  ok <- file.copy(
-    from = publications_src,
-    to = publications_dst,
-    recursive = TRUE
+  dir.create(publications_dst, showWarnings = FALSE)
+  
+  files <- list.files(
+    publications_src,
+    full.names = TRUE,
+    recursive = FALSE
   )
   
-  if (!ok) {
-    stop("Failed to copy publications directory")
+  if (length(files) == 0L) {
+    stop("publications directory is empty: ", publications_src)
   }
+  
+  ok <- file.copy(
+    from = files,
+    to   = publications_dst
+  )
+  
+  if (!all(ok)) {
+    stop("Failed to copy one or more publication files")
+  }
+  
   
   # --- copy and modify template ----
   
@@ -76,3 +88,4 @@ new_issue <- function(year = "2025", issue = "01", overwrite = FALSE) {
   message("Created issue: ", target_file)
   invisible(target_file)
 }
+
