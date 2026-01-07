@@ -343,7 +343,7 @@ Here, I'll focus on the first method:
 
 #### Walkthrough
 
-![Editing the publications list.](https://thieled.github.io/ecpr-newsletter/tutorial/img/05-edit-qmd.gif)
+![Editing the publications list.](https://thieled.github.io/ecpr-newsletter/tutorial/img/05-edit-bib.gif)
 
 
 ## 07 · (Optional) (Re-)Render the Newsletter to HTML
@@ -388,7 +388,11 @@ Add the base URL:
 
 [Open the URL](https://thieled.github.io/ecpr-newsletter/issues/2025/12/newsletter_2025_12.html) in your browser to **preview**.
 
-## 07 · Send the Newsletter via ECPR
+
+## 08 · Send the Newsletter via ECPR
+
+The final step is to **copy** the ready .html code to the ECPR newsletter webmail, send a test mail, and then send it to the members.
+
 
 #### Steps
 
@@ -401,17 +405,11 @@ Add the base URL:
 7. Click **Source code** (icon top left)
 8. Paste the copied **HTML** into the message field, nothing eles.
 9. Add a email **subject**
-10. **Testing:**
+10. **Testing:** Send a **Test Mail** to your own account (and have some patience) before sending it out to our members.
+11. **Send final version:** Once you're satisfied with the content and layout, send the final version.
 
+#### Walkthrough
 
-Click Send test email first
-
-Check layout in your inbox
-
-Final step
-
-Click SEND AN EMAIL TO ALL GROUP MEMBERS
-
-Confirm
+![Sending.](https://thieled.github.io/ecpr-newsletter/tutorial/img/06-sending.gif)
 
 Done 🎉
