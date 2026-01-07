@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -262,6 +297,37 @@ Finished when it turns <strong>green</strong> 🟢.</p>
 <li>A <strong>one-glimpse overview</strong> (for Call for Papers / Job Bulletin)</li>
 </ul>
 <p>Important: always read and double-check before using.</p>
+</section>
+<section id="example" class="level4">
+<h4 class="anchored" data-anchor-id="example">Example</h4>
+<p>For example, the markdown-formatted summary for the <a href="https://thieled.github.io/ecpr-newsletter/issues/2025/12/summarize/polcom_section.docx"><strong>Call for Papers</strong></a> for the General Conference would look like this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Call: Political Communication Between Disruptive Technologies and Democratic Backsliding</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="sc">:::</span> section</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>The Standing Group invites submissions to <span class="sc">*</span>Political Communication Between Disruptive Technologies and Democratic Backsliding<span class="sc">*</span>, a section of the <span class="sc">*</span>ECPR General Conference <span class="dv">2026</span><span class="sc">*</span> taking place at <span class="sc">**</span>Jagiellonian University<span class="sc">**</span> <span class="cf">in</span> <span class="sc">**</span>Kraków<span class="sc">**</span> on <span class="sc">**</span><span class="dv">8</span>–<span class="dv">11</span> September <span class="dv">2026</span><span class="sc">**</span>. Chaired by <span class="sc">**</span>Johanna Burger<span class="sc">**</span> (<span class="sc">**</span>Freie Universität Berlin<span class="sc">**</span>) and <span class="sc">**</span>Thomas Milic<span class="sc">**</span> (<span class="sc">**</span>University of Zurich<span class="sc">**</span>) and endorsed by the ECPR Standing Group on Political Communication, the section seeks research that clarifies how technological change, information disorders, and political strategies interact to affect democratic institutions and public discourse.</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>We welcome theoretical, empirical, and methodological contributions addressing themes such as generative AI and platform dynamics, disinformation and cross<span class="sc">-</span>border influence operations, the evolving role of journalism and fact‑checking, and actors’ strategies <span class="cf">for</span> resilience and institutional reform. Panel and paper proposals are open until <span class="sc">**</span><span class="dv">9</span> January <span class="dv">2026</span><span class="sc">**</span> — submit your proposal and consult the full guidelines via the link below.</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>Deadline<span class="sc">:</span> <span class="er">**</span><span class="dv">9</span> January <span class="dv">2026</span><span class="sc">**</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="er">&lt;</span>button class<span class="ot">=</span><span class="st">"readmore"</span><span class="sc">&gt;</span><span class="er">&lt;</span>a href<span class="ot">=</span><span class="st">"https://ecpr.eu/Events/Event/SectionDetails/1677"</span><span class="sc">&gt;</span>Read more<span class="sc">&lt;</span><span class="er">/</span>a<span class="sc">&gt;</span><span class="er">&lt;/</span>button<span class="sc">&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="er">:::</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="do">## Call – Short</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="er">:::</span> job</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="sc">**</span>Title<span class="sc">:</span><span class="er">**</span> Political Communication Between Disruptive Technologies and Democratic <span class="fu">Backsliding</span> (Section S69)  </span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="sc">**</span>Location<span class="sc">:</span><span class="er">**</span> Jagiellonian University, Kraków  </span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="sc">**</span>Deadline<span class="sc">:</span><span class="er">**</span> <span class="dv">9</span> January <span class="dv">2026</span>  </span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="sc">**</span>Description<span class="sc">:</span><span class="er">**</span> Call <span class="cf">for</span> panels and papers on how emerging technologies, information disorders, media intermediaries, and political actors shape democratic vulnerability and resilience.  </span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="sc">&lt;</span>button class<span class="ot">=</span><span class="st">"readmore"</span><span class="sc">&gt;</span><span class="er">&lt;</span>a href<span class="ot">=</span><span class="st">"https://ecpr.eu/Events/Event/SectionDetails/1677"</span><span class="sc">&gt;</span>Read more<span class="sc">&lt;</span><span class="er">/</span>a<span class="sc">&gt;</span><span class="er">&lt;/</span>button<span class="sc">&gt;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="er">:::</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="walktrough-3" class="level4">
 <h4 class="anchored" data-anchor-id="walktrough-3">Walktrough:</h4>

@@ -183,7 +183,39 @@ Please note that this workflow only works after you have added **payment informa
 
 Important: always read and double-check before using.
 
+#### Example
 
+For example, the markdown-formatted summary for the [**Call for Papers**](https://thieled.github.io/ecpr-newsletter/issues/2025/12/summarize/polcom_section.docx) for the General Conference would look like this:
+
+```{r, eval=F}
+
+## Call: Political Communication Between Disruptive Technologies and Democratic Backsliding
+
+::: section
+
+The Standing Group invites submissions to *Political Communication Between Disruptive Technologies and Democratic Backsliding*, a section of the *ECPR General Conference 2026* taking place at **Jagiellonian University** in **Kraków** on **8–11 September 2026**. Chaired by **Johanna Burger** (**Freie Universität Berlin**) and **Thomas Milic** (**University of Zurich**) and endorsed by the ECPR Standing Group on Political Communication, the section seeks research that clarifies how technological change, information disorders, and political strategies interact to affect democratic institutions and public discourse.
+
+We welcome theoretical, empirical, and methodological contributions addressing themes such as generative AI and platform dynamics, disinformation and cross-border influence operations, the evolving role of journalism and fact‑checking, and actors’ strategies for resilience and institutional reform. Panel and paper proposals are open until **9 January 2026** — submit your proposal and consult the full guidelines via the link below.
+
+Deadline: **9 January 2026**
+
+<button class="readmore"><a href="https://ecpr.eu/Events/Event/SectionDetails/1677">Read more</a></button>
+
+:::
+
+---
+
+## Call – Short
+
+::: job
+**Title:** Political Communication Between Disruptive Technologies and Democratic Backsliding (Section S69)  
+**Location:** Jagiellonian University, Kraków  
+**Deadline:** 9 January 2026  
+**Description:** Call for panels and papers on how emerging technologies, information disorders, media intermediaries, and political actors shape democratic vulnerability and resilience.  
+<button class="readmore"><a href="https://ecpr.eu/Events/Event/SectionDetails/1677">Read more</a></button>
+:::
+
+```
 
 #### Walktrough:
 
@@ -212,11 +244,11 @@ To do so, follow these steps:
 
 You can edit, keep, or delete these sections:
 
-1. **Welcome** & **Table of contents** (automatically created) 
+1. **Welcome** (editable) & **Table of contents** (automatically created but can be deleted) 
 2. Main **News** items  
 3. **Call for Papers** overview  
 4. **Job Bulletin**  
-5. **Publications** by members (Articles / Books)
+5. **Publications** by members
 
 Do **not** change anything above:
 `<!-- ===== CONTENT START ===== -->`  
@@ -245,13 +277,13 @@ The table is created automatically from the `## Headlines`. To remove it, simply
 
 ##### Images
 
-All images included in the newsletter must publicly available, hosted on a web server. Use the **previously uploaded** (and cropped images) and find the correct URL. 
+All images included in the newsletter must publicly available, hosted on a web server. Follow the instructions No. 02 and Nr. 03 in this tutorial to **upload** (and crop images) and find the correct URL. 
 
 The correct URL is always the **base URL**:
 
 `https://thieled.github.io/ecpr-newsletter/` 
 
-plus the relative/path/from/ecpr-newsletter, e.g.: 
+plus the relative/path/from/ecpr-newsletter, for example: 
 
 `https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/Krakow.png`
 
