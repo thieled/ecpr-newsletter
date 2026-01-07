@@ -87,7 +87,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#optional-crop-images-to-square-format" id="toc-optional-crop-images-to-square-format" class="nav-link" data-scroll-target="#optional-crop-images-to-square-format">03 · (Optional:) Crop Images to Square Format</a></li>
   <li><a href="#optional-let-a-llm-summarize-a-document" id="toc-optional-let-a-llm-summarize-a-document" class="nav-link" data-scroll-target="#optional-let-a-llm-summarize-a-document">04 · (Optional:) Let a LLM Summarize a Document</a></li>
   <li><a href="#edit-the-newsletter" id="toc-edit-the-newsletter" class="nav-link" data-scroll-target="#edit-the-newsletter">05 · Edit the Newsletter</a></li>
-  <li><a href="#render-the-newsletter-to-html" id="toc-render-the-newsletter-to-html" class="nav-link" data-scroll-target="#render-the-newsletter-to-html">06 · Render the Newsletter to HTML</a></li>
+  <li><a href="#optional-re-render-the-newsletter-to-html" id="toc-optional-re-render-the-newsletter-to-html" class="nav-link" data-scroll-target="#optional-re-render-the-newsletter-to-html">06 · (Optional) (Re-)Render the Newsletter to HTML</a></li>
   <li><a href="#send-the-newsletter-via-ecpr" id="toc-send-the-newsletter-via-ecpr" class="nav-link" data-scroll-target="#send-the-newsletter-via-ecpr">07 · Send the Newsletter via ECPR</a></li>
   </ul>
 </nav>
@@ -359,14 +359,14 @@ Finished when it turns <strong>green</strong> 🟢.</p>
 <h4 class="anchored" data-anchor-id="newsletter-structure">Newsletter Structure</h4>
 <p>You can edit, keep, or delete these sections:</p>
 <ol type="1">
-<li><strong>Welcome</strong> &amp; <strong>Table of contents</strong> (automatically created)</li>
+<li><strong>Welcome</strong> (editable) &amp; <strong>Table of contents</strong> (automatically created but can be deleted)</li>
 <li>Main <strong>News</strong> items<br>
 </li>
 <li><strong>Call for Papers</strong> overview<br>
 </li>
 <li><strong>Job Bulletin</strong><br>
 </li>
-<li><strong>Publications</strong> by members (Articles / Books)</li>
+<li><strong>Publications</strong> by members</li>
 </ol>
 <p>Do <strong>not</strong> change anything above: <code>&lt;!-- ===== CONTENT START ===== --&gt;</code><br>
 or below: <code>&lt;!-- ===== FOOTER ===== --&gt;</code></p>
@@ -392,10 +392,10 @@ or below: <code>&lt;!-- ===== FOOTER ===== --&gt;</code></p>
 </section>
 <section id="images" class="level5">
 <h5 class="anchored" data-anchor-id="images">Images</h5>
-<p>All images included in the newsletter must publicly available, hosted on a web server. Use the <strong>previously uploaded</strong> (and cropped images) and find the correct URL.</p>
+<p>All images included in the newsletter must publicly available, hosted on a web server. Follow the instructions No.&nbsp;02 and Nr. 03 in this tutorial to <strong>upload</strong> (and crop images) and find the correct URL.</p>
 <p>The correct URL is always the <strong>base URL</strong>:</p>
 <p><code>https://thieled.github.io/ecpr-newsletter/</code></p>
-<p>plus the relative/path/from/ecpr-newsletter, e.g.:</p>
+<p>plus the relative/path/from/ecpr-newsletter, for example:</p>
 <p><code>https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/Krakow.png</code></p>
 <p>Use this <strong>code snippet</strong> to insert images - simply replace the URL:<br>
 </p>
@@ -437,9 +437,16 @@ or below: <code>&lt;!-- ===== FOOTER ===== --&gt;</code></p>
 </div>
 </section>
 </section>
-<section id="render-the-newsletter-to-html" class="level2">
-<h2 class="anchored" data-anchor-id="render-the-newsletter-to-html">06 · Render the Newsletter to HTML</h2>
-<p>This step is crucial: it converts the newsletter from .qmd into email-safe <strong>HTML</strong> and inlines <strong>CSS</strong> (style guides) for compatibility with E-Mail programs like Outlook.</p>
+<section id="optional-re-render-the-newsletter-to-html" class="level2">
+<h2 class="anchored" data-anchor-id="optional-re-render-the-newsletter-to-html">06 · (Optional) (Re-)Render the Newsletter to HTML</h2>
+<p>The newsletter must be converted from .qmd into email-safe <strong>HTML</strong> and with inlined <strong>CSS</strong> (style guides) for compatibility with E-Mail programs like Outlook.</p>
+<p>Luckily, this process is <strong>triggered automatically</strong> whenever you commit changes in a .qmd file in the /issues subfolder.</p>
+<p>Rendering and deploying the html code to the github sever can take a moment (about 30 Sec. - 3 Min.). You can monitor the progress in the <strong>Actions</strong> tab:</p>
+<ul>
+<li>As soon as the <code>02-Render-and-inline-newsletter</code> process has finished 🟢, the .html file is ready.</li>
+<li>As long as the <code>pages build and deployment</code> process pending 🟡, changes in the newsletter are not yet ‘live’ in the online version of the newsletter.</li>
+</ul>
+<p>If you think something has not worked correctly in the automatic workflow, and want to trigger a re-rendering, follow these steps:</p>
 <section id="steps-1" class="level4">
 <h4 class="anchored" data-anchor-id="steps-1">Steps</h4>
 <ol type="1">
@@ -460,8 +467,8 @@ or below: <code>&lt;!-- ===== FOOTER ===== --&gt;</code></p>
 <p>A <strong>new .html file</strong> appears in the issue subfolder:</p>
 <p><code>newsletter_YEAR_ISSUE.html</code></p>
 </section>
-<section id="preview-the-newsletter" class="level4">
-<h4 class="anchored" data-anchor-id="preview-the-newsletter">Preview the Newsletter</h4>
+<section id="online-preview-of-the-newsletter" class="level4">
+<h4 class="anchored" data-anchor-id="online-preview-of-the-newsletter">Online Preview of the Newsletter</h4>
 <p>Copy the file path, for example: <code>issues/2025/12/newsletter_2025_12.html</code></p>
 <p>Add the base URL:</p>
 <p><code>https://thieled.github.io/ecpr-newsletter/issues/2025/12/newsletter_2025_12.html</code></p>

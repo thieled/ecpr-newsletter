@@ -318,10 +318,29 @@ You can edit or remove `**Title**`, `**Location**` etc. as you wish:
 
 ![Editing a .qmd.](https://thieled.github.io/ecpr-newsletter/tutorial/img/04-edit-qmd.gif)
 
+## 06 · Edit the Publications Section
 
-## 06 · Render the Newsletter to HTML
+The newsletter includes a section *'Recent Publications from our Members'*. 
 
-This step is crucial: it converts the newsletter from .qmd into email-safe **HTML** and inlines **CSS** (style guides) for compatibility with E-Mail programs like Outlook.
+Per **default**, all publications listed in the `publications.bib` file under `/issues/YEAR/ISSUE/publications/` are included and auto-formatted in APA format.
+
+To 
+
+
+
+## 07 · (Optional) (Re-)Render the Newsletter to HTML
+
+The newsletter must be converted from .qmd into email-safe **HTML** and with inlined **CSS** (style guides) for compatibility with E-Mail programs like Outlook.
+
+Luckily, this process is **triggered automatically** whenever you commit changes in a .qmd file in the /issues subfolder.
+
+Rendering and deploying the html code to the github sever can take a moment (about 30 Sec. - 3 Min.). You can monitor the progress in the **Actions** tab:
+
+- As soon as the `02-Render-and-inline-newsletter` process has finished 🟢, the .html file is ready.
+- As long as the `pages build and deployment` process pending 🟡, changes in the newsletter are not yet 'live' in the online version of the newsletter. 
+
+
+If you think something has not worked correctly in the automatic workflow, and want to trigger a re-rendering, follow these steps:   
 
 #### Steps
 
@@ -340,7 +359,7 @@ A **new .html file** appears in the issue subfolder:
 
 `newsletter_YEAR_ISSUE.html`
 
-#### Preview the Newsletter
+#### Online Preview of the Newsletter
 
 Copy the file path, for example:
 `issues/2025/12/newsletter_2025_12.html`
