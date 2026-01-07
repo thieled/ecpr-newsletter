@@ -324,8 +324,26 @@ The newsletter includes a section *'Recent Publications from our Members'*.
 
 Per **default**, all publications listed in the `publications.bib` file under `/issues/YEAR/ISSUE/publications/` are included and auto-formatted in APA format.
 
-To 
+You have three options to edit the publications list:
 
+- Use a **citation manager** like Zotero + BetterBibTex to create the .bib entries
+- **Manually change** .bib entries
+- **Ignore .bib and manually format** the publication list
+
+Here, I'll focus on the first method: 
+
+#### Steps
+
+1. **Add** the publication items (articles / books) to a Zotero folder of your choice; ask Daniel to get access to a `ecpr-polcom-newsletter` shared Zotero folder.
+2. **Export** the items: You can export a single entry or the whole folder in .bib format.
+3. **Navigate** to `/issues/YEAR/ISSUE/publications` and edit ✏️ the `publications.bib` file.
+4. **Delete** (or manually edit) the template entries and **paste** your copied entry.
+5. **Commit** the changes and make sure to **re-render** the .qmd file (see No. 07 below).
+
+
+#### Walkthrough
+
+![Editing the publications list.](https://thieled.github.io/ecpr-newsletter/tutorial/img/05-edit-qmd.gif)
 
 
 ## 07 · (Optional) (Re-)Render the Newsletter to HTML
@@ -337,7 +355,7 @@ Luckily, this process is **triggered automatically** whenever you commit changes
 Rendering and deploying the html code to the github sever can take a moment (about 30 Sec. - 3 Min.). You can monitor the progress in the **Actions** tab:
 
 - As soon as the `02-Render-and-inline-newsletter` process has finished 🟢, the .html file is ready.
-- As long as the `pages build and deployment` process pending 🟡, changes in the newsletter are not yet 'live' in the online version of the newsletter. 
+- As long as the `pages build and deployment` process pending 🟡, changes in the newsletter are not yet 'live' in the online version of the newsletter. **Have patience:** Sometimes changes are visible in the live online version with some latency, even after the process has finished.
 
 
 If you think something has not worked correctly in the automatic workflow, and want to trigger a re-rendering, follow these steps:   

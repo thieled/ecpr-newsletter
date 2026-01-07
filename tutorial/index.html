@@ -87,7 +87,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#optional-crop-images-to-square-format" id="toc-optional-crop-images-to-square-format" class="nav-link" data-scroll-target="#optional-crop-images-to-square-format">03 · (Optional:) Crop Images to Square Format</a></li>
   <li><a href="#optional-let-a-llm-summarize-a-document" id="toc-optional-let-a-llm-summarize-a-document" class="nav-link" data-scroll-target="#optional-let-a-llm-summarize-a-document">04 · (Optional:) Let a LLM Summarize a Document</a></li>
   <li><a href="#edit-the-newsletter" id="toc-edit-the-newsletter" class="nav-link" data-scroll-target="#edit-the-newsletter">05 · Edit the Newsletter</a></li>
-  <li><a href="#optional-re-render-the-newsletter-to-html" id="toc-optional-re-render-the-newsletter-to-html" class="nav-link" data-scroll-target="#optional-re-render-the-newsletter-to-html">06 · (Optional) (Re-)Render the Newsletter to HTML</a></li>
+  <li><a href="#edit-the-publications-section" id="toc-edit-the-publications-section" class="nav-link" data-scroll-target="#edit-the-publications-section">06 · Edit the Publications Section</a></li>
+  <li><a href="#optional-re-render-the-newsletter-to-html" id="toc-optional-re-render-the-newsletter-to-html" class="nav-link" data-scroll-target="#optional-re-render-the-newsletter-to-html">07 · (Optional) (Re-)Render the Newsletter to HTML</a></li>
   <li><a href="#send-the-newsletter-via-ecpr" id="toc-send-the-newsletter-via-ecpr" class="nav-link" data-scroll-target="#send-the-newsletter-via-ecpr">07 · Send the Newsletter via ECPR</a></li>
   </ul>
 </nav>
@@ -437,8 +438,30 @@ or below: <code>&lt;!-- ===== FOOTER ===== --&gt;</code></p>
 </div>
 </section>
 </section>
+<section id="edit-the-publications-section" class="level2">
+<h2 class="anchored" data-anchor-id="edit-the-publications-section">06 · Edit the Publications Section</h2>
+<p>The newsletter includes a section <em>‘Recent Publications from our Members’</em>.</p>
+<p>Per <strong>default</strong>, all publications listed in the <code>publications.bib</code> file under <code>/issues/YEAR/ISSUE/publications/</code> are included and auto-formatted in APA format.</p>
+<p>You have three options to edit the publications list:</p>
+<ul>
+<li>Use a <strong>citation manager</strong> like Zotero + BetterBibTex to create the .bib entries</li>
+<li><strong>Manually change</strong> .bib entries</li>
+<li><strong>Ignore .bib and manually format</strong> the publication list</li>
+</ul>
+<p>Here, I’ll focus on the first method:</p>
+<section id="steps-1" class="level4">
+<h4 class="anchored" data-anchor-id="steps-1">Steps</h4>
+<ol type="1">
+<li><strong>Add</strong> the publication items (articles / books) to a Zotero folder of your choice; ask Daniel to get access to a <code>ecpr-polcom-newsletter</code> shared Zotero folder.</li>
+<li><strong>Export</strong> the items: You can export a single entry or the whole folder in .bib format.</li>
+<li><strong>Navigate</strong> to <code>/issues/YEAR/ISSUE/publications</code> and edit ✏️ the <code>publications.bib</code> file.</li>
+<li><strong>Delete</strong> (or manually edit) the template entries and <strong>paste</strong> your copied entry.</li>
+<li><strong>Commit</strong> the changes and make sure to <strong>re-render</strong> the .qmd file (see No.&nbsp;07 below).</li>
+</ol>
+</section>
+</section>
 <section id="optional-re-render-the-newsletter-to-html" class="level2">
-<h2 class="anchored" data-anchor-id="optional-re-render-the-newsletter-to-html">06 · (Optional) (Re-)Render the Newsletter to HTML</h2>
+<h2 class="anchored" data-anchor-id="optional-re-render-the-newsletter-to-html">07 · (Optional) (Re-)Render the Newsletter to HTML</h2>
 <p>The newsletter must be converted from .qmd into email-safe <strong>HTML</strong> and with inlined <strong>CSS</strong> (style guides) for compatibility with E-Mail programs like Outlook.</p>
 <p>Luckily, this process is <strong>triggered automatically</strong> whenever you commit changes in a .qmd file in the /issues subfolder.</p>
 <p>Rendering and deploying the html code to the github sever can take a moment (about 30 Sec. - 3 Min.). You can monitor the progress in the <strong>Actions</strong> tab:</p>
@@ -447,8 +470,8 @@ or below: <code>&lt;!-- ===== FOOTER ===== --&gt;</code></p>
 <li>As long as the <code>pages build and deployment</code> process pending 🟡, changes in the newsletter are not yet ‘live’ in the online version of the newsletter.</li>
 </ul>
 <p>If you think something has not worked correctly in the automatic workflow, and want to trigger a re-rendering, follow these steps:</p>
-<section id="steps-1" class="level4">
-<h4 class="anchored" data-anchor-id="steps-1">Steps</h4>
+<section id="steps-2" class="level4">
+<h4 class="anchored" data-anchor-id="steps-2">Steps</h4>
 <ol type="1">
 <li>Go to the tab <strong>Actions</strong></li>
 <li>Click <strong>02-Render-and-inline-newsletter</strong></li>
@@ -477,8 +500,8 @@ or below: <code>&lt;!-- ===== FOOTER ===== --&gt;</code></p>
 </section>
 <section id="send-the-newsletter-via-ecpr" class="level2">
 <h2 class="anchored" data-anchor-id="send-the-newsletter-via-ecpr">07 · Send the Newsletter via ECPR</h2>
-<section id="steps-2" class="level4">
-<h4 class="anchored" data-anchor-id="steps-2">Steps</h4>
+<section id="steps-3" class="level4">
+<h4 class="anchored" data-anchor-id="steps-3">Steps</h4>
 <ol type="1">
 <li>Open the .html file on GitHub (in the issue folder)</li>
 <li>Click Copy raw file</li>
