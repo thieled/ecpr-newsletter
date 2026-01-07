@@ -158,12 +158,12 @@ call, or opportunity.
 Supported formats:
 - `.txt`, `.pdf`, `.doc`, `.docx`
 
-Please note that this workflow only works after you have added **payment information** to your GitHub profile. For the current workflow, **no costs occur** though.
+(Note: Please note that if you're using your own account, this workflow only works after you have added **payment information** to your GitHub profile. For the current workflow, **no costs occur** though. The account `ecprpolcom` is ready to go.).
 
 
 #### Instructions
 
-1. Go to: `issues → YEAR → ISSUE → summarize`
+1. Navigate to the sub-folder: `issues\YEAR\ISSUE\summarize`
 2. Click **Add file → Upload files**
 3. Upload **one document per event/opportunity**
 4. Use a clear commit message (example: `uploading polcom section cfp 2026`)
