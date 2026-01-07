@@ -66,8 +66,9 @@ nocite: |
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
 
 ::: section
-In this newsletter, we have some exciting news: 
 
+Hi all, This first section is to greet our members. 
+In this newsletter, we have some exciting news: 
 
 <!-- Table of Contents; Delete if not wished: -->
 ::: {.issue-toc}
@@ -75,36 +76,49 @@ In this newsletter, we have some exciting news:
 
 :::
 
-## Biggest News
+## Political Communication Section at the ECPR General Conference, 8-11 Sep 2026
 
 ::: section
-![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
+![](https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/Krakow_sq.png){.newsimg width="180"}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+The Political Communication Section (S69) at the *ECPR General Conference 2026* invites submissions to the section *Political Communication Between Disruptive Technologies and Democratic Backsliding*. Chaired by **Johanna Burger** (Freie Universität Berlin) and **Thomas Milic** (University of Zurich), the section will meet at **Jagiellonian University, Kraków** from **8–11 September 2026** and is endorsed by the ECPR Standing Group on Political Communication.
 
-<button class="readmore">
-<a href="https://example.com">Read more</a>
-</button>
+We welcome theoretical and empirical work that investigates how emerging technologies (including generative AI and platform governance), information disorders, media intermediaries, and political actors interact to shape democratic resilience or decline. Submissions addressing technology and authenticity, disinformation and cross-border influence, the role of journalism and fact-checking, and responses by parties, states, and civil society are especially relevant; a wide range of methods is encouraged.
+
+Submit panel and paper proposals by **9 January 2026**. Visit the section page for guidelines and to submit your proposal.
+
+**Deadline:** 9 January 2026
+
+<button class="readmore"><a href="https://ecpr.eu/Events/Event/SectionDetails/1677">Submit here!</a></button>
+
 :::
 
-
-## More News
+## New Headline
 
 ::: section
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+You can write *italics* or **bold** text like this.
+
+And 
+- bullet
+- point 
+- lists
+like that.
+
 :::
 
 ---
 
-## Conferences
+## Call for Papers
+
+Now lets add the short overview for the CfP:
 
 ::: job
-**Title:** ECPR General Conference  
-**Location:** University of Dublin  
-**Deadline:** 1 Jan 2023  
-**Description:** Short blurb describing the CfP  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
+**Title:** PolCom Section at the ECPR General Conference
+**Location:** Jagiellonian University, Kraków, Poland 
+**Deadline:** 9 January 2026  
+**Description:** Section title: *Political Communication Between Disruptive Technologies and Democratic Backsliding (ECPR S69).* Call for panels and papers on how technologies, information disorders, media intermediaries, and political actors interact to affect democratic processes.  
+<button class="readmore"><a href="https://ecpr.eu/Events/Event/SectionDetails/1677">Read more</a></button>
 :::
 
 ::: job
