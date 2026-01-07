@@ -112,7 +112,7 @@ Deadline: **31 January 2026**
 **Location:** Berlin (DeZIM)  
 **Deadline:** 31 January 2026  
 **Description:** Author workshop on how racism’s salience and valence are produced across traditional and social media; abstracts (250–300 words) due 31 Jan 2026.  
-<button class="readmore"><a href="mailto:hotait@dezim-institut.de">Read more</a></button>
+<button class="readmore"><a href="https://thieled.github.io/ecpr-newsletter/issues/2026/01/doc/cfp_dezim/cfp_dezim.pdf">Read more</a></button>
 :::
 
 
