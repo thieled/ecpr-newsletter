@@ -80,6 +80,8 @@ In this newsletter, we have some exciting news:
 ::: section
 ![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
 
+This is a test to edit the qmd file via GitHub Codespaces.
+
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 <button class="readmore">
