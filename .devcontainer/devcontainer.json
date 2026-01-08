@@ -1,0 +1,11 @@
+{
+  "name": "Newsletter (Quarto Codespaces)",
+  "image": "ghcr.io/mcanouil/quarto-codespaces:latest",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "quarto.quarto"
+      ]
+    }
+  }
+}
