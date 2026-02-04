@@ -103,13 +103,18 @@ The final decisions will be sent out very soon! Stay tuned!
 
 <button class="readmore"><a href="https://events.ecpr.eu/Events/Event/sectiondetails/1677">Read more</a></button>
 
+:::
 
-## Upcoming ECR Club Session
+
+## Next ECR Club Session on 10th February 2026 
 
 ::: section
 
 ![](https://thieled.github.io/ecpr-newsletter/assets/banners/ecr_club_sq.png){.newsimg width="180"}
 
+text
+
+:::
 
 
 ## CfP Workshop, DeZIM: *Fragmented and Contested? Debates on Racism in Media*
@@ -122,9 +127,55 @@ The organizers invite 250–300 word abstracts plus a short bio (max 150 words) 
 
 Deadline: **31 January 2026**
 
-<button class="readmore"><a href="https://thieled.github.io/ecpr-newsletter/issues/2026/01/doc/cfp_dezim/cfp_dezim.pdf">Read more</a></button>
+<button class="readmore"><a href="https://thieled.github.io/ecpr-newsletter/issues/2026/01/doc/cfp_dezim/cfp_dezim.pdf">Download CfP</a></button>
 
 :::
+
+## CfP: Special Issue on Co-Producing Environmental Publics in *Communication and the Public*
+
+::: section
+
+The Special Issue in *Communication and the Public* on *Co-Producing Environmental Publics: Technology, Communication, and Ecological Transformation* invites submissions. The issue examines how digital technologies—sensor networks, big data, algorithms and AI—reshape the communicative infrastructures through which environmental publics form, influence perceptions of risk, and mediate responsibility and action.
+
+Contributions are invited on themes such as algorithmic infrastructures, datafication of environmental knowledge, networked activism, surveillance ecologies, and misinformation, with a particular encouragement for work from **Asia, Africa, Latin America,** and **Indigenous contexts** and for interdisciplinary approaches. Guest editors are **Dr. Dechun Zhang (University of Copenhagen)**, **Dr. Weiai Xu (University of Massachusetts Amherst)**, and **Dr. Han Lin (Soochow University)**.
+
+Deadlines: **Abstracts: March 20, 2026. Full papers: July 31, 2026**. 
+
+<button class="readmore"><a href="https://drive.google.com/file/d/1zAr6qNL5YtkC9YKQtj9VexGcPmZxelaq/view?usp=sharing">Read more</a></button>
+
+:::
+
+
+## CfP: Special Issue on Communicability in *Revista Sintaxis*
+
+::: section
+
+The special issue of *Revista Sintaxis* on *Interdisciplinary Perspectives: Contemporary Challenges and Critical Alternatives in Practical Philosophy and Communication* invites original, unpublished work exploring the intersections of communicability, practical philosophy, and the humanities. Topics include: epistemologies of communication, digital ethics, post-truth and democracy, algorithmic mediation, scientific discourse, and the role of education and culture in public life.
+
+Submissions are welcomed from scholars across the humanities and social sciences using qualitative, quantitative, mixed-methods, or theoretical approaches. Guest editors **Dr. Ignacio Quepons** and **Dr. José Ramón Orrantia Cavazos** (Instituto de Filosofía, **Universidad Veracruzana**) will consider contributions that include empirical research, critical dissemination, or situated theoretical reflection. Submission is via the journal’s OJS platform; author guidelines are available on the journal site.
+
+Submission Deadline: **March 30, 2026**
+
+<button class="readmore"><a href="https://thieled.github.io/ecpr-newsletter/issues/2026/01/doc/cfp_cica/cfp_cica.pdf">Download CfP</a></button>
+
+:::
+
+
+## Ad Astra Doctoral Scholarship in Authoritarian Politics
+
+::: section
+
+Applications are open for the *Ad Astra Doctoral Scholarship in Authoritarian Politics* at the **School of Politics and International Relations, University College Dublin**, offering doctoral supervision under **Dr. Nikita Khokhlov**. The scholarship supports projects examining authoritarian legitimation, propaganda, disinformation, media and censorship, elite behaviour, public opinion, diffusion and learning among regimes, democratization/autocratization, and personalist rule—topics central to political communication research.
+
+Proposals using quantitative, computational, or mixed methods (e.g., natural language processing, machine learning, survey experiments, network analysis) are particularly encouraged, though innovative qualitative approaches are also welcome. The award covers tuition (up to the non‑EU rate), provides a **€25,000** annual stipend and a **€4,000** research budget for conferences, fieldwork, and related costs.
+
+Apply by **Friday 6th February 2026, 5pm (Dublin time)**. If you are interested in advancing research on communication under authoritarianism, consider applying now.
+
+<button class="readmore"><a href="https://www.ucd.ie/spire/study/prospectivephdstudents/adastradoctoralscholarships/">Read more</a></button>
+
+:::
+
+
 
 
 ---
