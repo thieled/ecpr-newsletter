@@ -66,7 +66,21 @@ nocite: |
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
 
 ::: section
-In this newsletter, we have some exciting news: 
+We’re starting the year with a few updates from our side: **Laura Jacobs** is taking over as **chair** of the Steering Committee of the Standing Group on Political Communication, joining **Johanna Burger**, who continues in her role. We thank **Marieken van der Velden** for her excellent work and dedication over the past years, and warmly welcome Laura to the position. 🙏
+
+You may also notice things look a little different around here. That’s because we’ve refreshed the **newsletter’s layout** and moved to an HTML format to make it cleaner and easier to read. Many thanks to **Daniel** for bringing the new design to life! 🧑‍💻
+
+
+
+- reorganized internally & refurbished look
+- cfp dezim
+- cfp si cap
+- cfp si cica 
+- polcom encyc
+- phd opening adastra
+- 
+
+
 
 
 <!-- Table of Contents; Delete if not wished: -->
@@ -75,22 +89,18 @@ In this newsletter, we have some exciting news:
 
 :::
 
-## Biggest News
+## General Conference 2026: Decisions out Soon!
 
 ::: section
+
 ![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
 
-This is a test to edit the qmd file via GitHub Codespaces.
+We're as excited as you are to receive the decisions for the ECPR General Conference 2026, 8-11 Sep, taking place at Jagiellonian University in the in the beautiful city of Kraków.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<button class="readmore">
-<a href="https://example.com">Read more</a>
-</button>
-:::
+The PolCom Section, arragend by **Johanna Burger** and **Thomas Milic**, plans with no less than ten panels on wide range of topics! A big thank you to our section chairs for their hard work in putting together a fantastic program. Stay tuned for the final decisions, which will be in your inbox soon!
 
 
-## CfP Workshop: *Fragmented and Contested? Debates on Racism in Media*
+## CfP Workshop, DeZIM: *Fragmented and Contested? Debates on Racism in Media*
 
 ::: section
 
