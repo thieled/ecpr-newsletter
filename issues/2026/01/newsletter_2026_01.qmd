@@ -95,9 +95,13 @@ You may also notice things look a little different around here. That’s because
 
 ![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
 
-We're as excited as you are to receive the decisions for the ECPR General Conference 2026, 8-11 Sep, taking place at Jagiellonian University in the in the beautiful city of Kraków.
+We thank everyone who submitted to the ECPR General Conference 2026, as well as our section chairs **Johanna Burger** and **Thomas Milic** for their hard work in reviewing and putting together the program. 
 
-The PolCom Section, arragend by **Johanna Burger** and **Thomas Milic**, plans with no less than ten panels on wide range of topics! A big thank you to our section chairs for their hard work in putting together a fantastic program. Stay tuned for the final decisions, which will be in your inbox soon!
+The Section **Political Communication Between Disruptive Technologies and Democratic Backsliding**, endorsed by the Standing Group will feature no less than ten panels on a wide range of topics!
+
+The final decisions will be sent out very soon! Stay tuned!
+
+<button class="readmore"><a href="https://events.ecpr.eu/Events/Event/sectiondetails/1677">Read more</a></button>
 
 
 ## Upcoming ECR Club Session
@@ -105,7 +109,6 @@ The PolCom Section, arragend by **Johanna Burger** and **Thomas Milic**, plans w
 ::: section
 
 ![](https://thieled.github.io/ecpr-newsletter/assets/banners/ecr_club_sq.png){.newsimg width="180"}
-
 
 
 
