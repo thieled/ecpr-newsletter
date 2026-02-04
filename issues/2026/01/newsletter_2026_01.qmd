@@ -70,24 +70,16 @@ We’re starting the year with a few updates from our side: **Laura Jacobs** is 
 
 You may also notice things look a little different around here. That’s because we’ve refreshed the **newsletter’s layout** and moved to an HTML format to make it cleaner and easier to read. Many thanks to **Daniel** for bringing the new design to life! 🧑‍💻
 
-
-
-- reorganized internally & refurbished look
-- cfp dezim
-- cfp si cap
-- cfp si cica 
-- polcom encyc
-- phd opening adastra
-- 
-
-
-
+This month's newsletter features: 
 
 <!-- Table of Contents; Delete if not wished: -->
 ::: {.issue-toc}
 :::
 
 :::
+
+
+---
 
 ## General Conference 2026: Decisions out Soon!
 
@@ -106,13 +98,28 @@ The final decisions will be sent out very soon! Stay tuned!
 :::
 
 
+
 ## Next ECR Club Session on 10th February 2026 
 
 ::: section
 
 ![](https://thieled.github.io/ecpr-newsletter/assets/banners/ecr_club_sq.png){.newsimg width="180"}
 
-text
+::: section
+
+Join our next **ECR Club** session, featuring **Edwin Jans** (**Wageningen University**) presenting *A drizzle, not a storm: Polarisation around climate change in dutch political and media debates*. The study employs a longitudinal manual content analysis (2010–2021) of parliamentary debates and newspapers to measure three forms of polarisation: ideological, affective, and factual belief. The findings show stable ideological divides, while affective and factual-belief polarisation remain low but show modest increases recently—trends linked in politics to the rise of ecological and populist radical-right parties and in media to popular newspapers.
+
+The session will be chaired by **Mariken van der Velden** (**VU Amsterdam**), on **Tuesday 10 February 2026, 11:00–11:45 GMT**. 
+
+<button class="readmore"><a href="https://ecpr.eu/Events/Event/PanelDetails/16972">Read more</a></button>
+
+<button class="readmore"><a href="https://ecpr-eu.zoom.us/j/85212235856?pwd=xTw2V1AOaN7CvI9RbUOgT7gHgEfPAI.1">Zoom Link</a></button>
+
+
+
+:::
+
+
 
 :::
 
@@ -131,7 +138,7 @@ Deadline: **31 January 2026**
 
 :::
 
-## CfP: Special Issue on Co-Producing Environmental Publics in *Communication and the Public*
+## CfP: Special Issue in *Communication and the Public*
 
 ::: section
 
@@ -146,7 +153,7 @@ Deadlines: **Abstracts: March 20, 2026. Full papers: July 31, 2026**.
 :::
 
 
-## CfP: Special Issue on Communicability in *Revista Sintaxis*
+## CfP: Special Issue in *Revista Sintaxis*
 
 ::: section
 
@@ -176,11 +183,23 @@ Apply by **Friday 6th February 2026, 5pm (Dublin time)**. If you are interested 
 :::
 
 
+## New Encyclopedia of Political Communication from Our Members 
+
+::: section
+
+*Elgar Encyclopedia of Political Communication*, edited by **Alessandro Nai**, **Max Grömping**, and **Dominique Wirz**, is a newly published comprehensive reference that maps the field of political communication, including media and journalism studies. The volume comprises **431 entries** authored by **581 contributors from 58 countries**, and presents authoritative overviews of foundational theories, empirical methodologies, and emerging research directions.
+
+This encyclopedia is a key resource for scholars seeking synthesis and inspiration across subfields — from agenda-setting and media effects to digital communication and comparative perspectives. The editors’ introductory chapter, “Mapping political communication,” is available open access.
+
+<button class="readmore"><a href="https://doi.org/10.4337/9781035301447">Read more</a></button>
+
+:::
+
 
 
 ---
 
-## Calls for Papers
+## **Calls for Papers - Overview**
 
 ::: job
 **Title:** Fragmented and Contested? Debates on Racism in Traditional and Social Media (International Workshop)  
@@ -190,38 +209,34 @@ Apply by **Friday 6th February 2026, 5pm (Dublin time)**. If you are interested 
 <button class="readmore"><a href="https://thieled.github.io/ecpr-newsletter/issues/2026/01/doc/cfp_dezim/cfp_dezim.pdf">Read more</a></button>
 :::
 
-
 ::: job
-**Title:** ECPR General Conference  
-**Location:** University of Dublin  
-**Deadline:** 1 Jan 2023  
-**Description:** Short blurb describing the CfP  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
+**Title:** Special Issue in Communication and the Public: Co-Producing Environmental Publics: Technology, Communication, and Ecological Transformation
+**Deadline:** March 20, 2026  
+**Description:** CFP exploring how digital technologies co-produce environmental publics, knowledge, governance, and collective action; abstracts (≤500 words) to guest editors.  
+<button class="readmore"><a href="https://drive.google.com/file/d/1zAr6qNL5YtkC9YKQtj9VexGcPmZxelaq/view?usp=sharing">Read more</a></button>
 :::
 
 ::: job
-**Title:** ECREA  
-**Location:** University of Brno  
-**Deadline:** NN  
-**Description:** Short blurb describing the CfP  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
+**Title:** Special Issue in Sintaxis: Interdisciplinary Perspectives on Communicability and Practical Philosophy  
+**Deadline:** March 30, 2026  
+**Description:** Call for original, unpublished articles on the intersection of communication, practical philosophy, and the humanities; submissions via the journal's OJS.  
+<button class="readmore"><a href="https://thieled.github.io/ecpr-newsletter/issues/2026/01/doc/cfp_cica/cfp_cica.pdf">Read more</a></button>
 :::
 
 ---
 
-## Job Bulletin
+## **Job Bulletin**
 
 ::: job
-**Title:** Assistant Professor (Tenure-Track)  
-**Location:** Universitat Pompeu Fabra  
-**Deadline:** 3 Feb 2025  
-**Description:** Short blurb describing the job.  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
+**Title:** Ad Astra Doctoral Scholarship in Authoritarian Politics  
+**Location:** School of Politics and International Relations, University College Dublin (Dublin, Ireland)  
+**Deadline:** Friday 6th February 2026, 5pm (Dublin time)  
+**Description:** Fully funded PhD scholarship for research on authoritarian politics with emphasis on communication, propaganda, disinformation, and related quantitative/computational methods.  
+<button class="readmore"><a href="https://www.ucd.ie/spire/study/prospectivephdstudents/adastradoctoralscholarships/">Read more</a></button>
 :::
 
+
+---
 
 ## Recent Publications by Our Members
 
