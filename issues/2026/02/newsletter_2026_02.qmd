@@ -66,13 +66,31 @@ nocite: |
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
 
 ::: section
-In this newsletter, we have some exciting news: 
-
+This month's newsletter brings several updates for the political communication community, including news about the general conference, upcoming workshops, and a chance to share your feedback:
 
 <!-- Table of Contents; Delete if not wished: -->
 ::: {.issue-toc}
 :::
 
+:::
+
+---
+
+## ECPR PolCom Member Survey
+
+::: section 
+
+![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
+
+We want to hear from you! Your **input and feedback** will help us improve our activities and develop initiatives that better serve the European political communication community.
+
+We invite you to participate in a **short member survey** (5–10 minutes) to share your thoughts on what we're doing well and where we can do better.
+
+Your input is invaluable to us — thank you for taking the time to contribute!
+
+<button class="readmore"><a href="https://uantwerpen.eu.qualtrics.com/jfe/form/SV_3qPBjPWp4VwPFWu">Take the survey</a></button>
+
+:::
 
 
 
@@ -80,7 +98,7 @@ In this newsletter, we have some exciting news:
 
 ::: section
 
-![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
+![](https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/Krakow_sq.png){.newsimg width="180"}
 
 We are very much looking forward to our section **Political Communication Between Disruptive Technologies and Democratic Backsliding** at the General Conference in Krakow, 8-11 September 2026.
 
@@ -94,84 +112,85 @@ Do not miss the **registration**, opening on **March 18** and closing on **April
 
 
 
-## Next ECR Club Session on 10th March 2026 
+## Next ECR Club Session on 10th February 2026 
 
 ::: section
 
 ![](https://thieled.github.io/ecpr-newsletter/assets/banners/ecr_club_sq.png){.newsimg width="180"}
 
+Join our next **ECR club** session on *"The role of interpersonal communication in the induction and adaptation process of first-year students to higher education"*, a mixed-methods study that examines how relationships between students, teachers and administrative staff shape retention, dropout, academic satisfaction and performance. The talk highlights practical factors, barriers and strategies to support first‑year integration—topics relevant for scholars of institutional and political communication.
+
+Presenter: **Catalin Tutuianu (SNSPA, Romania)** \
+Discussant **Mariëtte Huizinga (Vrije Universiteit Amsterdam)** \
+Chair: **Daniel Thiele (Freie Universität Berlin)**. 
+
+Online on **10 March 2026, 11:00–12:00 GMT**. 
+
+<button class="readmore"><a href="https://ecpr.eu/Events/Event/PanelDetails/16973">Read more</a></button>
+
+<button class="readmore"><a href="https://ecpr-eu.zoom.us/j/85212235856?pwd=xTw2V1AOaN7CvI9RbUOgT7gHgEfPAI.1">Join via Zoom!</a></button>
+
+:::
+
+
+## CEU Workshop: AI for Democratic Politics
+
 ::: section
 
-Join our next **ECR Club** session, featuring **Edwin Jans** (**Wageningen University**) presenting *A drizzle, not a storm: Polarisation around climate change in dutch political and media debates*. The study employs a longitudinal manual content analysis (2010–2021) of parliamentary debates and newspapers to measure three forms of polarisation: ideological, affective, and factual belief. The findings show stable ideological divides, while affective and factual-belief polarisation remain low but show modest increases recently—trends linked in politics to the rise of ecological and populist radical-right parties and in media to popular newspapers.
+The Central European University (CEU) Democracy Institute and the Friedrich-Ebert-Stiftung invite submissions to *AI for Democratic Politics. Improving Campaigns, Strengthening Public Information, Supporting Citizen Participation*, a two-day workshop addressing the democratic risks and opportunities of AI across information, competition, and participation. Convenors **Zsofia Bocskay (CEU Democracy Institute)** and **Simge Andı (University of Exeter)** will host the event on **November 19–20, 2026** at **Central European University (CEU), Vienna, Austria**; the workshop seeks comparative, methodological, and policy-oriented work that speaks to journalists, policymakers, and civil-society actors.
 
-The session will be chaired by **Mariken van der Velden** (**VU Amsterdam**), on **Tuesday 10 February 2026, 11:00–11:45 GMT**. 
+Proposals should include a tentative title, a short abstract (max 250 words), and a brief author note (max 50 words). Some travel/accommodation support is available; selected participants will circulate full drafts in advance and contribute to a focused program that may lead to a special issue or edited volume. Submit proposals by **March 31, 2026, 11:59 PM CET** and direct enquiries to organizers as listed on the call page. Apply or read the full call via the link below — submissions via the form provided.
 
-<button class="readmore"><a href="https://ecpr.eu/Events/Event/PanelDetails/16972">Read more</a></button>
+Deadline: **March 31, 2026, 11:59 PM CET**
 
-<button class="readmore"><a href="https://ecpr-eu.zoom.us/j/85212235856?pwd=xTw2V1AOaN7CvI9RbUOgT7gHgEfPAI.1">Zoom Link</a></button>
-
-
+<button class="readmore"><a href="https://democracyinstitute.ceu.edu/articles/cfp-ai-democratic-politics">Read more</a></button>
 
 :::
 
 
 
-:::
 
-## Biggest News
+## COSMOS PhD School on AI and Democracy in Cortona, Italy (May 2026)
 
 ::: section
-![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+The *COSMOS PhD School* is a week-long intensive for PhD students and early‑career researchers exploring the political, social and ethical implications of generative artificial intelligence. Organized by the Center on Social Movement Studies (COSMOS) at the **Scuola Normale Superiore**, the School runs **18–22 May 2026** at **Palazzone di Cortona (AR, Italy)**, offers **32** hours of instruction in **English**, and admits up to **25** participants.
 
-<button class="readmore">
-<a href="https://example.com">Read more</a>
-</button>
+Through morning lectures and afternoon methodological labs, the programme addresses core questions—Does AI strengthen or weaken democracy?—and themes including AI ethics and democratic control, automation of labour and warfare, environmental impacts, and the future of journalism. Featured speakers include **Peter Asaro**, **Antonio Casilli**, **Mark Coeckelbergh**, **Matteo Pasquinelli**, and organisers **Marco Deseriis** and **Hans‑Joerg Trenz**. The School is tuition‑free; travel and accommodation are the participant’s responsibility.
+
+Apply by sending a CV and a one‑page cover letter (single PDF) explaining fit with your research to **marco.deseriis@sns.it** and **hansjorg.trenz@sns.it** by **15 March 2026**. Accepted candidates will be notified by **1 April 2026**. 
+
+Application deadline: **15 March 2026**
+
+<button class="readmore"><a href="https://www.sns.it/en/node/1095461">Read more</a></button>
+
 :::
 
 
-## More News
-
-::: section
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-:::
 
 ---
 
-## Conferences
+## Calls for Papers
 
 ::: job
-**Title:** ECPR General Conference  
-**Location:** University of Dublin  
-**Deadline:** 1 Jan 2023  
-**Description:** Short blurb describing the CfP  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
+**Title:** AI for Democratic Politics: Improving Campaigns, Strengthening Public Information, Supporting Citizen Participation  
+**Location:** Central European University (CEU), Vienna, Austria  
+**Deadline:** March 31, 2026, 11:59 PM CET  
+**Description:** Two-day workshop exploring AI’s risks and opportunities for information, political competition, and citizen participation; 250-word abstracts invited.  
+<button class="readmore"><a href="https://democracyinstitute.ceu.edu/articles/cfp-ai-democratic-politics">Read more</a></button>
 :::
+
 
 ::: job
-**Title:** ECREA  
-**Location:** University of Brno  
-**Deadline:** NN  
-**Description:** Short blurb describing the CfP  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
+**Title:** COSMOS PhD School on AI and Democracy  
+**Location:** Scuola Normale Superiore, Palazzone di Cortona (AR), Italy  
+**Deadline:** 15 March 2026  
+**Description:** Week‑long, tuition‑free PhD school (18–22 May 2026) on generative AI’s social and political impacts, combining lectures and hands‑on labs.  
+<button class="readmore"><a href="https://www.sns.it/en/node/1095461">Read more</a></button>
 :::
+
 
 ---
-
-## Job Bulletin
-
-::: job
-**Title:** Assistant Professor (Tenure-Track)  
-**Location:** Universitat Pompeu Fabra  
-**Deadline:** 3 Feb 2025  
-**Description:** Short blurb describing the job.  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
-:::
-
 
 ## Recent Publications by Our Members
 
