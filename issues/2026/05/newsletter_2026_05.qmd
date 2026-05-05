@@ -66,7 +66,7 @@ nocite: |
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
 
 ::: section
-In this newsletter, we have some exciting news: 
+We hope you 
 
 
 <!-- Table of Contents; Delete if not wished: -->
@@ -75,17 +75,41 @@ In this newsletter, we have some exciting news:
 
 :::
 
-## Biggest News
+## Junior–Senior Mentoring in Krakow
+
+::: section
+![](https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/Krakow_sq.png){.newsimg width="180"}
+
+Are you attending the ECPR General Conference 2026 in Krakow? We are organizing a **Junior–Senior Mentoring** initiative in political communication. 
+
+The idea is simple: we match junior and senior scholars based on shared research interests, and you meet once informally during the conference to exchange ideas, experiences, and advice. Interested in joining?
+
+Please sign up--as *senior* or *junior* scholar--by submitting your details below and we'll get in touch with you. Please note that we have limited availibilities for the junior scholars.
+
+Deadline to register is **May 23**.
+
+<button class="readmore">
+<a href="https://uantwerpen.eu.qualtrics.com/jfe/form/SV_do6RSAAiYnAEiSq">Sign up!</a>
+</button>
+:::
+
+
+## Volunteer for the Best Paper Award '25 Jury!
 
 ::: section
 ![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+We're still short of jury members for our **Best Paper Award (BPA)** comittee! 
+
+If you want to **volunteer** to become part of the BPA committee to select the best paper presented in the PolComm section at the ECPR General Conference 2025 in Thessaloniki, please sign up and we'll get in touch with you.
+
+Deadline to register is **May 20**.
 
 <button class="readmore">
-<a href="https://example.com">Read more</a>
+<a href="https://uantwerpen.eu.qualtrics.com/jfe/form/SV_eFJLSc91AkfaP0G">Sign up for the BPA!</a>
 </button>
 :::
+
 
 
 ## More News
