@@ -1,0 +1,184 @@
+---
+title: ""
+year: 2026
+issue: "05"
+format:
+  html:
+    theme: none
+    toc: false
+    page-layout: full
+    embed-resources: false
+    css: https://thieled.github.io/ecpr-newsletter/assets/styles/newsletter_v02.css
+    include-in-header:
+      text: |
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="x-apple-disable-message-reformatting">
+        <!--[if mso]>
+        <style>
+          body, table, td, p, a {
+            font-family: Arial, Helvetica, sans-serif !important;
+          }
+          table {
+            border-collapse: collapse;
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+          }
+          img {
+            -ms-interpolation-mode: bicubic;
+          }
+        </style>
+        <![endif]-->
+bibliography: publications/publications.bib
+csl: publications/apa.csl
+nocite: |
+  @*
+---
+---
+
+<!-- ===== OUTLOOK CENTERING WRAPPER ===== -->
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" bgcolor="#f9fafc">
+<tr>
+<td align="center">
+
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+<tr>
+<td class="email-body">
+
+<!-- ===== HEADER IMAGE ===== -->
+
+<img
+  src="https://thieled.github.io/ecpr-newsletter/assets/banners/header.png"
+  alt="ECPR PolCom Newsletter"
+  width="600"
+  style="display:block;width:100%;max-width:600px;height:auto;border:0;">
+
+<!-- ===== VIEW IN BROWSER ===== -->
+
+::: {style="margin:10px 0 0 0;text-align:center;"}
+[View in browser](https://thieled.github.io/ecpr-newsletter/issues/{{< meta year >}}/{{< meta issue >}}/newsletter_{{< meta year >}}_{{< meta issue >}}.html){style="font-size:12px;line-height:1.2;color:#6b7280;text-decoration:underline;"}
+:::
+
+
+<!-- ===== CONTENT START ===== -->
+
+## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
+
+::: section
+In this newsletter, we have some exciting news: 
+
+
+<!-- Table of Contents; Delete if not wished: -->
+::: {.issue-toc}
+:::
+
+:::
+
+## Biggest News
+
+::: section
+![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+<button class="readmore">
+<a href="https://example.com">Read more</a>
+</button>
+:::
+
+
+## More News
+
+::: section
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+:::
+
+---
+
+## Conferences
+
+::: job
+**Title:** ECPR General Conference  
+**Location:** University of Dublin  
+**Deadline:** 1 Jan 2023  
+**Description:** Short blurb describing the CfP  
+
+<button class="readmore"><a href="https://example.com">Read more</a></button>
+:::
+
+::: job
+**Title:** ECREA  
+**Location:** University of Brno  
+**Deadline:** NN  
+**Description:** Short blurb describing the CfP  
+
+<button class="readmore"><a href="https://example.com">Read more</a></button>
+:::
+
+---
+
+## Job Bulletin
+
+::: job
+**Title:** Assistant Professor (Tenure-Track)  
+**Location:** Universitat Pompeu Fabra  
+**Deadline:** 3 Feb 2025  
+**Description:** Short blurb describing the job.  
+
+<button class="readmore"><a href="https://example.com">Read more</a></button>
+:::
+
+
+## Recent Publications by Our Members
+
+::: {#refs}
+:::
+
+
+<!-- ===== FOOTER ===== -->
+
+<div class="footer">
+
+<div class="footer-content">
+
+<table role="presentation" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="padding:0 6px;">
+      <a href="https://bsky.app/profile/ecpr-polcom.bsky.social">
+        <img src="https://thieled.github.io/ecpr-newsletter/assets/icons/bluesky.png"
+             width="28" height="28" style="display:inline-block;">
+      </a>
+    </td>
+    <td style="padding:0 6px;">
+      <a href="https://www.linkedin.com/company/ecpr-polcom">
+        <img src="https://thieled.github.io/ecpr-newsletter/assets/icons/linkedin.png"
+             width="28" height="28" style="display:inline-block;">
+      </a>
+    </td>
+  </tr>
+</table>
+
+<p><strong>Standing Group on Political Communication</strong><br>
+European Consortium for Political Research</p>
+
+<p class="smalltext">
+You received this email because you are a member of the<br>
+ECPR Standing Group on Political Communication.<br><br>
+<a href="https://ecpr.eu/login.aspx" class="footer-link">
+Manage subscriptions via your My ECPR account
+</a>
+</p>
+
+</div>
+</div>
+
+<!-- ===== CONTENT END ===== -->
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
