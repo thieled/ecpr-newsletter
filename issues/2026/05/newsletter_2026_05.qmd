@@ -66,7 +66,7 @@ nocite: |
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
 
 ::: section
-We hope you 
+May is here, and so is a fresh issue of the ECPR PolCom Newsletter. This month, we have three announcements from the Standing Group: a **mentoring event** at the ECPR General Conference in Krakow; an open call for volunteers to join the **Best Paper Award jury**; and a reminder that our member **survey** is still open and your input shapes what we do next. We also highlight several **external events** worth putting on your radar.
 
 
 <!-- Table of Contents; Delete if not wished: -->
@@ -110,29 +110,41 @@ Deadline to register is **May 20**.
 </button>
 :::
 
+
+## Still open: ECPR PolCom Member Survey
+
+::: section 
+
+![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
+
+Our member **survery** is still open! Let us know **input and feedback** to help us improve our activities and develop initiatives that better serve the European political communication community.
+
+<button class="readmore"><a href="https://uantwerpen.eu.qualtrics.com/jfe/form/SV_3qPBjPWp4VwPFWu">Take the survey</a></button>
+
+:::
+
+
 ---
 
 ### GESIS Fall Seminar in Computational Social Science (31 Aug–29 Sep)
 
 ::: section
 
-Registration is open for the *GESIS Fall Seminar in Computational Social Science*, a month-long programme offered by **GESIS** from **31 August–29 September**, available in **Mannheim or online**. The seminar delivers introductory and advanced courses on collecting and analyzing digital behavioral data from the web, social media, and digital archives, combining lectures by leading experts with hands-on exercises and peer exchange.
-
-Key courses this year include Web Data Collection, Machine Learning for Text Analysis, Computer Vision, Agent-Based Modeling & Simulation, Large Language Models, Causal Machine Learning, and Mobile Data Collection—topics directly relevant to scholars of political communication working with digital trace data and automated text/image analysis. Visit the course pages to view descriptions and register.
-
-Registration open
+The *GESIS Fall Seminar in Computational Social Science* runs **31 August–29 September** in Mannheim or online, offering introductory and advanced courses on digital behavioral data. This year's programme covers Web Data Collection, Machine Learning for Text Analysis, LLMs, Computer Vision, and more — highly relevant for political communication scholars working or planning to work with digital trace data and computational methods.
 
 <button class="readmore"><a href="https://gesis.org/fallseminar">Read more</a></button>
 
 :::
 
-## Pre-conference: Instant Messaging as Political Communication Infrastructure
+## ECREA Pre-conference: Instant Messaging as Political Communication Infrastructure
 
 ::: section
 
-Join the pre-conference *Instant Messaging as Political Communication Infrastructure*, which brings together scholars to advance theory and methods for studying instant messaging platforms (WhatsApp, Telegram, Signal, Viber) as sites of political communication and everyday governance. The event will take place on **7 September 2026** at the **Faculty of Social Studies, Masaryk University, Brno, Czech Republic** and is organized around two thematic tracks — **Pro-Democratic Political Communication** (grassroots organizing, movements, campaigns, ethics) and **Anti-Democratic Political Communication** (conspiracist/extremist networks, hate speech, authoritarian uses).
+The pre-conference *Instant Messaging as Political Communication Infrastructure* brings together scholars advancing theory and methods for studying platforms like WhatsApp, Telegram, and Signal as sites of political communication. Taking place on **7 September 2026** at the Faculty of Social Studies, Masaryk University, Brno, the event is organized around two tracks: **Pro-Democratic Political Communication** and **Anti-Democratic Political Communication**.
 
-Submissions (1,000–1,500 words) are invited for original research, theoretical and methodological papers, toolkits, and data repositories. Submission deadline: **15 May 2026**; notifications by **12 June 2026**. Registration fees: ECREA members €40 | Non-members €60 | PhD students (ECREA members) €25. For queries contact **o.pasitselska@rug.nl**. Organizers include **Kilian Buehling**, **Olga Pasitselska**, **Qinfeng Zhu**, **Eedan Amit‑Danhi**, and **Emilija Gagrčin** (Universität Tübingen / Weizenbaum Institute; University of Groningen; University of Bergen). Submit your proposal and read the full call to contribute to methodological and conceptual advances in political communication research.
+Submissions (1,000–1,500 words) are invited for original research, theoretical and methodological contributions, toolkits, and data repositories. Submission deadline: **15 May 2026**. Registration fees: ECREA members €40 | Non-members €60 | PhD students €25. 
+
+For queries contact [**o.pasitselska@rug.nl**](mailto:o.pasitselska@rug.nl).
 
 Submission deadline: **15 May 2026**
 
@@ -145,9 +157,9 @@ Submission deadline: **15 May 2026**
 
 ::: section
 
-Join the *VIRUS* kick‑off seminar presenting *Violence by Russia in Ukraine: Examining the Implications of Its Narrative Justification in Russia and Europe*. The event frames ongoing research on how narratives that justify violence shape public opinion and political communication across Russia and European contexts.
+The *VIRUS* kick‑off seminar presents research on *Violence by Russia in Ukraine* — specifically how narratives justifying violence shape public opinion and political communication across Russia and European contexts. Presented by **Polina Zavershinskaia**, chaired by **Matteo Bassoli**, with discussant **Pietro De Perini**.
 
-The seminar is chaired by **Matteo Bassoli** and presented by **Polina Zavershinskaia**, with discussant **Pietro De Perini**. It takes place at **Aula Alpi, Department of Political Science, Law and International Studies (SPGI), via del Santo 26, Padua, Italy**, on **10 June 2026, 12:30–14:00** and will be offered in hybrid format (online access via Zoom). For questions and participation details, contact **polina.zavershinskaia@unipd.it**. Please register or reach out to confirm attendance.
+The event takes place on **10 June 2026, 12:30–14:00** at the Department of Political Science, Law and International Studies, Padua, and is available online via Zoom. Contact [**polina.zavershinskaia@unipd.it**](mailto:polina.zavershinskaia@unipd.it) to register.
 
 When: **10 June 2026, 12:30–14:00**
 
