@@ -1,0 +1,7 @@
+
+
+Call for participants: GESIS Fall Seminar in Computational Social Science
+
+Registration is open for this year’s GESIS Fall Seminar in Computational Social Science! The Fall Seminar takes place from 31 August to 29 September in Mannheim or online (depending on the course) and features introductory and advanced courses on collecting and analyzing digital behavioral data from the web, social media, or digital archives. Courses are taught by leading experts in the field and offer plenty of opportunities to learn from and connect with other like-minded researchers. Lectures in each course are complemented by hands-on exercises, giving you the opportunity to directly implement your newly acquired skills and knowledge. Courses this year include introductory courses on Computational Social Science and Web Data Collection, as well as Machine Learning for Text Analysis, Computer Vision, Agent-Based Modeling & Simulation, Large Language Models, Causal Machine Learning, and Mobile Data Collection and Analysis.
+
+For more information, detailed course descriptions, and the registration form, visit https://gesis.org/fallseminar.
