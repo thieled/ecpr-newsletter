@@ -110,49 +110,52 @@ Deadline to register is **May 20**.
 </button>
 :::
 
+---
 
-
-## More News
+### GESIS Fall Seminar in Computational Social Science (31 Aug–29 Sep)
 
 ::: section
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Registration is open for the *GESIS Fall Seminar in Computational Social Science*, a month-long programme offered by **GESIS** from **31 August–29 September**, available in **Mannheim or online**. The seminar delivers introductory and advanced courses on collecting and analyzing digital behavioral data from the web, social media, and digital archives, combining lectures by leading experts with hands-on exercises and peer exchange.
+
+Key courses this year include Web Data Collection, Machine Learning for Text Analysis, Computer Vision, Agent-Based Modeling & Simulation, Large Language Models, Causal Machine Learning, and Mobile Data Collection—topics directly relevant to scholars of political communication working with digital trace data and automated text/image analysis. Visit the course pages to view descriptions and register.
+
+Registration open
+
+<button class="readmore"><a href="https://gesis.org/fallseminar">Read more</a></button>
+
+:::
+
+## Pre-conference: Instant Messaging as Political Communication Infrastructure
+
+::: section
+
+Join the pre-conference *Instant Messaging as Political Communication Infrastructure*, which brings together scholars to advance theory and methods for studying instant messaging platforms (WhatsApp, Telegram, Signal, Viber) as sites of political communication and everyday governance. The event will take place on **7 September 2026** at the **Faculty of Social Studies, Masaryk University, Brno, Czech Republic** and is organized around two thematic tracks — **Pro-Democratic Political Communication** (grassroots organizing, movements, campaigns, ethics) and **Anti-Democratic Political Communication** (conspiracist/extremist networks, hate speech, authoritarian uses).
+
+Submissions (1,000–1,500 words) are invited for original research, theoretical and methodological papers, toolkits, and data repositories. Submission deadline: **15 May 2026**; notifications by **12 June 2026**. Registration fees: ECREA members €40 | Non-members €60 | PhD students (ECREA members) €25. For queries contact **o.pasitselska@rug.nl**. Organizers include **Kilian Buehling**, **Olga Pasitselska**, **Qinfeng Zhu**, **Eedan Amit‑Danhi**, and **Emilija Gagrčin** (Universität Tübingen / Weizenbaum Institute; University of Groningen; University of Bergen). Submit your proposal and read the full call to contribute to methodological and conceptual advances in political communication research.
+
+Submission deadline: **15 May 2026**
+
+<button class="readmore"><a href="https://bit.ly/IMPolComm">Read more</a></button>
+
+:::
+
+
+## VIRUS Kick‑off Seminar: Narrative Justification of Russian Violence
+
+::: section
+
+Join the *VIRUS* kick‑off seminar presenting *Violence by Russia in Ukraine: Examining the Implications of Its Narrative Justification in Russia and Europe*. The event frames ongoing research on how narratives that justify violence shape public opinion and political communication across Russia and European contexts.
+
+The seminar is chaired by **Matteo Bassoli** and presented by **Polina Zavershinskaia**, with discussant **Pietro De Perini**. It takes place at **Aula Alpi, Department of Political Science, Law and International Studies (SPGI), via del Santo 26, Padua, Italy**, on **10 June 2026, 12:30–14:00** and will be offered in hybrid format (online access via Zoom). For questions and participation details, contact **polina.zavershinskaia@unipd.it**. Please register or reach out to confirm attendance.
+
+When: **10 June 2026, 12:30–14:00**
+
+<button class="readmore"><a href="mailto:polina.zavershinskaia@unipd.it">Sign up</a></button>
+
 :::
 
 ---
-
-## Conferences
-
-::: job
-**Title:** ECPR General Conference  
-**Location:** University of Dublin  
-**Deadline:** 1 Jan 2023  
-**Description:** Short blurb describing the CfP  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
-:::
-
-::: job
-**Title:** ECREA  
-**Location:** University of Brno  
-**Deadline:** NN  
-**Description:** Short blurb describing the CfP  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
-:::
-
----
-
-## Job Bulletin
-
-::: job
-**Title:** Assistant Professor (Tenure-Track)  
-**Location:** Universitat Pompeu Fabra  
-**Deadline:** 3 Feb 2025  
-**Description:** Short blurb describing the job.  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
-:::
-
 
 ## Recent Publications by Our Members
 
