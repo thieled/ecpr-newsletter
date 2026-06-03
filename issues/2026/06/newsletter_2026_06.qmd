@@ -66,13 +66,14 @@ nocite: |
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
 
 ::: section
-In this newsletter, we have some exciting news: 
+In this month's newsletter, we have some exciting news: 
 
 
 <!-- Table of Contents; Delete if not wished: -->
 ::: {.issue-toc}
-
 :::
+
+---
 
 ## ECR Club: Sign‑Up for the Next Round!
 
@@ -146,6 +147,12 @@ Abstract submission deadline is **23 June 2026**.
 
 :::
 
+---
+
+## Recent Publications by Our Members
+
+::: {#refs}
+:::
 
 ---
 
