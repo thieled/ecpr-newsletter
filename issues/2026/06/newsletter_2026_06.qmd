@@ -63,10 +63,10 @@ nocite: |
 
 <!-- ===== CONTENT START ===== -->
 
-## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
+## ECPR PolCom Newsletter – {{< meta issue >}}/{{< meta year >}}
 
 ::: section
-In this month's newsletter, we have some exciting news: 
+In this month's newsletter of the ECPR Standing Group on Political Communication, we have some exciting news: 
 
 
 <!-- Table of Contents; Delete if not wished: -->
