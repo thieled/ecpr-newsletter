@@ -2,17 +2,17 @@
 
 ::: section
 
-The **Political Studies Association of Ireland (PSAI) Specialist Group in Computational Methods** invites paper submissions for panels at the **PSAI Annual Conference**, hosted by **University College Cork** on **16–18 October 2026**. The group is looking for empirical and methodological work applying computational approaches — text analysis, images-as-data, social networks, AI-driven methods — to political phenomena including rhetoric, legislative speech, campaigns, extremist communication, multilingual analysis, and emotion detection.
+The **PSAI Specialist Group in Computational Methods** invites paper submissions for panels at the **PSAI Annual Conference** at **University College Cork**, **16–18 October 2026**. We welcome work applying computational text analysis, images-as-data, social networks, or AI-driven methods to any political phenomenon. This year also features a joint panel with the Political Theory Specialist Group on the ethics of AI-driven methods, and a pre-conference workshop is planned.
 
-A highlight this year is a joint panel with the **Political Theory Specialist Group** on the *ethics and normative implications of AI-driven methods* — a timely addition for anyone working at the boundary of methodology and critical inquiry. A one-day pre-conference workshop on new computational applications in political research is also in the works.
+Organisers: **Nikita Khokhlov** and **Lorcan McLaren** (UCD). 
 
-The PSAI Annual Conference is famously informal and collegial, and the computational panels consistently attract engaged, constructive audiences. Organisers **Nikita Khokhlov** and **Lorcan McLaren** (both at University College Dublin) actively encourage applications from women, racial and ethnic minorities, and junior scholars — and limited funding is available for postgraduate students and early-career PSAI members.
+Abstract submission deadline is **23 June 2026**.
 
-Submit a title, author details, professional status, and a ≤ 300-word abstract via the form below by **23 June 2026**.
+<button class="readmore"><a href="https://forms.gle/VKS7xcqsE5gTDNj57">Submit here!</a></button>
 
-**Deadline:** **23 June 2026**
+<button class="readmore"><a href="https://thieled.github.io/ecpr-newsletter/issues/2026/06/summarize/cfp_psai.txt">Full call here.</a></button>
 
-<button class="readmore"><a href="https://forms.gle/VKS7xcqsE5gTDNj57">Read more</a></button>
+
 
 :::
 

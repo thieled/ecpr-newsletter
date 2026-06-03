@@ -1,12 +1,8 @@
-## Postdoc — Media, Inequality, and Democratic Support (EDGE)
+## Postdoc Position at ASCoR: — Media, Inequality, and Democratic Support (EDGE)
 
 ::: section
 
-**Kathleen Beckers** and **Katjana Gattermann** are recruiting a postdoctoral researcher for the Horizon Europe project *EDGE* ("Enhancing Democratic Support under Conditions of Geographic and Intersectional Inequalities in Europe") at the **Amsterdam School of Communication Research (ASCoR)**. The role sits at the intersection of media framing, survey experiments, and comparative political communication, with a focus on how digital information environments shape public perceptions of inequality, blame attribution, and democratic support.
-
-The postdoc joins an international consortium coordinated by **GESIS (Cologne)** and is embedded in ASCoR's **Political Communication & Journalism** group. The position is fully funded for 30 months (with a possible 6-month teaching extension), starts **1 October 2026**, and carries a salary of **€ 4,412–€ 6,433 gross per month**. Candidates should have a background in communication science, political science, journalism studies, or a related field, with strong quantitative research skills.
-
-Questions can be directed to Kathleen Beckers (k.a.e.beckers@uva.nl) or Katjana Gattermann (k.gattermann@uva.nl).
+**Kathleen Beckers** and **Katjana Gattermann** are recruiting a postdoc for the Horizon Europe *EDGE* project at **ASCoR (University of Amsterdam)**. The role focuses on how media and digital information environments shape public perceptions of inequality and democratic support, combining media framing, survey experiments, and comparative approaches within an international consortium coordinated by **GESIS (Cologne)**. The position is fully funded for 30 months, starts **1 October 2026**. Strong quantitative background required.
 
 Deadline: **7 June 2026**
 

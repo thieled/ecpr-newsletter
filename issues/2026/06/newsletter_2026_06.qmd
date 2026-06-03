@@ -71,49 +71,92 @@ In this newsletter, we have some exciting news:
 
 <!-- Table of Contents; Delete if not wished: -->
 ::: {.issue-toc}
-:::
 
 :::
 
-## Biggest News
+## ECR Club: Sign‑Up for the Next Round!
 
 ::: section
-![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<figure style="float:right; width:280px; margin:0 0 10px 18px;">
+  <a href="https://thieled.github.io/ecpr-newsletter/issues/2026/06/img/ecr_screen.jpg" target="_blank">
+    <img src="https://thieled.github.io/ecpr-newsletter/issues/2026/06/img/ecr_screen.jpg"
+         alt="Screenshot of ECR session"
+         style="width:100%; height:auto; border-radius:4px; display:block;">
+  </a>
+  <figcaption style="font-size:11px; color:#6b7280; margin-top:5px; line-height:1.4;">
+    Screenshot of Doris Bukman's (UvA) ECR presentation on "Publishers' power: The influence of ownership on the framing of media mergers", May 12, 2026. Discussant: Sophie Lecheler (U Vienna)
+  </figcaption>
+</figure>
+
+Our **Early Carreer Researcher (ECR) Club** is going in its next round! The club is a recurring series offering early-career researchers a chance to present ongoing work and receive structured feedback from a dedicated discussant. Sessions are held online around lunchtime on a **Tuesday**, and the format is explicitly designed to be supportive and developmental rather than high-stakes.
+
+To sign up as a presenter, you will need to provide your name and contact details, your seniority level (PhD year or year of defence for postdocs), a working title and short abstract, and your preferred month to present. You may also suggest potential discussants. Sign-up is via the form below.
+
+<button class="readmore"><a href="https://uva.fra1.qualtrics.com/jfe/form/SV_3IewzsN0fpXLEpg">Sign up here!</a></button>
+
+
+:::
+
+
+
+:::
+
+## Deadline Extended: Junior Scholar Mentoring at ECPR in Krakow
+
+::: section
+![](https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/Krakow_sq.png){.newsimg width="180"}
+
+We are extending our **deadline** for our **Junior – Senior PolCom Mentoring** initiative at the ECPR General Conference 2026 in Krakow until **June 16, 2026**!
+
+Read more and register here:
 
 <button class="readmore">
-<a href="https://example.com">Read more</a>
+<a href="https://uantwerpen.eu.qualtrics.com/jfe/form/SV_do6RSAAiYnAEiSq">Read more & sign up</a>
 </button>
-:::
-
-
-## More News
-
-::: section
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 :::
 
 ---
 
-## Conferences
+## Postdoc Position at ASCoR: — Media, Inequality, and Democratic Support (EDGE)
 
-::: job
-**Title:** ECPR General Conference  
-**Location:** University of Dublin  
-**Deadline:** 1 Jan 2023  
-**Description:** Short blurb describing the CfP  
+::: section
 
-<button class="readmore"><a href="https://example.com">Read more</a></button>
+**Kathleen Beckers** and **Katjana Gattermann** are recruiting a postdoc for the Horizon Europe *EDGE* project at **ASCoR (University of Amsterdam)**. The role focuses on how media and digital information environments shape public perceptions of inequality and democratic support, combining media framing, survey experiments, and comparative approaches within an international consortium coordinated by **GESIS (Cologne)**. The position is fully funded for 30 months, starts **1 October 2026**. Strong quantitative background required.
+
+Deadline: **7 June 2026**
+
+<button class="readmore"><a href="https://werkenbij.uva.nl/en/vacancies/postdoc-position-media-inequality-and-democratic-support-netherlands-15076">Read more</a></button>
+
 :::
 
-::: job
-**Title:** ECREA  
-**Location:** University of Brno  
-**Deadline:** NN  
-**Description:** Short blurb describing the CfP  
+## CfP: PSAI Computational Methods Panels
 
-<button class="readmore"><a href="https://example.com">Read more</a></button>
+::: section
+
+The **PSAI Specialist Group in Computational Methods** invites paper submissions for panels at the **PSAI Annual Conference** at **University College Cork**, **16–18 October 2026**. We welcome work applying computational text analysis, images-as-data, social networks, or AI-driven methods to any political phenomenon. This year also features a joint panel with the Political Theory Specialist Group on the ethics of AI-driven methods, and a pre-conference workshop is planned.
+
+Organisers: **Nikita Khokhlov** and **Lorcan McLaren** (UCD). 
+
+Abstract submission deadline is **23 June 2026**.
+
+<button class="readmore"><a href="https://forms.gle/VKS7xcqsE5gTDNj57">Submit here!</a></button>
+
+<button class="readmore"><a href="https://thieled.github.io/ecpr-newsletter/issues/2026/06/summarize/cfp_psai.txt">Full call here (.txt)</a></button>
+
+:::
+
+
+---
+
+## CfP
+
+::: job
+**Title:** PSAI Computational Methods Panels (PSAI Annual Conference 2026)  
+**Location:** University College Cork, Cork, Ireland  
+**Deadline:** 23 June 2026  
+**Description:** Call for papers for computational methods panel sessions at the PSAI Annual Conference, including a joint AI ethics panel and a planned pre-conference workshop. Limited funding available for ECRs and postgraduate students.  
+<button class="readmore"><a href="https://forms.gle/VKS7xcqsE5gTDNj57">Read more</a></button>
 :::
 
 ---
@@ -121,12 +164,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit a
 ## Job Bulletin
 
 ::: job
-**Title:** Assistant Professor (Tenure-Track)  
-**Location:** Universitat Pompeu Fabra  
-**Deadline:** 3 Feb 2025  
-**Description:** Short blurb describing the job.  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
+**Title:** Postdoctoral Researcher  
+**Location:** University of Amsterdam (ASCoR), Amsterdam, Netherlands  
+**Deadline:** 7 June 2026  
+**Description:** Fully funded 30-month postdoc in the Horizon Europe project Media, Inequality, and Democratic Support (EDGE).  
+<button class="readmore"><a href="https://werkenbij.uva.nl/en/vacancies/postdoc-position-media-inequality-and-democratic-support-netherlands-15076">Submit</a></button>
 :::
 
 

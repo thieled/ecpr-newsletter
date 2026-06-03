@@ -2,11 +2,7 @@
 
 ::: section
 
-*Revista Sintaxis* (ISSN: 2594-1682), published by the Centro de Investigación para la Comunicación Aplicada at the Universidad Anáhuac México, invites submissions to its special monograph on **"Relationships and Conflicts between Government, Society, and Media in Scenarios of Digital Technological Convergence"** (Issue No. 18, January 2027).
-
-The call is framed around a central tension of our time: how digital convergence is redrawing the boundaries between civil society, state, and media — opening new spaces for participation and transparency while simultaneously enabling censorship, surveillance, disinformation, and platform-driven power asymmetries. Guest editors are **Dr. James A. Dettleff** (Pontificia Universidad Católica del Perú), **Dr. Nicolás Rotelli** (Universidad Blas Pascal, Córdoba), and **Dra. Patricia Torreblanca** (UNAM).
-
-Thematic axes include digital culture and new narratives, AI and disinformation, digital political violence, freedom of expression versus regulatory control, media concentration and polarization, and the transformation of journalism and media business models. The journal welcomes work from communication studies, political science, sociology, cultural studies, gender studies, and related disciplines — using qualitative, quantitative, or mixed methods. Contributions must be original and unpublished.
+*Revista Sintaxis* (Universidad Anáhuac México) calls for original submissions to Issue No. 18 on **government–society–media relations in the age of digital convergence** (publication January 2027). Topics include regulation and censorship, disinformation and AI, digital political violence, media concentration, and civic participation. All methods and relevant disciplines welcome. Guest editors: **Dr. James A. Dettleff** (PUCP), **Dr. Nicolás Rotelli** (UBP Córdoba), **Dra. Patricia Torreblanca** (UNAM).
 
 Deadline: **August 30, 2026**
 
