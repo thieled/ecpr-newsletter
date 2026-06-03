@@ -2,22 +2,22 @@
 
 ::: section
 
-The NeFCA Political Communication division invites you to the final seminar of this semester’s *PolCom Classics* series: *PolCom Classics — Artificial Intelligence*, presented by **Sanne Kruikemeier** (**Wageningen University & Research**). The talk will explore the role of artificial intelligence in contemporary political communication and its implications for media, public debate, and research on digital political behavior.
+The **NeFCA Political Communication division** (Netherlands–Flanders Communication Association) invites you to the final seminar of this semester's *PolCom Classics* series. **Sanne Kruikemeier** (Wageningen University & Research) will discuss the role of artificial intelligence in contemporary political communication — covering how AI shapes information flows, audience behaviour, and the broader implications for media and democratic processes.
 
-The online session will be held via **Microsoft Teams** on **June 24** from **12:00 to 13:00**. The event is free and aimed at both early-career and senior scholars; registration is required. Please register to secure your place.
+The session is free, online via **Microsoft Teams**, and open to researchers at all career stages. It's a concise and accessible lunchtime slot — worth registering for even if AI isn't your primary area.
 
-**When:** **June 24**, **12:00–13:00** (online)
+**When:** **June 24**, **12:00–13:00** (online, Microsoft Teams)
 
-<button class="readmore"><a href="https://forms.gle/Rotfwoi52xreXsap9">Read more</a></button>
+<button class="readmore"><a href="https://forms.gle/Rotfwoi52xreXsap9">Register</a></button>
 
 :::
 
 ## Call – Short
 
 ::: job
-**Title:** PolCom Classics — Artificial Intelligence (seminar)  
+**Title:** PolCom Classics — Artificial Intelligence (NeFCA seminar)  
 **Location:** Online (Microsoft Teams)  
 **Deadline:** –  
-**Description:** Online seminar by **Sanne Kruikemeier** (WUR) on AI’s role and implications for political communication; free with required registration.  
-<button class="readmore"><a href="https://forms.gle/Rotfwoi52xreXsap9">Read more</a></button>
+**Description:** Free online lunchtime seminar by Sanne Kruikemeier (WUR) on AI's role in political communication. Final session of the NeFCA PolCom Classics series this semester. Registration required.  
+<button class="readmore"><a href="https://forms.gle/Rotfwoi52xreXsap9">Register</a></button>
 :::
