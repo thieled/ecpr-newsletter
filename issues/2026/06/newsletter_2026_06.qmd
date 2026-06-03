@@ -149,35 +149,6 @@ Abstract submission deadline is **23 June 2026**.
 
 ---
 
-## CfP
-
-::: job
-**Title:** PSAI Computational Methods Panels (PSAI Annual Conference 2026)  
-**Location:** University College Cork, Cork, Ireland  
-**Deadline:** 23 June 2026  
-**Description:** Call for papers for computational methods panel sessions at the PSAI Annual Conference, including a joint AI ethics panel and a planned pre-conference workshop. Limited funding available for ECRs and postgraduate students.  
-<button class="readmore"><a href="https://forms.gle/VKS7xcqsE5gTDNj57">Read more</a></button>
-:::
-
----
-
-## Job Bulletin
-
-::: job
-**Title:** Postdoctoral Researcher  
-**Location:** University of Amsterdam (ASCoR), Amsterdam, Netherlands  
-**Deadline:** 7 June 2026  
-**Description:** Fully funded 30-month postdoc in the Horizon Europe project Media, Inequality, and Democratic Support (EDGE).  
-<button class="readmore"><a href="https://werkenbij.uva.nl/en/vacancies/postdoc-position-media-inequality-and-democratic-support-netherlands-15076">Submit</a></button>
-:::
-
-
-## Recent Publications by Our Members
-
-::: {#refs}
-:::
-
-
 <!-- ===== FOOTER ===== -->
 
 <div class="footer">
