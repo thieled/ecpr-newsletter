@@ -1,0 +1,42 @@
+
+Call for Papers for:
+
+PSAI Computational Methods Panels Call for Papers [Deadline: 23 June] 
+
+The Political Studies Association of Ireland (PSAI) Specialist Group in Computational Methods invites paper submissions for the Annual Conference of the PSAI, which will be hosted by the University College Cork on 16-18 October 2026:
+
+https://www.psai.ie/conferences/annual-conferences/
+
+Our Specialist Group seeks to organise a set of panels (3-4 papers each) around the application of computational methods (e.g., computational text analysis, images-as-data, social networks) to the domain of politics. Topics include, but are not limited to:
+
+    Political rhetoric
+    Legislative speech
+    Campaigns and social media
+    Politics and AI
+    Extremist communication in online spaces
+    Authoritarian politics
+    Multilingual text analysis
+    Using images or text to study (political) communication and political competition
+    Emotion detection in images and text
+
+This year, we propose an additional joint panel with the Political Theory Specialist Group. This joint panel invites contributions at the intersection of methodological innovation and the ethics of AI. We welcome papers that critically assess what new AI-driven methods make possible and what they risk obscuring in academic research, as well as those that address the normative challenges and ethical implications arising from the use of computational tools in social sciences.
+
+Finally, we are planning to organise a one-day pre-conference workshop on the applications of new computational methods to the study of politics. The details will be confirmed later.
+
+The PSAI Annual Conference is a great and informal conference that offers ample opportunities to network. Participants in our computational methods panels are sure to receive constructive and useful feedback on their work. Last year, our Specialist Group hosted five panels featuring 14 papers. We strongly encourage applications from women, racial and ethnic minorities, and junior scholars. Limited funding is available for postgraduate students and early career researchers who are PSAI members. See here for details:
+http://www.psai.ie/funding-calls/.
+
+Those interested should submit an abstract using this google form: https://forms.gle/VKS7xcqsE5gTDNj57 by 23 June 2026. This abstract should include:
+
+    Paper title,
+    Author name(s) and affiliation(s),
+    Professional status (PhD student, postdoc, lecturer, professor, independent scholar),
+    Abstract of the proposed paper (no more than 300 words).
+
+Please get in touch if you have any questions.
+
+Nikita Khokhlov, University College Dublin
+nikita.khokhlov@ucd.ie
+
+Lorcan McLaren, University College Dublin
+lorcan.mclaren@ucdconnect.ie
