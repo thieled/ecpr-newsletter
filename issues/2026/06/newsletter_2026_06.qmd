@@ -63,9 +63,12 @@ nocite: |
 
 <!-- ===== CONTENT START ===== -->
 
-## ECPR PolCom Newsletter – {{< meta issue >}}/{{< meta year >}}
+## ECPR PolCom Newsletter – {{< meta issue >}}/{{< meta year a>}}
 
 ::: section
+
+**CORRECTION:** *Here, we disseminate the newsletter again, with correctly rendered hyperlinks. Please excuse the inconvenience!*
+
 In this month's newsletter of the ECPR Standing Group on Political Communication, we have some exciting news: 
 
 
@@ -94,8 +97,7 @@ Our **Early Carreer Researcher (ECR) Club** is going in its next round! The club
 
 To sign up as a presenter, you will need to provide your name and contact details, your seniority level (PhD year or year of defence for postdocs), a working title and short abstract, and your preferred month to present. You may also suggest potential discussants. Sign-up is via the form below.
 
-<button class="readmore"><a href="https://uva.fra1.qualtrics.com/jfe/form/SV_3IewzsN0fpXLEpg">Sign up here!</a></button>
-
+[Sign up here!](https://uva.fra1.qualtrics.com/jfe/form/SV_3IewzsN0fpXLEpg){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
 
 :::
 
@@ -112,10 +114,11 @@ We are extending our **deadline** for our **Junior – Senior PolCom Mentoring**
 
 Read more and register here:
 
-<button class="readmore">
-<a href="https://uantwerpen.eu.qualtrics.com/jfe/form/SV_do6RSAAiYnAEiSq">Read more & sign up</a>
-</button>
+[Read more & Sign up!](https://uantwerpen.eu.qualtrics.com/jfe/form/SV_do6RSAAiYnAEiSq){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
+
 :::
+
 
 ---
 
@@ -127,7 +130,9 @@ Read more and register here:
 
 Deadline: **7 June 2026**
 
-<button class="readmore"><a href="https://werkenbij.uva.nl/en/vacancies/postdoc-position-media-inequality-and-democratic-support-netherlands-15076">Read more</a></button>
+
+[Read more](https://werkenbij.uva.nl/en/vacancies/postdoc-position-media-inequality-and-democratic-support-netherlands-15076){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
 
 :::
 
@@ -141,9 +146,10 @@ Organisers: **Nikita Khokhlov** and **Lorcan McLaren** (UCD).
 
 Abstract submission deadline is **23 June 2026**.
 
-<button class="readmore"><a href="https://forms.gle/VKS7xcqsE5gTDNj57">Submit here!</a></button>
 
-<button class="readmore"><a href="https://thieled.github.io/ecpr-newsletter/issues/2026/06/summarize/cfp_psai.txt">Full call here (.txt)</a></button>
+[Submit here](https://forms.gle/VKS7xcqsE5gTDNj57){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
+[Full call here](https://thieled.github.io/ecpr-newsletter/issues/2026/06/summarize/cfp_psai.txt){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
 
 :::
 
