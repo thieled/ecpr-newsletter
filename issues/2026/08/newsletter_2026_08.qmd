@@ -73,6 +73,8 @@ We hope you are enjoying a restful summer break 🌴😎🏖️, and — given t
 ::: {.issue-toc}
 :::
 
+---
+
 ## PolCom Section at ECPR Krakow
 
 ::: section
@@ -97,6 +99,21 @@ Room, date and time for the Standing Group **Business Meeting** and the [ECR Men
 See the full section overview, abstracts and paper listings here:
 
 [View section details](https://ecpr.eu/Events/Event/SectionDetails/1677){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
+:::
+
+---
+
+
+## ECPR Joint Sessions - Reach out For Workshop Endorsement
+
+::: section
+
+The call for the ECPR Joint Sessions of Workshops, taking place at the **University of Trieste, 1–4 June 2027**, is now open. The deadline for submissions to ECPR is **15 September 2026**..
+
+Each Standing Group may endorse one workshop proposal. If you are putting together a workshop proposal that fits the scope of Political Communication, send it our way by **end of August 2026** — we will review submissions and endorse the strongest one on behalf of the Standing Group.
+
+[Read more](https://ecpr.eu/Events/369){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
 
 :::
 
