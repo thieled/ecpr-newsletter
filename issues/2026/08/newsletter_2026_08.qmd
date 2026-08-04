@@ -66,8 +66,8 @@ nocite: |
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
 
 ::: section
-In this newsletter, we have some exciting news: 
 
+We hope you are enjoying a restful summer break 🌴😎🏖️, and — given the heatwaves sweeping across many parts of Europe — that you are staying cool, hydrated, and safe. In this newsletter, we have some exciting news to share:
 
 <!-- Table of Contents; Delete if not wished: -->
 ::: {.issue-toc}
@@ -107,14 +107,15 @@ See the full section overview, abstracts and paper listings here:
 
 ::: section
 
-The Research Institute Transitions at **University of Namur** invites applications for a two‑year postdoctoral position on the ERC‑funded project *POLSTYLE — New trends or old habits? Stability and changes of political styles since 1960*, coordinated by **Prof. Jeremy Dodeigne**. POLSTYLE maps long‑term changes in political communication using the Political Hostility Scale (PHOS) and unique datasets from parliamentary debates, television archives and social media, combining theory, comparative analysis and cutting‑edge NLP methods.
+The Research Institute Transitions at **University of Namur** invites applications for a two‑year postdoctoral position on the ERC‑funded project *POLSTYLE — New trends or old habits? Stability and changes of political styles since 1960*, coordinated by **Prof. Jeremy Dodeigne**. POLSTYLE maps long‑term changes in political communication, combining comparative analysis with cutting‑edge NLP methods.
 
-The appointment is ideal for a candidate with a PhD in comparative politics and strong interests in political communication, democratic erosion, party politics and/or radical right studies. The postdoc will develop an independent research agenda within the project (topics include mainstreaming of hostile rhetoric, spill‑over across arenas, effects on citizens, and party communication strategies), lead publications, and work with a team using advanced computational tools; computational support is provided. The position is based in **Namur, Belgium**, offers mentorship and conference funding, and starts **1 or 15 October 2026**. Apply by sending a single PDF (cover letter, 2‑page research report, CV, and three referees) to polstyle@unamur.be.
+Ideal candidates hold a PhD in comparative politics with strong interests in political communication, democratic erosion, or party politics, and will develop an independent research agenda within the project. The position is based in **Namur, Belgium**, and starts **1 or 15 October 2026**. Apply by sending a single PDF (cover letter, research report, CV, and three referees) to polstyle@unamur.be.
 
 **Deadline: 15 August 2026**
 
-[Read more](https://euraxess.ec.europa.eu/jobs/449343){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+[Job Offer](https://euraxess.ec.europa.eu/jobs/449343){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
 
+[Download Job Description](https://thieled.github.io/ecpr-newsletter/issues/2026/08/doc/job_Postdoc_erc_Polstyle_UNamur2026.pdf){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
 
 :::
 
@@ -123,18 +124,31 @@ The appointment is ideal for a candidate with a PhD in comparative politics and 
 
 ::: section
 
-The Italian Association of Political Communication (AssoComPol) invites submissions to *Beyond Fragmentation? Contemporary Forms of Belonging Between Ideology and Narrative*, its annual conference exploring how new modes of political-cultural belonging emerge amid fragmentation, polarization, and digital mediation. The programme welcomes theoretical and empirical work on themes such as values and political culture, pre-political citizenship and affect, online communities and subcultures, journalism and alternative news ecosystems, the role of platforms and AI, and methodological approaches to cultural transformation.
+The Italian Association of Political Communication (AssoComPol) invites submissions to *Beyond Fragmentation? Contemporary Forms of Belonging Between Ideology and Narrative*, its annual conference exploring new modes of political-cultural belonging amid fragmentation, polarization, and digital mediation. Topics include political culture, online communities, journalism, platforms and AI, and methods for studying cultural transformation.
 
-The conference will take place at the Departments of Political Science (**University of Perugia**) and International Human and Social Sciences (**University for Foreigners of Perugia**) in **Perugia, Italy**, **10–12 December 2026**. The Scientific Committee includes scholars such as **Paolo Mancini** and **Giampietro Mazzoleni**. Submit extended abstracts (5000 characters) and required metadata via the conference submission site by **16 September 2026**. Notifications will be sent **10–12 October 2026**; full papers are due **30 November 2026**. 
-
-Submit your proposal and consult abstract instructions online.
+The conference takes place **10–12 December 2026** in **Perugia, Italy**, hosted by the University of Perugia and the University for Foreigners of Perugia. Submit extended abstracts (5000 characters) by **16 September 2026**; notifications follow **10–12 October**, with full papers due **30 November 2026**.
 
 Deadline: **16 September 2026**
 
-[Read more](https://compol.confnow.eu/){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+[Download CfP](https://thieled.github.io/ecpr-newsletter/issues/2026/08/doc/CfP_Call_AssoComPol26_EN.pdf){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
 
 :::
 
+---
+
+
+## Input for Next Newsletter
+
+::: section
+
+If you have any news you would like to share in the **next newsletter** of the ECPR Standing Group on Political Communication, please send it to [daniel.thiele@fu-berlin.de](mailto:daniel.thiele@fu-berlin.de?subject=ecpr-polcom-input) by **August 15th, 2026.**
+
+This may include calls for papers or abstracts, event announcements, vacancies relevant to the political communication community, or recent publications by our members (peer-reviewed articles or monographs).
+
+[Send us your input!](mailto:daniel.thiele@fu-berlin.de?subject=ecpr-polcom-input){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
+:::
 
 ---
 
