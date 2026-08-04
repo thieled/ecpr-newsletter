@@ -73,61 +73,70 @@ In this newsletter, we have some exciting news:
 ::: {.issue-toc}
 :::
 
-:::
-
-## Biggest News
+## PolCom Section at ECPR Krakow
 
 ::: section
-![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
+![](https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/Krakow_sq.png){.newsimg width="180"}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+The programme for our section, [**"Political Communication Between Disruptive Technologies and Democratic Backsliding,"**](https://ecpr.eu/Events/Event/SectionDetails/1677) at the ECPR General Conference 2026 in Krakow (8–11 September) is now live. Across nine panels, papers address AI and platform governance, disinformation, election campaigning, authenticity and emotion, media trust, migration discourse, polarization, and political communication in war and conflict. All panels meet in person at the Faculty of International and Political Studies (Ground Floor, Room 08).
 
-<button class="readmore">
-<a href="https://example.com">Read more</a>
-</button>
+| Date | Time (CEST) | Panel |
+|---|---|---|
+| Tue 08/09 | 09:00–10:45 | [Platforms, Algorithms, and Information Control](https://ecpr.eu/Events/Event/PanelDetails/17545) |
+| Tue 08/09 | 11:15–13:00 | [Conspiracy Narratives and Elite Communication](https://ecpr.eu/Events/Event/PanelDetails/17538) |
+| Tue 08/09 | 14:00–15:45 | [War, Conflict, and Information Politics](https://ecpr.eu/Events/Event/PanelDetails/17541) |
+| Tue 08/09 | 16:15–18:00 | [Migration, Intolerance, and Moral Boundaries](https://ecpr.eu/Events/Event/PanelDetails/17542) |
+| Wed 09/09 | 11:15–13:00 | [Authenticity and Emotions](https://ecpr.eu/Events/Event/PanelDetails/17540) |
+| Wed 09/09 | 16:15–18:00 | [Elections, Campaigning, and Political Advertising](https://ecpr.eu/Events/Event/PanelDetails/17544) |
+| Thu 10/09 | 09:00–10:45 | [Disinformation, Falsehoods, and Democratic Resilience](https://ecpr.eu/Events/Event/PanelDetails/17537) |
+| Thu 10/09 | 11:15–13:00 | [Political Alignment, Identity, and Polarization](https://ecpr.eu/Events/Event/PanelDetails/17546) |
+| Thu 10/09 | 16:15–18:00 | [Media, Trust, and Democratic Accountability](https://ecpr.eu/Events/Event/PanelDetails/17536) |
+
+Room, date and time for the Standing Group **Business Meeting** and the [ECR Mentoring Session](https://ecpr.eu/Events/Event/PanelDetails/18012) are still to be announced.
+
+See the full section overview, abstracts and paper listings here:
+
+[View section details](https://ecpr.eu/Events/Event/SectionDetails/1677){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
 :::
 
-
-## More News
-
-::: section
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-:::
 
 ---
 
-## Conferences
+## Vacany: Postdoctoral Researcher at U Namur
 
-::: job
-**Title:** ECPR General Conference  
-**Location:** University of Dublin  
-**Deadline:** 1 Jan 2023  
-**Description:** Short blurb describing the CfP  
+::: section
 
-<button class="readmore"><a href="https://example.com">Read more</a></button>
+The Research Institute Transitions at **University of Namur** invites applications for a two‑year postdoctoral position on the ERC‑funded project *POLSTYLE — New trends or old habits? Stability and changes of political styles since 1960*, coordinated by **Prof. Jeremy Dodeigne**. POLSTYLE maps long‑term changes in political communication using the Political Hostility Scale (PHOS) and unique datasets from parliamentary debates, television archives and social media, combining theory, comparative analysis and cutting‑edge NLP methods.
+
+The appointment is ideal for a candidate with a PhD in comparative politics and strong interests in political communication, democratic erosion, party politics and/or radical right studies. The postdoc will develop an independent research agenda within the project (topics include mainstreaming of hostile rhetoric, spill‑over across arenas, effects on citizens, and party communication strategies), lead publications, and work with a team using advanced computational tools; computational support is provided. The position is based in **Namur, Belgium**, offers mentorship and conference funding, and starts **1 or 15 October 2026**. Apply by sending a single PDF (cover letter, 2‑page research report, CV, and three referees) to polstyle@unamur.be.
+
+**Deadline: 15 August 2026**
+
+[Read more](https://euraxess.ec.europa.eu/jobs/449343){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
+
 :::
 
-::: job
-**Title:** ECREA  
-**Location:** University of Brno  
-**Deadline:** NN  
-**Description:** Short blurb describing the CfP  
 
-<button class="readmore"><a href="https://example.com">Read more</a></button>
+## CfP: Beyond Fragmentation? (AssoComPol Annual Conference)
+
+::: section
+
+The Italian Association of Political Communication (AssoComPol) invites submissions to *Beyond Fragmentation? Contemporary Forms of Belonging Between Ideology and Narrative*, its annual conference exploring how new modes of political-cultural belonging emerge amid fragmentation, polarization, and digital mediation. The programme welcomes theoretical and empirical work on themes such as values and political culture, pre-political citizenship and affect, online communities and subcultures, journalism and alternative news ecosystems, the role of platforms and AI, and methodological approaches to cultural transformation.
+
+The conference will take place at the Departments of Political Science (**University of Perugia**) and International Human and Social Sciences (**University for Foreigners of Perugia**) in **Perugia, Italy**, **10–12 December 2026**. The Scientific Committee includes scholars such as **Paolo Mancini** and **Giampietro Mazzoleni**. Submit extended abstracts (5000 characters) and required metadata via the conference submission site by **16 September 2026**. Notifications will be sent **10–12 October 2026**; full papers are due **30 November 2026**. 
+
+Submit your proposal and consult abstract instructions online.
+
+Deadline: **16 September 2026**
+
+[Read more](https://compol.confnow.eu/){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
 :::
+
 
 ---
-
-## Job Bulletin
-
-::: job
-**Title:** Assistant Professor (Tenure-Track)  
-**Location:** Universitat Pompeu Fabra  
-**Deadline:** 3 Feb 2025  
-**Description:** Short blurb describing the job.  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
-:::
 
 
 ## Recent Publications by Our Members
