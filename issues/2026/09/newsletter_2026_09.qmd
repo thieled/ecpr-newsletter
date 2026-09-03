@@ -34,7 +34,6 @@ csl: publications/apa.csl
 nocite: |
   @*
 ---
----
 
 <!-- ===== OUTLOOK CENTERING WRAPPER ===== -->
 
@@ -66,68 +65,110 @@ nocite: |
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
 
 ::: section
-In this newsletter, we have some exciting news: 
+The **ECPR General Conference in Krakow** is just around the corner! We can't wait to reconnect with so many of you in person, catch up on each other's work, and celebrate another great year for our section. To get you in the mood, here's a packed newsletter with our full panel programme, a warm congratulations to our Best Paper Award winners, and a few more things you won't want to miss:
 
 
 <!-- Table of Contents; Delete if not wished: -->
 ::: {.issue-toc}
 :::
 
-:::
-
-## Biggest News
+## PolCom Events at ECPR Krakow
 
 ::: section
-![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
+![](https://thieled.github.io/ecpr-newsletter/issues/2025/12/img/Krakow_sq.png){.newsimg width="180"}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Here is the updated program for our section, [**"Political Communication Between Disruptive Technologies and Democratic Backsliding,"**](https://ecpr.eu/Events/Event/SectionDetails/1677) at the upcoming General Conference.
 
-<button class="readmore">
-<a href="https://example.com">Read more</a>
-</button>
-:::
+#### Location
+
+All panels meet in person at the Faculty of International and Political Studies Ground Floor, **Room 08**. The business meeting will be in **Room 10** in the same building. 
+
+[View map](https://ecpr.eu/Events/Event/Content?ID=1623&EventID=349){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
+| Date | Time (CEST) | Panel |
+|---|---|---|
+| Tue 08/09 | 09:00–10:45 | [Platforms, Algorithms, and Information Control](https://ecpr.eu/Events/Event/PanelDetails/17545) |
+| Tue 08/09 | 11:15–13:00 | [Conspiracy Narratives and Elite Communication](https://ecpr.eu/Events/Event/PanelDetails/17538) |
+| Tue 08/09 | 14:00–15:45 | [War, Conflict, and Information Politics](https://ecpr.eu/Events/Event/PanelDetails/17541) |
+| Tue 08/09 | 16:15–18:00 | [Migration, Intolerance, and Moral Boundaries](https://ecpr.eu/Events/Event/PanelDetails/17542) |
+| Wed 09/09 | 11:15–13:00 | [Authenticity and Emotions](https://ecpr.eu/Events/Event/PanelDetails/17540) |
+| Wed 09/09 | 16:15–18:00 | [Elections, Campaigning, and Political Advertising](https://ecpr.eu/Events/Event/PanelDetails/17544) |
+| Thu 10/09 | 09:00–10:45 | [Disinformation, Falsehoods, and Democratic Resilience](https://ecpr.eu/Events/Event/PanelDetails/17537) |
+| Thu 10/09 | 11:15–13:00 | [Political Alignment, Identity, and Polarization](https://ecpr.eu/Events/Event/PanelDetails/17546) |
+| Thu 10/09 | 16:15–18:00 | [Media, Trust, and Democratic Accountability](https://ecpr.eu/Events/Event/PanelDetails/17536) |
+| Thu 10/09 | 18:15–19:15 | Business Meeting of the Political Communication meeting |
+| Thu 10/09 | 20:00 | Dinner & Drinks (self-payed, location tba) |
+
+See the full section overview, abstracts and paper listings here:
+
+[View section details](https://ecpr.eu/Events/Event/SectionDetails/1677){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
+#### Business Meeting
+
+Would you like to help shape the PolCom Group's activities? Come to our **business meeting** on **Thursday, 10 Sep, 18:15-19:15 in Room 10**, Faculty of International and Political Studies Ground Floor.
+
+#### Social Event - Dinner & Drinks
+
+After the business meeting, there will be an excellent **networking opportunity** for networking: Together with our section chairs, the *Standing Groups on Political Methodology*, and the *Research Network on Digital Authoritarianism* we are organizing a joint **dinner**. 
+
+We cannot cover participants’ costs, but we will choose an affordable venue. If you would like to attend, please take 30 seconds to complete [this form](https://uantwerpen.eu.qualtrics.com/jfe/form/SV_25gcUfsXodcpjz8) by 7 September so we can book a venue that offers the best accommodation. 
+
+[RSVP - Dinner](https://uantwerpen.eu.qualtrics.com/jfe/form/SV_25gcUfsXodcpjz8){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
 
 
-## More News
-
-::: section
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 :::
 
 ---
 
-## Conferences
+## Best Paper Award at the Political Communication Section 2025
 
-::: job
-**Title:** ECPR General Conference  
-**Location:** University of Dublin  
-**Deadline:** 1 Jan 2023  
-**Description:** Short blurb describing the CfP  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
-:::
-
-::: job
-**Title:** ECREA  
-**Location:** University of Brno  
-**Deadline:** NN  
-**Description:** Short blurb describing the CfP  
-
-<button class="readmore"><a href="https://example.com">Read more</a></button>
-:::
+We are delighted to congratulate the winners of the **Best Paper Award** of the Political Communication section at last year's General Conference, for their paper *Countering Anti-Minority Narratives: A Field Experiment in India*: **Sumitra Badrinathan** (American University), **Simon Chauchard** (University Carlos III Madrid & Instituto Carlos 3 – Juan March), **Niloufer Siddiqui** (University at Albany-SUNY), and **Abhyudaya Tyagi** (Columbia University). Congratulations to the authors on this outstanding achievement! The award will be presented to the authors at our **business meeting** in Krakow.
 
 ---
 
-## Job Bulletin
+## Volunteers Wanted: Best Paper Award Committee 2026
 
-::: job
-**Title:** Assistant Professor (Tenure-Track)  
-**Location:** Universitat Pompeu Fabra  
-**Deadline:** 3 Feb 2025  
-**Description:** Short blurb describing the job.  
+The ECPR Political Communication Standing Group is looking for **volunteers to serve on the jury** for this year's Best Paper Award.
 
-<button class="readmore"><a href="https://example.com">Read more</a></button>
-:::
+Jury members will evaluate a small selection of nominated papers presented within the Political Communication section at the ECPR General Conference. We aim to compose a diverse jury representing different career stages, institutions, countries, and areas of expertise.
+
+Would you be willing to serve as a jury member? Please indicate your interest and provide some brief information below. Further details and evaluation criteria will be shared with the selected jury members.
+
+Thank you for supporting our community and helping us recognise excellent research in political communication!
+
+[Volunteer as Jury Member](https://uantwerpen.eu.qualtrics.com/jfe/form/SV_cIJZ9vhiN8DhyRw){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
+
+---
+
+## ECR Club - Reminder to Sign‑Up
+
+![](https://thieled.github.io/ecpr-newsletter/assets/banners/ecr_club_sq.png){.newsimg width="180"}
+
+Here's a friendly reminder to sign up for the next round of our **Early Carreer Researcher (ECR) Club**. The club is a recurring series offering early-career researchers a chance to present ongoing work and receive structured feedback from a dedicated discussant. Sessions are held online around lunchtime on a **Tuesday**, and the format is explicitly designed to be supportive and developmental rather than high-stakes.
+
+To sign up as a presenter, you will need to provide your name and contact details, your seniority level (PhD year or year of defence for postdocs), a working title and short abstract, and your preferred month to present. You may also suggest potential discussants. Sign-up is via the form below.
+
+[Sign up here!](https://uva.fra1.qualtrics.com/jfe/form/SV_3IewzsN0fpXLEpg){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
+
+---
+
+
+## NeFCA PolCom Classics Webinar
+
+With the start of the new academic year, the [NeFCA PolCom](https://nefca.eu/divisions/political-communication/) division is also launching a new **PolCom Classics webinar**!
+
+This time, **Alessandro Nai** will tell us more about **(Negative) campaiging**.
+
+**When?** September 24, from 12:00-13:00
+**Where?** Online, through Microsoft Teams
+
+[Register here!](https://docs.google.com/forms/d/e/1FAIpQLScWFcsJMIQbfk44FRL3k8OJcwojezv8ZBtolGcADYzDDTgjcw/viewform){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
+
+---
+
 
 
 ## Recent Publications by Our Members
