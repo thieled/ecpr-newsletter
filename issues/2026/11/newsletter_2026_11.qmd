@@ -34,7 +34,6 @@ csl: publications/apa.csl
 nocite: |
   @*
 ---
----
 
 <!-- ===== OUTLOOK CENTERING WRAPPER ===== -->
 
@@ -66,8 +65,11 @@ nocite: |
 ## ECPR Newsletter – {{< meta issue >}}/{{< meta year >}}
 
 ::: section
-In this newsletter, we have some exciting news: 
+Dear members of the PolCom Standing Group,
 
+Krakow already feels a while ago, but we are still enjoying the memory of our panels, the lively business meeting, and the dinner afterwards. Thank you to everyone who presented, discussed, chaired, and simply joined us there.
+
+With the days getting shorter, it is time to plan for next year, and there are two ECPR deadlines coming up. In this issue, you will find:
 
 <!-- Table of Contents; Delete if not wished: -->
 ::: {.issue-toc}
@@ -75,60 +77,75 @@ In this newsletter, we have some exciting news:
 
 :::
 
-## Biggest News
+---
+
+## Call for Papers: Political Communication at ECPR Barcelona 2027
 
 ::: section
-![](https://thieled.github.io/ecpr-newsletter/assets/icons/roundel.png){.newsimg width="180"}
+![](https://thieled.github.io/ecpr-newsletter/issues/2026/11/img/barcelona.png){.newsimg width="180"}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+The call for papers for the **2027 ECPR General Conference** is now open! The conference takes place at **Pompeu Fabra University in Barcelona** from **7 to 10 September 2027**, and once again our Standing Group endorses a Political Communication section:
 
-<button class="readmore">
-<a href="https://example.com">Read more</a>
-</button>
-:::
+**S07 – [Beyond Us vs. Them: Unpacking the Roles and Ramifications of Hostile Political Communication](https://ecpr.eu/Events/Event/SectionDetails/1707)**
 
+We are happy to announce that we expect to fill **10 panels** in Barcelona. A big thank you to **Alessandro Nai** and **Annamijn Beijeman** (both University of Amsterdam), who chair the section this year.
 
-## More News
+#### What the section is about
 
-::: section
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Intergroup hostility is a defining feature of contemporary politics. The section asks what role political communication plays in these dynamics: does it condone, facilitate, or even fuel hostility between social and political groups, and which interventions might reduce it? The chairs particularly welcome papers and panels on:
+
+- **Group appeals in political information:** how elites and news media frame in-groups and out-groups, and how these appeals relate to societal cleavages and outgroup antipathy
+- **Exclusionary and dehumanising rhetoric:** intolerance, hate speech, and the pathways from dehumanising language to radicalisation and support for political violence
+- **Communicating aggressiveness:** attack politics beyond negative campaigning, incivility, disinformation within aggressive rhetoric, and its effects on apathy and news avoidance
+
+Indicative panel topics include information pathways to radicalisation, the nexus of political aggressiveness and entertainment, shifting norms of acceptable political speech, the "new political numbness", and weaponising AI for political attacks. True to the spirit of the section, strong submissions on political communication beyond these themes are just as welcome, as are all methods, types of data, and levels of analysis. Empirical papers are especially welcome, and theoretical work will be considered.
+
+**Deadline:** Fri 8 Jan 2027 (midnight GMT)
+
+[View section call](https://ecpr.eu/Events/Event/SectionDetails/1707){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"} [Submit your proposal](https://ecpr.eu/GeneralConference){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
 :::
 
 ---
 
-## Conferences
+## Early-Career Researchers: Join Our ECR Club!
 
-::: job
-**Title:** ECPR General Conference  
-**Location:** University of Dublin  
-**Deadline:** 1 Jan 2023  
-**Description:** Short blurb describing the CfP  
+![](https://thieled.github.io/ecpr-newsletter/assets/banners/ecr_club_sq.png){.newsimg width="180"}
 
-<button class="readmore"><a href="https://example.com">Read more</a></button>
-:::
+Are you a PhD student or postdoc working on political communication? Do you have a paper you would love to get feedback on before submitting it to a journal or conference? Then our **Early-Career Researcher (ECR) Club** is for you, and we would love to hear from you!
 
-::: job
-**Title:** ECREA  
-**Location:** University of Brno  
-**Deadline:** NN  
-**Description:** Short blurb describing the CfP  
+In each session, an early-career researcher presents ongoing work, such as a dissertation chapter or a draft article, and receives **in-depth, constructive feedback from a dedicated discussant**, followed by an open discussion with peers. It is a chance to:
 
-<button class="readmore"><a href="https://example.com">Read more</a></button>
-:::
+- get focused feedback on your work from a scholar who has read it closely
+- practise presenting in a friendly, low-stakes setting: the format is explicitly supportive and developmental
+- meet other early-career political communication researchers and grow your network
+- make your work visible within the Standing Group
+
+Sessions are held **online around lunchtime on a Tuesday**, so it is easy to fit one into your week, wherever you are based.
+
+Signing up takes only a few minutes: just tell us your name and contact details, your career stage (PhD year, or year of defence for postdocs), a working title with a short abstract, and the month you would prefer to present. You are also welcome to suggest a discussant you would like to hear from.
+
+**Supervisors and senior colleagues:** please forward this to your PhD students and postdocs, and encourage them to sign up!
+
+[Sign up to present](https://uva.fra1.qualtrics.com/jfe/form/SV_3IewzsN0fpXLEpg){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
 
 ---
 
-## Job Bulletin
+## ECPR Joint Sessions 2027 in Trieste: Submit by 14 December
 
-::: job
-**Title:** Assistant Professor (Tenure-Track)  
-**Location:** Universitat Pompeu Fabra  
-**Deadline:** 3 Feb 2025  
-**Description:** Short blurb describing the job.  
+If you are looking for a few days of focused discussion of your work, consider the **ECPR Joint Sessions of Workshops**, which take place at the **University of Trieste** from **1 to 4 June 2027**.
 
-<button class="readmore"><a href="https://example.com">Read more</a></button>
-:::
+Unlike a large conference, each Workshop brings together **15–20 Papers in a small, dedicated group** that stays together for the whole event. This leaves time to engage deeply with each other's work, test your arguments, get constructive feedback, and build connections that can lead to new collaborations. Many early-career participants find the Joint Sessions one of the best venues for developing a paper.
 
+The political communication Standing Group is still available to endore one workshop! Feel free to contact us per mail! 
+
+**Deadline for Proposals:** Monday 14 December 2026 (GMT midnight).
+
+[Explore Workshops and submit](https://ecpr.eu/JointSessions){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
+[Contact us!](mailto:Johanna.Burger@fhgr.ch,laura.jacobs@uantwerpen.be?subject=ECPR%20Joint%20Session%20-%20Workshop%20Endorsement){style="background-color:#000000;color:#ffffff;font-weight:bold;text-decoration:none;padding:6px 14px;border-radius:4px;display:inline-block;"}
+
+
+---
 
 ## Recent Publications by Our Members
 
